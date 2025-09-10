@@ -3,48 +3,117 @@
 ## 1. Alcances y Limitaciones
 
 ### Alcances
-El programa `Nnhamming.py` es una implementación de una Red Neuronal de Hamming diseñada para la **clasificación de patrones binarios**. Su principal objetivo es tomar un conjunto de datos (correos) representados por características binarias (1s y 0s) y determinar a cuál de los **prototipos predefinidos** (`Spam` o `Legitimo`) se parece más.
+El programa `Nnhamming.py` implementa una **Red Neuronal de Hamming** para clasificar patrones binarios, diseñada específicamente para clasificar correos electrónicos como **Spam** o **Legítimo** basándose en características binarias (0s y 1s). Utiliza una capa competitiva con inhibición lateral simulada para asignar la clase del prototipo más cercano según la **distancia de Hamming**.
 
-- [cite_start]**Clasificación Rápida**: La principal fortaleza del sistema es su velocidad[cite: 97, 40]. No hay un proceso de "entrenamiento", la clasificación es casi instantánea.
-- **Entrada por CSV**: El sistema es flexible y permite al usuario definir sus propios prototipos y casos de prueba a través de archivos CSV.
-- [cite_start]**Robustez al Ruido**: Tolera pequeñas diferencias en los patrones de entrada, clasificando un caso en la categoría más cercana aunque no sea una coincidencia perfecta[cite: 105, 39].
+- **Clasificación Instantánea**: No requiere entrenamiento, permitiendo clasificaciones rápidas y eficientes, ideal para aplicaciones en tiempo real [1, 2].
+- **Entrada Flexible por CSV**: Soporta archivos CSV para prototipos y casos, con detección automática de delimitadores (`,` o `;`) y validación de encabezados.
+- **Soporte para Metadatos**: Permite un archivo CSV opcional (`metadata.csv`) para especificar las características esperadas y sus tipos (binario), mejorando la validación.
+- **Robustez al Ruido**: Tolera pequeñas variaciones en los patrones de entrada, asignando casos al prototipo más cercano incluso si no hay coincidencia exacta [1].
+- **Manejo Avanzado de Errores**: Valida archivos, codificación, y valores binarios, con mensajes detallados y registro opcional en un archivo de log.
+- **Salida Detallada**: Proporciona información sobre la clasificación, incluyendo la distancia de Hamming y la clase asignada, con soporte para modo verbose.
+- **Manual Integrado**: El argumento `--help` ofrece un manual completo con ejemplos de uso.
 
 ### Limitaciones
-- [cite_start]**Solo Datos Binarios**: El sistema solo puede procesar datos que sean estrictamente binarios (0 o 1)[cite: 109]. Cualquier otro tipo de dato debe ser pre-procesado.
-- **No Aprende**: La red no aprende de nuevos datos. Para añadir o modificar una categoría, se debe editar manualmente el archivo de prototipos.
-- [cite_start]**Escalabilidad Limitada**: El rendimiento puede disminuir si el número de prototipos (clases) aumenta considerablemente, ya que cada caso debe ser comparado contra cada prototipo[cite: 112].
+- **Solo Datos Binarios**: Solo procesa características binarias (0/1 o equivalentes como 'yes'/'no', 'true'/'false'). Datos no binarios requieren preprocesamiento [1].
+- **Sin Aprendizaje**: La red no ajusta prototipos automáticamente; cualquier cambio en las clases requiere modificar manualmente el archivo de prototipos.
+- **Escalabilidad Limitada**: El rendimiento puede degradarse con un número muy grande de prototipos, ya que compara cada caso con todos los prototipos [1].
+- **Empates en Distancia**: En caso de empate en la distancia de Hamming, asigna la clase "Indeterminado" para evitar sesgos, lo que puede requerir intervención manual para resolver ambigüedades.
 
 ## 2. Proceso de Instalación
 
-La instalación es muy sencilla gracias a que el script solo utiliza librerías estándar de Python.
+La instalación es sencilla, ya que `Nnhamming.py` utiliza únicamente la biblioteca estándar de Python.
 
-1.  **Tener Python**: Asegúrate de tener Python 3.6 o una versión superior instalada en tu sistema. Puedes verificarlo abriendo una terminal y escribiendo `python3 --version`.
-2.  **Descargar los Archivos**: Descarga el script `Nnhamming.py` y los archivos CSV de ejemplo (`prototipos_correo.csv`, `dataset_base.csv`, etc.) en una misma carpeta.
-3.  **No se requieren dependencias**: No es necesario instalar paquetes adicionales con `pip`. El script está listo para ser ejecutado.
+1. **Requisito de Python**: Asegúrate de tener **Python 3.6** o superior instalado. Verifica con:
+   ```bash
+   python3 --version
+   ```
+2. **Descarga de Archivos**: Coloca el script `Nnhamming.py`, los archivos CSV de ejemplo (`prototipos_correo.csv`, `dataset_base.csv`), y opcionalmente `metadata.csv` en una misma carpeta.
+3. **Sin Dependencias Externas**: No se requiere instalar paquetes adicionales con `pip`. El script está listo para ejecutarse.
+4. **Opcional**: Consulta el archivo `README.md` (si se incluye) para instrucciones detalladas y ejemplos de archivos CSV.
 
 ## 3. Modo de Correr un Test Demo
 
-Para realizar una prueba rápida y verificar que todo funciona correctamente:
+Para probar el funcionamiento del clasificador:
 
-1.  Abre una terminal o consola de comandos.
-2.  Navega hasta la carpeta donde guardaste los archivos usando el comando `cd ruta/a/tu/carpeta`.
-3.  Ejecuta el siguiente comando:
-    ```bash
-    python Nnhamming.py prototipos_correo.csv dataset_base.csv
-    ```
-4.  **Salida Esperada**: Deberías ver en la pantalla el resultado de la clasificación para cada correo en el archivo `dataset_base.csv`, indicando su clase asignada y su distancia de Hamming.
+1. Abre una terminal o consola de comandos.
+2. Navega a la carpeta con los archivos usando:
+   ```bash
+   cd ruta/a/tu/carpeta
+   ```
+3. Ejecuta el script con los archivos de prototipos y casos:
+   ```bash
+   python Nnhamming.py prototipos_correo.csv dataset_base.csv
+   ```
+   O con opciones adicionales:
+   ```bash
+   python Nnhamming.py prototipos_correo.csv dataset_base.csv --metadata metadata.csv --log errores.log --verbose
+   ```
+4. **Salida Esperada**: El programa mostrará la clasificación de cada caso en `dataset_base.csv`, indicando el ID del caso, la clase asignada (ej. Spam o Legítimo), y la distancia de Hamming al prototipo más cercano. Los errores y resultados se registran en `errores.log` si se especifica `--log`.
+5. **Ayuda Adicional**: Para ver un manual de uso detallado, ejecuta:
+   ```bash
+   python Nnhamming.py --help
+   ```
+
+### Ejemplo de Archivos CSV
+- **prototipos_correo.csv**:
+  ```csv
+  Clase,Caracteristica1,Caracteristica2,Caracteristica3,Caracteristica4
+  Spam,1,0,1,0
+  Legitimo,0,1,0,1
+  ```
+- **dataset_base.csv**:
+  ```csv
+  ID,Caracteristica1,Caracteristica2,Caracteristica3,Caracteristica4
+  Caso1,1,0,1,1
+  Caso2,0,1,0,0
+  ```
+- **metadata.csv** (opcional):
+  ```csv
+  Caracteristica,Tipo
+  Caracteristica1,binario
+  Caracteristica2,binario
+  Caracteristica3,binario
+  Caracteristica4,binario
+  ```
+
+### Ejemplo de Salida
+```plaintext
+--- INICIO DE CLASIFICACIÓN CON RED DE HAMMING ---
+Prototipos: ['Spam', 'Legitimo']
+Características: 4 -> ['Caracteristica1', 'Caracteristica2', 'Caracteristica3', 'Caracteristica4']
+------------------------------------------------------------
+  > Caso 'Caso1': Clasificado como 'Spam' (Hamming=1)
+  > Caso 'Caso2': Clasificado como 'Legitimo' (Hamming=1)
+------------------------------------------------------------
+--- CLASIFICACIÓN FINALIZADA ---
+```
 
 ## 4. FAQ (Preguntas Frecuentes)
 
-**P1: ¿Qué sucede si un correo tiene la misma distancia a 'Spam' y a 'Legitimo'?**
-**R1:** El algoritmo actual asignará la clase del primer prototipo que encuentre en el archivo `prototipos_correo.csv` que cumpla con esa distancia mínima. En nuestro caso, si 'Spam' está primero, se clasificaría como 'Spam' en caso de empate.
+**P1: ¿Qué sucede si un caso tiene la misma distancia de Hamming a dos prototipos?**  
+**R1**: El algoritmo asigna la clase "Indeterminado" para evitar sesgos, indicando que no hay un ganador claro. Puedes revisar el archivo de prototipos o ajustar las características para resolver empates.
 
-**P2: ¿Puedo agregar más características para analizar los correos?**
-**R2:** Sí. Para hacerlo, debes agregar la nueva columna tanto en el archivo de prototipos como en los archivos de datasets. El script detectará automáticamente la nueva característica y la incluirá en el cálculo de la distancia, siempre y cuando los encabezados coincidan.
+**P2: ¿Puedo agregar más características para analizar los correos?**  
+**R2**: Sí, puedes añadir o eliminar columnas en los archivos CSV de prototipos y casos, siempre que los encabezados coincidan en ambos archivos y estén definidos en `metadata.csv` (si se usa). El script detecta automáticamente las características.
 
-**P3: ¿Por qué mi archivo CSV da un error de formato?**
-**R3:** La causa más común es que el número o los nombres de las columnas en tu archivo de casos no coinciden exactamente con los del archivo de prototipos. Asegúrate de que todos los archivos tengan las mismas 11 columnas (1 de ID/Clase y 10 de características) con los mismos nombres.
+**P3: ¿Por qué mi archivo CSV genera un error de formato?**  
+**R3**: Los errores comunes incluyen:  
+- Nombres de columnas diferentes entre `prototipos_correo.csv` y `dataset_base.csv`.  
+- Valores no binarios (ej. "3" en lugar de "0" o "1").  
+- Falta de encabezado en la primera fila del CSV.  
+- Delimitadores inconsistentes (usa `,` o `;` consistentemente).  
+- Columnas no definidas en `metadata.csv` (si se usa).  
+Revisa los mensajes de error en la consola o el archivo de log para detalles específicos.
 
-## 5. REFERENCIAS
-[1] Artificial Neural Networks. Edgar Sánchez-Sinencio and Clifford Lau. IEEE Press. 1992.
+**P4: ¿Puedo usar valores no numéricos como 'yes'/'no'?**  
+**R4**: Sí, el script mapea automáticamente valores como 'yes'/'no', 'true'/'false', 'sí'/'no', etc., a 0 y 1. Otros valores (ej. texto arbitrario) causarán un error.
+
+**P5: ¿Para qué sirve el archivo de metadatos?**  
+**R5**: El archivo `metadata.csv` (opcional) especifica las características esperadas y su tipo (binario). Ayuda a validar que las columnas en los archivos CSV sean correctas y consistentes.
+
+**P6: ¿Cómo funciona el archivo de log?**  
+**R6**: Si especificas `--log errores.log`, los mensajes de error y los resultados de clasificación se guardan en el archivo con marca de tiempo. Esto es útil para depurar o auditar el proceso.
+
+## 5. Referencias
+[1] Artificial Neural Networks. Edgar Sánchez-Sinencio and Clifford Lau. IEEE Press. 1992.  
 [2] Presentación "Las Redes de Hamming" - Cradinaux, Paredez, Saavedra. UADER 2025.
