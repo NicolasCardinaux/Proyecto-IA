@@ -58,12 +58,6 @@ python procesar_correos.py correos_ejemplo.txt resultados_finales.csv
 ```  
 **Resultado**: Genera el archivo `resultados_finales.csv`.
 
-### Ayuda
-Para ver las opciones disponibles:  
-```bash
-python procesar_correos.py --help
-```
-
 ## 4. Formato del Archivo de Entrada (.txt)
 
 El archivo de entrada debe ser un archivo de texto plano donde cada correo esté separado por la línea `Recibidos`. El formato esperado para cada correo es:  
