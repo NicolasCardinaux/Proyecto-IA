@@ -108,7 +108,7 @@ Revisa los mensajes de error en la consola o el archivo de log para detalles esp
 **P4: ¿Puedo usar valores no numéricos como 'yes'/'no'?**  
 **R4**: Sí, el script mapea automáticamente valores como 'yes'/'no', 'true'/'false', 'sí'/'no', etc., a 0 y 1. Otros valores (ej. texto arbitrario) causarán un error.
 
-**P5: ¿Para qué sirve el archivo de metadatos?**  
+**P5: ¿Para qué sirve el archivo de prototipos?**  
 **R5**: El archivo `prototipos.csv` (opcional) especifica las características esperadas y su tipo (binario). Ayuda a validar que las columnas en los archivos CSV sean correctas y consistentes.
 
 **P6: ¿Cómo funciona el archivo de log?**  
