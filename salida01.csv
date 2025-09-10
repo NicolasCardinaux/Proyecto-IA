@@ -1,0 +1,6 @@
+ID,AsuntoEnMayusculas,ContieneOferta,UsaLenguajePromocional,TieneErroresOrtograficos,SolicitaInfoPersonal,ContieneMultiplesLlamadasAccion,EsUrgente,UsaEmoticonos,EsRespuesta,SaludoGenerico,RemitenteSospechoso,UsaAcortadorURL,ExcesoDeEnlaces
+01/Desconocido,0,0,0,0,0,0,0,0,0,0,0,0,0
+02/Altair One,0,1,1,1,1,0,0,0,0,0,0,0,0
+03/PUMA,0,1,1,1,1,1,0,1,0,0,0,0,0
+04/Swappa,0,0,1,1,0,0,0,0,0,0,0,0,0
+05/AliExpress,0,1,1,0,1,0,0,0,0,0,0,0,0

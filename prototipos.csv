@@ -1,0 +1,3 @@
+Clase;AsuntoEnMayusculas;ContieneOferta;UsaLenguajePromocional;TieneErroresOrtograficos;SolicitaInfoPersonal;ContieneMultiplesLlamadasAccion;EsUrgente;UsaEmoticonos;EsRespuesta;SaludoGenerico
+Spam;1;1;1;1;1;1;1;1;0;1
+Legitimo;0;0;1;0;0;0;0;1;1;0

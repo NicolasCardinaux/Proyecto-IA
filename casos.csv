@@ -1,0 +1,6 @@
+ID;AsuntoEnMayusculas;ContieneOferta;UsaLenguajePromocional;TieneErroresOrtograficos;SolicitaInfoPersonal;ContieneMultiplesLlamadasAccion;EsUrgente;UsaEmoticonos;EsRespuesta;SaludoGenerico
+email_01;1;1;1;0;1;0;0;0;1;1
+email_02;0;0;0;0;1;0;0;1;1;0
+email_03;1;1;0;1;0;0;1;1;0;0
+email_04;1;0;1;1;1;1;0;0;1;0
+email_05;0;0;0;0;1;1;0;0;0;0
