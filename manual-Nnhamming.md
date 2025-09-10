@@ -7,7 +7,7 @@ El programa `Nnhamming.py` implementa una **Red Neuronal de Hamming** para clasi
 
 - **Clasificación Instantánea**: No requiere entrenamiento, permitiendo clasificaciones rápidas y eficientes, ideal para aplicaciones en tiempo real [1, 2].
 - **Entrada Flexible por CSV**: Soporta archivos CSV para prototipos y casos, con detección automática de delimitadores (`,` o `;`) y validación de encabezados.
-- **Soporte para Metadatos**: Permite un archivo CSV opcional (`metadata.csv`) para especificar las características esperadas y sus tipos (binario), mejorando la validación.
+- **Soporte para Metadatos**: Permite un archivo CSV opcional (`prototipos.csv`) para especificar las características esperadas y sus tipos (binario), mejorando la validación.
 - **Robustez al Ruido**: Tolera pequeñas variaciones en los patrones de entrada, asignando casos al prototipo más cercano incluso si no hay coincidencia exacta [1].
 - **Manejo Avanzado de Errores**: Valida archivos, codificación, y valores binarios, con mensajes detallados y registro opcional en un archivo de log.
 - **Salida Detallada**: Proporciona información sobre la clasificación, incluyendo la distancia de Hamming y la clase asignada, con soporte para modo verbose.
@@ -27,7 +27,7 @@ La instalación es sencilla, ya que `Nnhamming.py` utiliza únicamente la biblio
    ```bash
    python3 --version
    ```
-2. **Descarga de Archivos**: Coloca el script `Nnhamming.py`, los archivos CSV de ejemplo (`prototipos_correo.csv`, `dataset_base.csv`), y opcionalmente `metadata.csv` en una misma carpeta.
+2. **Descarga de Archivos**: Coloca el script `Nnhamming.py`, los archivos CSV de ejemplo (`prototipos_correo.csv`, `dataset_base.csv`), y opcionalmente `prototipos.csv` en una misma carpeta.
 3. **Sin Dependencias Externas**: No se requiere instalar paquetes adicionales con `pip`. El script está listo para ejecutarse.
 4. **Opcional**: Consulta el archivo `README.md` (si se incluye) para instrucciones detalladas y ejemplos de archivos CSV.
 
@@ -46,7 +46,7 @@ Para probar el funcionamiento del clasificador:
    ```
    O con opciones adicionales:
    ```bash
-   python Nnhamming.py prototipos_correo.csv dataset_base.csv --metadata metadata.csv --log errores.log --verbose
+   python Nnhamming.py prototipos_correo.csv dataset_base.csv --prototipos prototipos.csv --log errores.log --verbose
    ```
 4. **Salida Esperada**: El programa mostrará la clasificación de cada caso en `dataset_base.csv`, indicando el ID del caso, la clase asignada (ej. Spam o Legítimo), y la distancia de Hamming al prototipo más cercano. Los errores y resultados se registran en `errores.log` si se especifica `--log`.
 5. **Ayuda Adicional**: Para ver un manual de uso detallado, ejecuta:
@@ -67,7 +67,7 @@ Para probar el funcionamiento del clasificador:
   Caso1,1,0,1,1
   Caso2,0,1,0,0
   ```
-- **metadata.csv** (opcional):
+- **prototipos.csv** (opcional):
   ```csv
   Caracteristica,Tipo
   Caracteristica1,binario
@@ -94,7 +94,7 @@ Características: 4 -> ['Caracteristica1', 'Caracteristica2', 'Caracteristica3',
 **R1**: Si un caso tiene la misma distancia mínima a dos prototipos, se asigna la clase “Spam”, asegurando que los casos ambiguos se consideren potencialmente peligrosos o no deseados. Esto evita que el sistema subestime correos de riesgo y simplifica la decisión ante empates.
 
 **P2: ¿Puedo agregar más características para analizar los correos?**  
-**R2**: Sí, puedes añadir o eliminar columnas en los archivos CSV de prototipos y casos, siempre que los encabezados coincidan en ambos archivos y estén definidos en `metadata.csv` (si se usa). El script detecta automáticamente las características.
+**R2**: Sí, puedes añadir o eliminar columnas en los archivos CSV de prototipos y casos, siempre que los encabezados coincidan en ambos archivos y estén definidos en `prototipos.csv` (si se usa). El script detecta automáticamente las características.
 
 **P3: ¿Por qué mi archivo CSV genera un error de formato?**  
 **R3**: Los errores comunes incluyen:  
@@ -102,14 +102,14 @@ Características: 4 -> ['Caracteristica1', 'Caracteristica2', 'Caracteristica3',
 - Valores no binarios (ej. "3" en lugar de "0" o "1").  
 - Falta de encabezado en la primera fila del CSV.  
 - Delimitadores inconsistentes (usa `,` o `;` consistentemente).  
-- Columnas no definidas en `metadata.csv` (si se usa).  
+- Columnas no definidas en `prototipos.csv` (si se usa).  
 Revisa los mensajes de error en la consola o el archivo de log para detalles específicos.
 
 **P4: ¿Puedo usar valores no numéricos como 'yes'/'no'?**  
 **R4**: Sí, el script mapea automáticamente valores como 'yes'/'no', 'true'/'false', 'sí'/'no', etc., a 0 y 1. Otros valores (ej. texto arbitrario) causarán un error.
 
 **P5: ¿Para qué sirve el archivo de metadatos?**  
-**R5**: El archivo `metadata.csv` (opcional) especifica las características esperadas y su tipo (binario). Ayuda a validar que las columnas en los archivos CSV sean correctas y consistentes.
+**R5**: El archivo `prototipos.csv` (opcional) especifica las características esperadas y su tipo (binario). Ayuda a validar que las columnas en los archivos CSV sean correctas y consistentes.
 
 **P6: ¿Cómo funciona el archivo de log?**  
 **R6**: Si especificas `--log errores.log`, los mensajes de error y los resultados de clasificación se guardan en el archivo con marca de tiempo. Esto es útil para depurar o auditar el proceso.
