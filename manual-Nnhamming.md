@@ -91,7 +91,7 @@ Características: 4 -> ['Caracteristica1', 'Caracteristica2', 'Caracteristica3',
 ## 4. FAQ (Preguntas Frecuentes)
 
 **P1: ¿Qué sucede si un caso tiene la misma distancia de Hamming a dos prototipos?**  
-**R1**: Si un caso tiene la misma distancia mínima a dos prototipos, se asigna la clase “Spam”, asegurando que los casos ambiguos se consideren potencialmente peligrosos o no deseados. Esto evita que el sistema subestime correos de riesgo y simplifica la decisión ante empates.
+**R1**: Si un caso tiene la misma distancia mínima a dos prototipos, se asigna la clase “Indeterminado”. De esta forma, el sistema no resuelve la ambigüedad a favor de ninguna clase en particular y evita clasificaciones erróneas cuando los patrones son indistinguibles.
 
 **P2: ¿Puedo agregar más características para analizar los correos?**  
 **R2**: Sí, puedes añadir o eliminar columnas en los archivos CSV de prototipos y casos, siempre que los encabezados coincidan en ambos archivos y estén definidos en `prototipos.csv` (si se usa). El script detecta automáticamente las características.
