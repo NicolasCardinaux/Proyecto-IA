@@ -109,7 +109,7 @@ Revisa los mensajes de error en la consola o el archivo de log para detalles esp
 **R4**: Sí, el script mapea automáticamente valores como 'yes'/'no', 'true'/'false', 'sí'/'no', etc., a 0 y 1. Otros valores (ej. texto arbitrario) causarán un error.
 
 **P5: ¿Para qué sirve el archivo de prototipos?**  
-**R5**: El archivo `prototipos.csv` (opcional) especifica las características esperadas y su tipo (binario). Ayuda a validar que las columnas en los archivos CSV sean correctas y consistentes.
+**R5**: El archivo `prototipos.csv`  especifica las características esperadas y su tipo (binario). Ayuda a validar que las columnas en los archivos CSV sean correctas y consistentes.
 
 **P6: ¿Cómo funciona el archivo de log?**  
 **R6**: Si especificas `--log errores.log`, los mensajes de error y los resultados de clasificación se guardan en el archivo con marca de tiempo. Esto es útil para depurar o auditar el proceso.
