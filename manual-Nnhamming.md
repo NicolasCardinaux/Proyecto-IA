@@ -11,7 +11,7 @@ El programa `Nnhamming.py` implementa una **Red Neuronal de Hamming** para clasi
 - **Robustez al Ruido**: Tolera pequeñas variaciones en los patrones de entrada, asignando casos al prototipo más cercano incluso si no hay coincidencia exacta [1].
 - **Manejo Avanzado de Errores**: Valida archivos, codificación, y valores binarios, con mensajes detallados y registro opcional en un archivo de log.
 - **Salida Detallada**: Proporciona información sobre la clasificación, incluyendo la distancia de Hamming y la clase asignada, con soporte para modo verbose.
-- **Manual Integrado**: El argumento `--help` ofrece un manual completo con ejemplos de uso.
+
 
 ### Limitaciones
 - **Solo Datos Binarios**: Solo procesa características binarias (0/1 o equivalentes como 'yes'/'no', 'true'/'false'). Datos no binarios requieren preprocesamiento [1].
