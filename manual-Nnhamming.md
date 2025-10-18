@@ -1,23 +1,26 @@
-# Manual de Referencia: Clasificador de Phishing con Red de Hamming (Nnhamming.py)
+# Manual de Referencia: Clasificador de Phishing con Red de Hamming (`Nnhamming.py`)
 
 ## 1. Alcances y Limitaciones
 
 ### Alcances
-El programa `Nnhamming.py` implementa una **Red Neuronal de Hamming** para clasificar patrones binarios, diseñada específicamente para clasificar correos electrónicos como **Spam** o **Legítimo** basándose en características binarias (0s y 1s). Utiliza una capa competitiva con inhibición lateral simulada para asignar la clase del prototipo más cercano según la **distancia de Hamming**.
+El programa `Nnhamming.py` implementa una **Red Neuronal de Hamming** para clasificar correos electrónicos como **Phishing** o **Legítimos**, a partir de características binarias preprocesadas.
 
-- **Clasificación Instantánea**: No requiere entrenamiento, permitiendo clasificaciones rápidas y eficientes, ideal para aplicaciones en tiempo real [1, 2].
-- **Entrada Flexible por CSV**: Soporta archivos CSV para prototipos y casos, con detección automática de delimitadores (`,` o `;`) y validación de encabezados.
-- **Soporte para Metadatos**: Permite un archivo CSV opcional (`prototipos.csv`) para especificar las características esperadas y sus tipos (binario), mejorando la validación.
-- **Robustez al Ruido**: Tolera pequeñas variaciones en los patrones de entrada, asignando casos al prototipo más cercano incluso si no hay coincidencia exacta [1].
-- **Manejo Avanzado de Errores**: Valida archivos, codificación, y valores binarios, con mensajes detallados y registro opcional en un archivo de log.
-- **Salida Detallada**: Proporciona información sobre la clasificación, incluyendo la distancia de Hamming y la clase asignada, con soporte para modo verbose.
+Se basa en una capa competitiva con **inhibición lateral simulada**, asignando la clase del prototipo más cercano en función de la **distancia de Hamming**.
+
+**Características principales:**
+- **Clasificación inmediata**: no requiere entrenamiento.  
+- **Entrada flexible**: lectura automática de archivos CSV con detección de delimitador (`;` o `,`).  
+- **Validación de consistencia** mediante metadatos opcionales.  
+- **Tolerancia a ruido**: clasifica incluso con diferencias parciales respecto al prototipo.  
+- **Gestión de errores y logs**: detalla inconsistencias en datos o formato.  
+- **Interpretabilidad**: muestra clase asignada y distancia de Hamming por caso.
 
 
 ### Limitaciones
-- **Solo Datos Binarios**: Solo procesa características binarias (0/1 o equivalentes como 'yes'/'no', 'true'/'false'). Datos no binarios requieren preprocesamiento [1].
-- **Sin Aprendizaje**: La red no ajusta prototipos automáticamente; cualquier cambio en las clases requiere modificar manualmente el archivo de prototipos.
-- **Escalabilidad Limitada**: El rendimiento puede degradarse con un número muy grande de prototipos, ya que compara cada caso con todos los prototipos [1].
-- **Empates en Distancia**: En caso de empate en la distancia de Hamming, asigna la clase "Indeterminado" para evitar sesgos, lo que puede requerir intervención manual para resolver ambigüedades.
+- Solo acepta **valores binarios (0/1)** o equivalentes semánticos (“sí/no”, “true/false”).  
+- No realiza **aprendizaje** ni ajuste automático de prototipos.  
+- En caso de empate de distancia, asigna la clase **“Indeterminado”**.  
+- Puede ser menos eficiente con un número muy elevado de prototipos.
 
 ## 2. Proceso de Instalación
 
