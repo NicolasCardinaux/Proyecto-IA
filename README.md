@@ -62,7 +62,15 @@ python Nnhamming.py prototipos.csv correos_analizados.csv
 
 El sistema imprimirá la clase asignada y la distancia de Hamming asociada a cada caso.
 
-## 3. Personalización
+## 3. Interpretación de Resultados
+
+El clasificador indica para cada correo:
+- La **clase asignada** (`Phishing`, `Legítimo` o `Indeterminado`).
+- La **distancia de Hamming**, que mide cuántas características difieren del prototipo más cercano.
+
+Una menor distancia implica mayor similitud con el patrón correspondiente.
+
+## 4. Personalización
 
 Este sistema es flexible y puedes adaptarlo a tus necesidades:
 
