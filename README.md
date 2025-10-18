@@ -72,7 +72,5 @@ Una menor distancia implica mayor similitud con el patrón correspondiente.
 
 ## 4. Personalización
 
-Este sistema es flexible y puedes adaptarlo a tus necesidades:
-
-- **Añadir características**: Si deseas que el clasificador considere otras características, simplemente modifica el script `procesar_correos.py` para que las detecte. Luego, añade las nuevas columnas tanto en tu archivo de prototipos como en los datasets que generes.
-- **Añadir más prototipos**: Si quieres clasificar en más de dos categorías, simplemente agrega más filas a tu archivo `prototipos.csv`, cada una con una clase diferente.
+- **Nuevas características**: puedes ampliar el análisis agregando reglas al script `procesar_correos.py` (por ejemplo, detección de dominios falsos o encabezados falsificados).  
+- **Nuevas clases**: añade más filas al archivo `prototipos.csv` si deseas incorporar categorías adicionales (por ejemplo, “Campaña Comercial”, “Correo Interno”).
