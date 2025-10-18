@@ -1,4 +1,4 @@
-# Manual de Referencia: Clasificador de Spam con Red de Hamming (Nnhamming.py)
+# Manual de Referencia: Clasificador de Phishing con Red de Hamming (Nnhamming.py)
 
 ## 1. Alcances y Limitaciones
 
