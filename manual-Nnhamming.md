@@ -22,17 +22,16 @@ Se basa en una capa competitiva con **inhibición lateral simulada**, asignando 
 - En caso de empate de distancia, asigna la clase **“Indeterminado”**.  
 - Puede ser menos eficiente con un número muy elevado de prototipos.
 
-## 2. Proceso de Instalación
+## 2. Instalación
 
-La instalación es sencilla, ya que `Nnhamming.py` utiliza únicamente la biblioteca estándar de Python.
+`Nnhamming.py` utiliza únicamente la **biblioteca estándar de Python**, sin dependencias externas.
 
-1. **Requisito de Python**: Asegúrate de tener **Python 3.6** o superior instalado. Verifica con:
+1. Verifica tu versión, debe ser **Python 3.6+**:
    ```bash
    python3 --version
    ```
-2. **Descarga de Archivos**: Coloca el script `Nnhamming.py`, los archivos CSV de ejemplo (`prototipos_correo.csv`, `dataset_base.csv`), y opcionalmente `prototipos.csv` en una misma carpeta.
-3. **Sin Dependencias Externas**: No se requiere instalar paquetes adicionales con `pip`. El script está listo para ejecutarse.
-4. **Opcional**: Consulta el archivo `README.md` (si se incluye) para instrucciones detalladas y ejemplos de archivos CSV.
+2. Descarga el script y los archivos CSV (`prototipos.csv`, `dataset.csv`).  
+3. No requiere instalación adicional.
 
 ## 3. Modo de Correr un Test Demo
 
