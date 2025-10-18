@@ -116,4 +116,4 @@ Revisa los mensajes de error en la consola o el archivo de log para detalles esp
 
 ## 5. Referencias
 [1] Artificial Neural Networks. Edgar Sánchez-Sinencio and Clifford Lau. IEEE Press. 1992.  
-[2] Presentación "Las Redes de Hamming" - Cradinaux, Paredez, Saavedra. UADER 2025.
+[2] Presentación "Las Redes de Hamming" - Cradinaux, Paredes, Saavedra. UADER 2025.

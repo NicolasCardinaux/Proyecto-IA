@@ -1,13 +1,15 @@
-# Proyecto de Clasificación con Red de Hamming
+# Proyecto de Detección de Phishing con Red de Hamming
 
-Este proyecto es una demostración de un sistema de clasificación de patrones binarios utilizando una Red Neuronal de Hamming. El flujo de trabajo se divide en dos etapas principales, gestionadas por dos scripts de Python:
+Este proyecto implementa un sistema de detección de intentos de **phishing** en correos electrónicos utilizando una **Red Neuronal de Hamming**. El flujo de trabajo se compone de dos etapas principales:
 
-- **Preprocesamiento de datos**: Un script para transformar datos de texto en un formato binario estructurado (CSV).
-- **Clasificación**: Una implementación de la Red de Hamming para clasificar los datos preprocesados.
+- **Preprocesamiento de correos**: un script que analiza mensajes y genera un conjunto de características binarias indicadoras de posible phishing.  
+- **Clasificación**: una red de Hamming que clasifica los correos procesados según la similitud con prototipos definidos.
 
 ## 1. Requisitos de Instalación
 
-Ambos scripts están escritos en Python y requieren la librería `pandas` para el procesamiento de archivos CSV. Para preparar tu entorno, abre una terminal y ejecuta el siguiente comando:
+Los scripts están desarrollados en **Python 3.6+** y requieren únicamente la librería `pandas` para la etapa de preprocesamiento.
+
+Instálala ejecutando:
 
 ```bash
 pip install pandas
