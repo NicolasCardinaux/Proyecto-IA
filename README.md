@@ -17,62 +17,50 @@ pip install pandas
 
 ## 2. Flujo de Trabajo
 
-El sistema funciona en un proceso secuencial y sencillo. A continuación, se detallan los pasos para preprocesar y clasificar tus datos.
+El sistema opera en dos pasos consecutivos: extracción de características y clasificación.
 
-### Paso 1: Preprocesamiento de Datos
+### Paso 1: Análisis de Correos
 
-El script `procesar_correos.py` se encarga de extraer características de un archivo de texto con correos electrónicos y convertirlas en un dataset binario.
+El script `procesar_correos.py` examina un archivo de texto con correos y genera un **dataset binario** con indicadores de comportamiento típico de *phishing* (por ejemplo, solicitud de información personal o uso de lenguaje promocional).
 
 #### Formato del archivo de entrada
 
-El archivo de texto de entrada (.txt) debe contener cada correo separado por la línea `Recibidos`.
+Cada correo debe estar separado por una línea que contenga la palabra exacta `Recibidos`.
 
 #### Uso
 
-Utiliza el siguiente comando, reemplazando los nombres de archivo por los que estés usando:
-
 ```bash
-python procesar_correos.py <archivo_de_entrada.txt> <archivo_de_salida.csv>
+python procesar_correos.py <archivo_entrada.txt> <archivo_salida.csv>
 ```
 
 **Ejemplo**:
-
 ```bash
-python procesar_correos.py ejemplo.txt ejemplo.csv
+python procesar_correos.py correos.txt correos_analizados.csv
 ```
 
-Este comando leerá `ejemplo.txt` y generará un archivo `ejemplo.csv` con las características binarias de cada correo. Este archivo será la entrada para la siguiente etapa.
+El script generará un archivo CSV con valores 0/1 para cada característica detectada.
 
-### Paso 2: Clasificación con la Red de Hamming
+### Paso 2: Clasificación con Red de Hamming
 
-El script `Nnhamming.py` toma los datos preprocesados y los clasifica. El sistema compara cada registro del archivo de entrada con un conjunto de prototipos predefinidos y asigna la clase del prototipo más cercano.
+El script `Nnhamming.py` clasifica los correos procesados comparando cada registro con prototipos de referencia (por ejemplo, **Phishing** o **Legítimo**) según la **distancia de Hamming**.
 
-#### Requisitos de archivos
+#### Archivos requeridos
 
-Necesitas dos archivos CSV:
-
-- **Archivo de prototipos**: Debe contener los patrones de referencia para cada clase (ej. `Spam`, `Legitimo`). Se asume que este archivo se llama `prototipos.csv`.
-- **Archivo de casos a clasificar**: Es el archivo que generaste en el paso 1 (ej. `ejemplo.csv`).
+- **prototipos.csv**: patrones de referencia para cada clase.  
+- **dataset.csv**: generado por el paso anterior.
 
 #### Uso
 
-Ejecuta el siguiente comando, asegurándote de que los archivos existan en la misma carpeta:
-
 ```bash
-python Nnhamming.py <archivo_de_prototipos.csv> <archivo_de_casos.csv>
+python Nnhamming.py prototipos.csv dataset.csv
 ```
 
 **Ejemplo**:
-
 ```bash
-python Nnhamming.py prototipos.csv ejemplo.csv
+python Nnhamming.py prototipos.csv correos_analizados.csv
 ```
 
-El script imprimirá los resultados de la clasificación directamente en la consola.
-
-#### Salida esperada
-
-Tras la ejecución, verás una tabla con la clase asignada a cada caso, junto con su distancia de Hamming, que representa el número de características diferentes al prototipo más cercano.
+El sistema imprimirá la clase asignada y la distancia de Hamming asociada a cada caso.
 
 ## 3. Personalización
 
