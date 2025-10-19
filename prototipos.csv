@@ -1,5 +1,5 @@
 Clase;AsuntoEnMayusculas;ContieneOferta;UsaLenguajePromocional;TieneErroresOrtograficos;SolicitaInfoPersonal;ContieneMultiplesLlamadasAccion;EsUrgente;UsaEmoticonos;EsRespuesta;SaludoGenerico
-Legitimo;1;1;1;1;0;0;0;0;0;0
-Spam;1;1;1;1;1;0;0;0;0;0
-Legitimo;0;0;0;0;0;0;1;1;1;1
-Spam;0;0;0;0;0;1;1;1;1;1
+Legítimo;1;1;1;1;0;0;0;0;0;0
+Phishing;1;1;1;1;1;0;0;0;0;0
+Legítimo;0;0;0;0;0;0;1;1;1;1
+Phishing;0;0;0;0;0;1;1;1;1;1
