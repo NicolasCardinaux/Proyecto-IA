@@ -2,19 +2,18 @@
 
 ## 1. Propósito y Alcances
 
-El script `procesar_correos.py` es una herramienta de preprocesamiento diseñada para analizar el contenido de correos electrónicos y extraer características binarias, transformando datos de texto no estructurado en un archivo CSV estructurado. Este dataset puede ser utilizado como entrada para clasificadores como la Red de Hamming (`Nnhamming.py`).  
+El script `procesar_correos.py` analiza el contenido textual de correos electrónicos para detectar **señales de phishing** y las transforma en un **dataset binario estructurado**.  
+Su objetivo es facilitar la clasificación de mensajes fraudulentos que buscan obtener credenciales o información personal.  
 
-**Propósito**: Convertir correos electrónicos en un conjunto de características binarias (0s y 1s) para facilitar su análisis o clasificación posterior.  
-**Alcances**:  
-- **Procesamiento Automático**: Extrae automáticamente características relevantes de correos electrónicos basadas en reglas predefinidas.  
-- **Formato Estandarizado**: Genera un archivo CSV compatible con clasificadores como `Nnhamming.py`.  
-- **Flexibilidad**: Procesa archivos de texto con múltiples correos, identificando patrones comunes en spam o correos legítimos.  
-- **No Clasifica**: Este script no clasifica correos; solo los prepara para clasificación posterior.  
+**Principales capacidades:**
+- Extracción automática de características relevantes a intentos de suplantación.  
+- Generación de archivos CSV compatibles con clasificadores como `Nnhamming.py`.  
+- Enfoque en **comportamientos de engaño**.
 
-**Limitaciones**:  
-- Requiere un formato de entrada específico (separador `Recibidos`).  
-- No detecta características avanzadas basadas en aprendizaje automático; utiliza reglas predefinidas.  
-- Depende de la calidad del archivo de entrada para generar resultados precisos.
+**Limitaciones:**
+- Depende del formato correcto del archivo (`Recibidos` como separador).  
+- Las reglas son heurísticas; no utiliza aprendizaje automático.  
+- Está diseñado principalmente para correos en español o inglés.
 
 ## 2. Proceso de Instalación
 
