@@ -1,4 +1,4 @@
-# Manual de Referencia: Analizador de Características de Correos (procesar_correos.py)
+# Manual de Referencia: Analizador de Características de Phishing (`procesar_correos.py`)
 
 ## 1. Propósito y Alcances
 
