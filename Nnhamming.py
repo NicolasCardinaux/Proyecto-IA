@@ -3,39 +3,17 @@
 """
 Nnhamming.py - Red de Hamming para clasificación (Trabajo Final Integrador)
 
-Autores: Cradinaux Nicolás, Paredez Lorenzo, Saavedra Nicolás
+Autores: Cardinaux Nicolás, Paredes Lorenzo, Saavedra Nicolás
 Fecha: Septiembre 2025
 Materia: Inteligencia Artificial - UADER FCyT
 
 Descripción:
-  Implementa una red de Hamming para clasificación de patrones binarios, con una
-  capa de entrada y una capa competitiva. Lee prototipos y casos desde archivos CSV,
-  calcula la distancia de Hamming y asigna la clase del prototipo más cercano usando
-  inhibición lateral simulada. Genera un archivo de log opcional para errores.
+  Implementa una red de Hamming para clasificar correos electrónicos según
+  características binarias extraídas por 'procesar_correos.py'. 
+  Permite distinguir entre correos legítimos y posibles intentos de phishing.
 
 Uso:
-  python Nnhamming.py prototipos.csv casos.csv [--id-column ID] [--metadata METADATA.csv] [--log LOG.txt] [--verbose]
-  python Nnhamming.py --help   # muestra ayuda
-
-Requisitos:
-  - Python 3.6+
-  - Archivos CSV con primera fila como header.
-  - El archivo de prototipos debe contener una columna 'Clase' (case-insensitive).
-  - Los valores de características deben ser binarios (0/1, yes/no, true/false, sí/no).
-  - Opcional: archivo CSV de metadatos con columnas 'Caracteristica' y 'Tipo' (binario).
-  - No requiere librerías externas (solo stdlib).
-
-Formato de los archivos CSV:
-  - prototipos.csv: Columnas 'Clase', <característica1>, <característica2>, ...
-  - casos.csv: Columnas <ID>, <característica1>, <característica2>, ...
-  - metadata.csv (opcional): Columnas 'Caracteristica', 'Tipo' (ejemplo: 'binario')
-
-Instrucciones de instalación:
-  1. Asegúrate de tener Python 3.6+ instalado.
-  2. Guarda este script como 'Nnhamming.py'.
-  3. Prepara los archivos CSV de prototipos y casos.
-  4. (Opcional) Crea un archivo metadata.csv para validar características.
-  5. Ejecuta: python Nnhamming.py prototipos.csv casos.csv
+  python Nnhamming.py prototipos.csv casos.csv [--log LOG.txt] [--verbose]
 """
 
 from __future__ import annotations
@@ -77,7 +55,7 @@ class HammingNetwork:
                 menor_distancia = dist
                 clase_ganadora = clase
             elif dist == menor_distancia:
-                clase_ganadora = "Indeterminado"  # Empate
+                clase_ganadora = "Indeterminado" # Empate
         return clase_ganadora, menor_distancia
 
 # ---------- Utilidad para autodetectar delimitador ----------
@@ -107,7 +85,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--id-column", default=None,
                         help="Nombre de la columna que contiene el ID del caso (por defecto: primera columna del CSV).")
     parser.add_argument("--metadata", default=None,
-                        help="Ruta al CSV de metadatos con columnas 'Caracteristica' y 'Tipo'.")
+                        help="Ruta al CSV de metadatos con columnas 'Característica' y 'Tipo'.")
     parser.add_argument("--log", default=None,
                         help="Ruta al archivo de log para registrar errores.")
     parser.add_argument("--abort-on-error", action="store_true",
@@ -151,10 +129,10 @@ def cargar_metadata(ruta_metadata: str, verbose: bool = False) -> Optional[Dict[
             if lector.fieldnames is None:
                 print(f"[ERROR] El archivo de metadatos '{ruta_metadata}' no contiene encabezado.")
                 return None
-            if 'Caracteristica' not in lector.fieldnames or 'Tipo' not in lector.fieldnames:
-                print(f"[ERROR] El CSV de metadatos debe incluir columnas 'Caracteristica' y 'Tipo'.")
+            if 'Característica' not in lector.fieldnames or 'Tipo' not in lector.fieldnames:
+                print(f"[ERROR] El CSV de metadatos debe incluir columnas 'Característica' y 'Tipo'.")
                 return None
-            metadata = {row['Caracteristica'].strip(): row['Tipo'].strip().lower() for row in lector}
+            metadata = {row['Característica'].strip(): row['Tipo'].strip().lower() for row in lector}
             if verbose:
                 print(f"[INFO] Cargados metadatos desde '{ruta_metadata}': {metadata}")
             return metadata
