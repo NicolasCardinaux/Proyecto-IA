@@ -15,47 +15,29 @@ Su objetivo es facilitar la clasificación de mensajes fraudulentos que buscan o
 - Las reglas son heurísticas; no utiliza aprendizaje automático.  
 - Está diseñado principalmente para correos en español o inglés.
 
-## 2. Proceso de Instalación
+## 2. Instalación
 
-El script utiliza la biblioteca `pandas`, que no está incluida en la instalación estándar de Python. Sigue estos pasos para configurarlo:
+Requiere Python 3.6+ y la biblioteca `pandas`:
 
-1. **Instalar Python**: Asegúrate de tener **Python 3.6** o superior. Verifica con:  
-   ```bash
-   python3 --version
-   ```  
-   Descarga Python desde [python.org](https://www.python.org) si es necesario.
-
-2. **Instalar pandas**: Instala la biblioteca requerida ejecutando:  
-   ```bash
-   pip install pandas
-   ```
-
-3. **Descargar Archivos**: Coloca el script `procesar_correos.py` y el archivo de entrada (formato `.txt`) en la misma carpeta. Los archivos de ejemplo (como `correos_ejemplo.txt`) pueden ser creados según el formato descrito en la sección 4.
-
-## 3. Modo de Uso
-
-El script se ejecuta desde la línea de comandos, tomando como entrada un archivo de texto con correos y generando un archivo CSV con las características extraídas.
-
-### Uso Básico
 ```bash
-python procesar_correos.py <archivo_de_entrada.txt>
+pip install pandas
 ```
-**Ejemplo**:  
-```bash
-python procesar_correos.py mis_correos.txt
-```  
-**Resultado**: Genera un archivo `correos_analizados.csv` en la misma carpeta.
 
-### Uso Avanzado
-Puedes especificar un nombre personalizado para el archivo de salida:  
+Coloca `procesar_correos.py` y tu archivo `.txt` de correos en la misma carpeta.
+
+## 3. Uso
+
+### Básico
 ```bash
-python procesar_correos.py <archivo_de_entrada.txt> <archivo_de_salida.csv>
-```  
-**Ejemplo**:  
+python procesar_correos.py correos.txt
+```
+Genera `correos_analizados.csv`.
+
+### Personalizado
 ```bash
-python procesar_correos.py correos_ejemplo.txt resultados_finales.csv
-```  
-**Resultado**: Genera el archivo `resultados_finales.csv`.
+python procesar_correos.py correos.txt salida.csv
+```
+Guarda el resultado con el nombre especificado.
 
 ## 4. Formato del Archivo de Entrada (.txt)
 
