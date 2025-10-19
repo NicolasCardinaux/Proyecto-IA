@@ -33,59 +33,29 @@ Se basa en una capa competitiva con **inhibición lateral simulada**, asignando 
 2. Descarga el script y los archivos CSV (`prototipos.csv`, `dataset.csv`).  
 3. No requiere instalación adicional.
 
-## 3. Modo de Correr un Test Demo
+## 3. Ejecución y Ejemplo Práctico
 
-Para probar el funcionamiento del clasificador:
-
-1. Abre una terminal o consola de comandos.
-2. Navega a la carpeta con los archivos usando:
+1. Abre la terminal en la carpeta del proyecto:
    ```bash
-   cd ruta/a/tu/carpeta
+   cd ruta/al/proyecto
    ```
-3. Ejecuta el script con los archivos de prototipos y casos:
+2. Ejecuta el clasificador:
    ```bash
-   python Nnhamming.py prototipos_correo.csv dataset_base.csv
+   python Nnhamming.py prototipos.csv dataset.csv
    ```
-   O con opciones adicionales:
+3. Opcionalmente agrega parámetros:
    ```bash
-   python Nnhamming.py prototipos_correo.csv dataset_base.csv --prototipos prototipos.csv --log errores.log --verbose
-   ```
-4. **Salida Esperada**: El programa mostrará la clasificación de cada caso en `dataset_base.csv`, indicando el ID del caso, la clase asignada (ej. Spam o Legítimo), y la distancia de Hamming al prototipo más cercano. Los errores y resultados se registran en `errores.log` si se especifica `--log`.
-5. **Ayuda Adicional**: Para ver un manual de uso detallado, ejecuta:
-   ```bash
-   python Nnhamming.py --help
+   python Nnhamming.py prototipos.csv dataset.csv --log resultados.log --verbose
    ```
 
-### Ejemplo de Archivos CSV
-- **prototipos_correo.csv**:
-  ```csv
-  Clase,Caracteristica1,Caracteristica2,Caracteristica3,Caracteristica4
-  Spam,1,0,1,0
-  Legitimo,0,1,0,1
-  ```
-- **dataset_base.csv**:
-  ```csv
-  ID,Caracteristica1,Caracteristica2,Caracteristica3,Caracteristica4
-  Caso1,1,0,1,1
-  Caso2,0,1,0,0
-  ```
-- **prototipos.csv** (opcional):
-  ```csv
-  Caracteristica,Tipo
-  Caracteristica1,binario
-  Caracteristica2,binario
-  Caracteristica3,binario
-  Caracteristica4,binario
-  ```
-
-### Ejemplo de Salida
+**Salida esperada:**
 ```plaintext
 --- INICIO DE CLASIFICACIÓN CON RED DE HAMMING ---
-Prototipos: ['Spam', 'Legitimo']
-Características: 4 -> ['Caracteristica1', 'Caracteristica2', 'Caracteristica3', 'Caracteristica4']
+Prototipos: ['Phishing', 'Legitimo']
+Características: 10 -> [...]
 ------------------------------------------------------------
-  > Caso 'Caso1': Clasificado como 'Spam' (Hamming=1)
-  > Caso 'Caso2': Clasificado como 'Legitimo' (Hamming=1)
+  > Caso 'email_01': Clasificado como 'Phishing' (Hamming=2)
+  > Caso 'email_02': Clasificado como 'Legitimo' (Hamming=1)
 ------------------------------------------------------------
 --- CLASIFICACIÓN FINALIZADA ---
 ```
