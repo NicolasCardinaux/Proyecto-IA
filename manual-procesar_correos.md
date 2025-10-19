@@ -60,56 +60,48 @@ Recibidos
 - Cada correo debe contener al menos un remitente, un asunto y un cuerpo, aunque el cuerpo puede ser breve.  
 - Si el formato no se respeta, el script omitirá ese correo y mostrará una advertencia en consola.
 
-## 5. Formato del Archivo de Salida (.csv)
+## 5. Características Analizadas (.csv)
 
-El archivo CSV generado contiene un encabezado con los nombres de las características y una fila por cada correo procesado. Las columnas son:  
+| Columna | Descripción |
+|----------|--------------|
+| **ID** | Identificador único. |
+| **AsuntoEnMayusculas** | Detección de uso excesivo de mayúsculas o signos de alerta. |
+| **ContieneOferta** | Busca incentivos falsos ("premio", "gratis", "cupón"). |
+| **UsaLenguajePromocional** | Identifica frases persuasivas ("promoción", "exclusivo", "ahorra"). |
+| **TieneErroresOrtograficos** | Detecta errores comunes o escritura no profesional. |
+| **SolicitaInfoPersonal** | Busca frases como “verifica tu cuenta” o “actualiza tu contraseña”. |
+| **ContieneMultiplesLlamadasAccion** | Evalúa la repetición de frases tipo “haz clic aquí” o “regístrate”. |
+| **EsUrgente** | Detecta expresiones de urgencia (“última oportunidad”, “expira pronto”). |
+| **UsaEmoticonos** | Señala presencia de símbolos o emojis para generar confianza. |
+| **EsRespuesta** | Indica si parece una respuesta (prefijo “Re:” o “Fwd:”). |
+| **SaludoGenerico** | Saludos impersonales (“Estimado cliente”, “Dear user”). |
+| **RemitenteSospechoso** | Verifica inconsistencias entre nombre y dominio (ej. “Banco XYZ <soporte@gmail.com>”). |
+| **UsaAcortadorURL** | Detección de servicios como bit.ly o tinyurl. |
+| **ExcesoDeEnlaces** | Marca si la cantidad de enlaces supera un umbral razonable. |
 
-| **Columna**                  | **Significado (1 = Sí, 0 = No)**                                                                 |
-|------------------------------|--------------------------------------------------------------------------------------------------|
-| ID                           | Identificador único del correo (generado automáticamente).                                        |
-| AsuntoEnMayusculas           | El asunto está en mayúsculas o contiene símbolos excesivos (ej. "¡OFERTA!").                     |
-| ContieneOferta               | Incluye palabras clave como "oferta", "gratis" o "premio".                                        |
-| UsaLenguajePromocional       | Contiene frases como "descuento", "ahorra" o "promoción".                                        |
-| TieneErroresOrtograficos     | Detecta errores ortográficos comunes (basado en reglas simples).                                  |
-| SolicitaInfoPersonal         | Solicita datos sensibles (contraseñas, datos bancarios, etc.).                                   |
-| ContieneMultiplesLlamadasAccion | Incluye más de 2 llamadas a la acción (ej. "clic aquí", "compra ahora").                       |
-| EsUrgente                    | Usa lenguaje de urgencia (ej. "expira pronto", "última oportunidad").                            |
-| UsaEmoticonos                | Contiene emoticonos o símbolos gráficos.                                                         |
-| EsRespuesta                  | El asunto comienza con "Re:", "Aw:" o similar, indicando una respuesta.                          |
-| SaludoGenerico               | Usa saludos genéricos como "Estimado cliente" o "Hola usuario".                                  |
-| RemitenteSospechoso          | El nombre del remitente no coincide con el dominio del correo (ej. "Banco XYZ <correo@gmail.com>"). |
-| UsaAcortadorURL              | Contiene enlaces con acortadores de URL (ej. bit.ly, tinyurl).                                   |
-| ExcesoDeEnlaces              | Contiene una cantidad desproporcionada de enlaces (umbral configurable).                         |
+## 6. Interpretación de Resultados
 
-**Ejemplo de CSV**:  
-```csv
-ID,AsuntoEnMayusculas,ContieneOferta,UsaLenguajePromocional,TieneErroresOrtograficos,SolicitaInfoPersonal,ContieneMultiplesLlamadasAccion,EsUrgente,UsaEmoticonos,EsRespuesta,SaludoGenerico,RemitenteSospechoso,UsaAcortadorURL,ExcesoDeEnlaces
-Correo1,1,1,1,0,0,1,1,1,0,0,1,1,0
-Correo2,0,0,0,0,0,0,0,0,1,1,0,0,0
-```
+Cada fila representa un correo y cada columna una característica binaria:
+- **1**: presente  
+- **0**: ausente  
 
-## 6. Preguntas Frecuentes (FAQ)
+El CSV resultante puede ser clasificado con `Nnhamming.py` para determinar si el correo es **Phishing** o **Legítimo**.
 
-**P1: ¿Qué significa un valor 1 o 0 en el CSV?**  
-**R1**: Un `1` indica que la característica está presente en el correo; un `0` indica que no lo está.
+## 7. Preguntas Frecuentes (FAQ)
 
-**P2: ¿El script clasifica los correos como Spam o Legítimo?**  
-**R2**: No, `procesar_correos.py` solo extrae características y genera un dataset. La clasificación debe realizarse con otro script, como `Nnhamming.py`, usando el CSV generado.
+**P1:** ¿Qué diferencia tiene respecto a un detector de spam?  
+**R1:** Este analizador se centra en patrones de **fraude y suplantación** (solicitud de información, urgencia, remitente falso), no en campañas publicitarias.
 
-**P3: ¿Qué pasa si mi archivo de entrada no tiene el formato correcto?**  
-**R3**: El script detectará errores como:  
-- Falta de la línea `Recibidos` como separador.  
-- Correos sin remitente, asunto o cuerpo.  
-- Caracteres inesperados en la línea `Recibidos`.  
-En estos casos, el script emitirá advertencias y puede omitir correos mal formateados. Revisa los mensajes de error para corregir el archivo.
+**P2:** ¿Qué ocurre si el formato del texto no cumple las reglas?  
+**R2:** Los correos mal estructurados se omiten con una advertencia en consola.
 
-**P4: ¿Puedo personalizar las características extraídas?**  
-**R4**: Sí, pero requiere modificar el código del script para añadir o quitar reglas de detección. Las características actuales están diseñadas para identificar patrones comunes en correos spam.
+**P3:** ¿Puedo añadir nuevas señales?  
+**R3:** Sí, editando las listas de palabras clave o funciones de detección dentro del script.
 
-**P5: ¿El script soporta otros idiomas?**  
-**R5**: Las reglas de detección están optimizadas para palabras clave en español (ej. "oferta", "gratis"). Para otros idiomas, deberías ajustar las palabras clave en el código.
+**P4:** ¿Qué idiomas soporta?  
+**R4:** Está optimizado para español, con soporte parcial para inglés.
 
-## 7. Ejemplo de Integración con Nnhamming.py
+## 8. Ejemplo de Integración con Nnhamming.py
 
 1. Usa `procesar_correos.py` para generar un archivo CSV a partir de un archivo de texto con correos:  
    ```bash
