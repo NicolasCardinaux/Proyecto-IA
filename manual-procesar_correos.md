@@ -41,30 +41,24 @@ Guarda el resultado con el nombre especificado.
 
 ## 4. Formato del Archivo de Entrada (.txt)
 
-El archivo de entrada debe ser un archivo de texto plano donde cada correo esté separado por la línea `Recibidos`. El formato esperado para cada correo es:  
-
-```
-Remitente_Nombre <remitente@ejemplo.com>
-Asunto del Correo
-Cuerpo del correo...
-Recibidos
-```
+Cada correo debe estar separado por una línea `Recibidos`.
 
 **Ejemplo**:  
 ```
-Juan Perez <juan@ejemplo.com>
-Oferta Especial: ¡Gana un iPhone!
-¡Haz clic ahora y reclama tu premio gratis! Última oportunidad.
+Banco Seguro <soporte@bancoseguro.com>
+Actualiza tus datos de acceso
+Por motivos de seguridad, verifica tu cuenta aquí: bit.ly/secure-login
 Recibidos
-Ana Gomez <ana@empresa.com>
-Re: Confirmación de reunión
-Estimado cliente, gracias por su interés...
+Oficina RRHH <rrhh@empresa.com>
+Re: Confirmación de horario
+Gracias por tu respuesta, nos vemos mañana.
 Recibidos
 ```
 
 **Notas**:  
-- La línea `Recibidos` debe ser exacta, sin espacios adicionales ni caracteres.  
-- Asegúrate de que cada correo tenga un remitente, asunto y cuerpo, aunque el cuerpo puede ser breve.
+- La línea `Recibidos` debe ser exacta, sin espacios adicionales ni caracteres extra.  
+- Cada correo debe contener al menos un remitente, un asunto y un cuerpo, aunque el cuerpo puede ser breve.  
+- Si el formato no se respeta, el script omitirá ese correo y mostrará una advertencia en consola.
 
 ## 5. Formato del Archivo de Salida (.csv)
 
