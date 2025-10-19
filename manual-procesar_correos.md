@@ -101,14 +101,14 @@ El CSV resultante puede ser clasificado con `Nnhamming.py` para determinar si el
 **P4:** ¿Qué idiomas soporta?  
 **R4:** Está optimizado para español, con soporte parcial para inglés.
 
-## 8. Ejemplo de Integración con Nnhamming.py
+## 8. Integración con Nnhamming.py
 
-1. Usa `procesar_correos.py` para generar un archivo CSV a partir de un archivo de texto con correos:  
+1. Analiza tus correos:
    ```bash
-   python procesar_correos.py correos_ejemplo.txt dataset_correos.csv
+   python procesar_correos.py correos.txt dataset.csv
    ```
-2. Usa el CSV generado como entrada para `Nnhamming.py`:  
+2. Clasifica los resultados:
    ```bash
-   python Nnhamming.py prototipos_correo.csv dataset_correos.csv
+   python Nnhamming.py prototipos.csv dataset.csv
    ```
-3. Revisa los resultados de clasificación en la consola.
+3. Revisa las predicciones en la consola o en el archivo de log.
