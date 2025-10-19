@@ -62,30 +62,21 @@ Características: 10 -> [...]
 
 ## 4. FAQ (Preguntas Frecuentes)
 
-**P1: ¿Qué sucede si un caso tiene la misma distancia de Hamming a dos prototipos?**  
-**R1**: Si un caso tiene la misma distancia mínima a dos prototipos, se asigna la clase “Indeterminado”. De esta forma, el sistema no resuelve la ambigüedad a favor de ninguna clase en particular y evita clasificaciones erróneas cuando los patrones son indistinguibles.
+**P1:** ¿Por qué se usa una red de Hamming para phishing?  
+**R1:** Porque permite comparar directamente la estructura binaria de correos con patrones típicos de suplantación (pedidos de credenciales, URLs acortadas, urgencia artificial) sin necesidad de entrenamiento previo.
 
-**P2: ¿Puedo agregar más características para analizar los correos?**  
-**R2**: Sí, puedes añadir o eliminar columnas en los archivos CSV de prototipos y casos, siempre que los encabezados coincidan en ambos archivos y estén definidos en `prototipos.csv` (si se usa). El script detecta automáticamente las características.
+**P2:** ¿Qué pasa si dos prototipos tienen igual distancia?  
+**R2:** Se asigna la clase *Indeterminado* para evitar sesgos.
 
-**P3: ¿Por qué mi archivo CSV genera un error de formato?**  
-**R3**: Los errores comunes incluyen:  
-- Nombres de columnas diferentes entre `prototipos_correo.csv` y `dataset_base.csv`.  
-- Valores no binarios (ej. "3" en lugar de "0" o "1").  
-- Falta de encabezado en la primera fila del CSV.  
-- Delimitadores inconsistentes (usa `,` o `;` consistentemente).  
-- Columnas no definidas en `prototipos.csv` (si se usa).  
-Revisa los mensajes de error en la consola o el archivo de log para detalles específicos.
+**P3:** ¿Puedo agregar más características o clases?  
+**R3:** Sí. Añade columnas y filas en los CSV asegurando que las cabeceras coincidan.
 
-**P4: ¿Puedo usar valores no numéricos como 'yes'/'no'?**  
-**R4**: Sí, el script mapea automáticamente valores como 'yes'/'no', 'true'/'false', 'sí'/'no', etc., a 0 y 1. Otros valores (ej. texto arbitrario) causarán un error.
+**P4:** ¿Por qué algunos correos quedan sin clasificar?  
+**R4:** Ocurre si poseen valores inválidos o vacíos. El programa los registra como errores o los marca como “Indeterminado”.
 
-**P5: ¿Para qué sirve el archivo de prototipos?**  
-**R5**: El archivo `prototipos.csv`  especifica las características esperadas y su tipo (binario). Ayuda a validar que las columnas en los archivos CSV sean correctas y consistentes.
-
-**P6: ¿Cómo funciona el archivo de log?**  
-**R6**: Si especificas `--log errores.log`, los mensajes de error y los resultados de clasificación se guardan en el archivo con marca de tiempo. Esto es útil para depurar o auditar el proceso.
+**P5:** ¿Qué diferencia hay con un detector de spam?  
+**R5:** Este clasificador se centra en indicadores de **suplantación de identidad** (dominios falsos, enlaces engañosos, urgencia y solicitudes de datos), no en promociones masivas o publicidad.
 
 ## 5. Referencias
-[1] Artificial Neural Networks. Edgar Sánchez-Sinencio and Clifford Lau. IEEE Press. 1992.  
-[2] Presentación "Las Redes de Hamming" - Cradinaux, Paredes, Saavedra. UADER 2025.
+[1] Artificial Neural Networks. Edgar Sánchez-Sinencio, Clifford Lau. IEEE Press, 1992.  
+[2] Cardinaux, Paredes, Saavedra. *Las Redes de Hamming aplicadas a la detección de phishing*. UADER FCyT, 2025.
