@@ -1,0 +1,6 @@
+ID;Clase_Predicha;Distancia_Hamming
+Correo01;Phishing;2
+Correo02;Phishing;1
+Correo03;Phishing;0
+Correo04;Legítimo;0
+Correo05;Legítimo;1

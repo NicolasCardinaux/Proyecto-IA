@@ -1,5 +1,11 @@
-Clase;AsuntoEnMayusculas;ContieneOferta;UsaLenguajePromocional;TieneErroresOrtograficos;SolicitaInfoPersonal;ContieneMultiplesLlamadasAccion;EsUrgente;UsaEmoticonos;EsRespuesta;SaludoGenerico
-Legítimo;1;1;1;1;0;0;0;0;0;0
-Phishing;1;1;1;1;1;0;0;0;0;0
-Legítimo;0;0;0;0;0;0;1;1;1;1
-Phishing;0;0;0;0;0;1;1;1;1;1
+Clase;AsuntoUrgente;SolicitaCredenciales;EnlacesSospechosos;DominioRemitenteSospechoso;ErroresOrtograficos;FaltaInformacionContacto;AmenazasConsecuencias;PremioInexperado;ActualizacionUrgente;SaludoGenerico
+Legítimo;0;0;0;0;0;0;0;0;0;0
+Legítimo;0;0;0;0;1;0;0;0;0;1
+Legítimo;0;0;0;1;0;1;0;0;0;0
+Legítimo;1;0;0;0;0;0;0;0;0;0
+Phishing;1;1;1;1;0;1;1;0;1;1
+Phishing;1;0;1;1;0;1;0;1;1;0
+Phishing;0;1;1;1;1;0;1;0;1;1
+Phishing;1;1;0;1;0;1;1;0;0;1
+Phishing;0;0;1;1;0;0;1;0;1;0
+Phishing;1;1;1;0;1;1;0;1;1;0

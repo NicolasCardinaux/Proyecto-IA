@@ -1,325 +1,303 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Nnhamming.py - Red de Hamming para clasificación (Trabajo Final Integrador)
+Nnhamming.py - Red de Hamming para Detección de Phishing
+Trabajo Final Integrador - Inteligencia Artificial - UADER FCyT
 
 Autores: Cardinaux Nicolás, Paredes Lorenzo, Saavedra Nicolás
 Fecha: Septiembre 2025
-Materia: Inteligencia Artificial - UADER FCyT
 
 Descripción:
-  Implementa una red de Hamming para clasificar correos electrónicos según
-  características binarias extraídas por 'procesar_correos.py'. 
-  Permite distinguir entre correos legítimos y posibles intentos de phishing.
-
-Uso:
-  python Nnhamming.py prototipos.csv casos.csv [--log LOG.txt] [--verbose]
+    Implementa una red de Hamming optimizada para clasificación de correos
+    electrónicos como Legítimos o Phishing basado en características binarias.
 """
 
-from __future__ import annotations
 import sys
 import csv
 import argparse
-from typing import List, Dict, Any, Optional, Tuple
 import os
-from uuid import uuid4
 import datetime
+from typing import List, Dict, Any, Tuple, Optional
+from collections import Counter
 
-# ---------- Clase Red de Hamming ----------
-class HammingNetwork:
-    """Implementa una red de Hamming con capa competitiva."""
+class RedHamming:
+    """Implementa una red de Hamming para clasificación binaria."""
     
-    def __init__(self, prototipos: List[Dict[str, Any]], caracteristicas: List[str]):
-        """Inicializa la red con prototipos y características."""
+    def __init__(self, prototipos: List[Dict[str, Any]]):
+        """
+        Inicializa la red con prototipos de entrenamiento.
+        """
         self.prototipos = prototipos
-        self.caracteristicas = caracteristicas
+        # Extraer características comunes entre todos los prototipos
+        self.caracteristicas = self._extraer_caracteristicas_comunes()
         self.num_prototipos = len(prototipos)
-        self.num_caracteristicas = len(caracteristicas)
+        self.num_caracteristicas = len(self.caracteristicas)
+        
+        print(f"🔧 Características para clasificación: {self.caracteristicas}")
+        
+    def _extraer_caracteristicas_comunes(self):
+        """Extrae características comunes excluyendo 'Clase' e 'ID'"""
+        if not self.prototipos:
+            return []
+        
+        # Tomar características del primer prototipo excluyendo 'Clase' e 'ID'
+        caracteristicas = [k for k in self.prototipos[0].keys() 
+                          if k not in ['Clase', 'ID'] and self.prototipos[0][k] is not None]
+        return caracteristicas
 
     def calcular_distancia_hamming(self, caso: Dict[str, int], prototipo: Dict[str, int]) -> int:
-        """Calcula la distancia de Hamming entre un caso y un prototipo."""
-        return sum(1 for c in self.caracteristicas if caso.get(c) != prototipo.get(c))
+        """
+        Calcula la distancia de Hamming entre un caso y un prototipo.
+        """
+        distancia = 0
+        for caracteristica in self.caracteristicas:
+            valor_caso = caso.get(caracteristica)
+            valor_prototipo = prototipo.get(caracteristica)
+            
+            # Si alguno es None, contar como diferencia
+            if valor_caso is None or valor_prototipo is None:
+                distancia += 1
+            elif valor_caso != valor_prototipo:
+                distancia += 1
+        return distancia
 
     def clasificar(self, caso: Dict[str, int]) -> Tuple[str, int]:
-        """Clasifica un caso usando distancia de Hamming e inhibición lateral simulada."""
+        """
+        Clasifica un caso usando la red de Hamming.
+        """
+        # Filtrar solo las características que tenemos en el caso
+        caso_filtrado = {k: v for k, v in caso.items() if k in self.caracteristicas and v is not None}
+        
+        if not caso_filtrado:
+            return "Indeterminado", -1
+        
+        # Calcular distancias a todos los prototipos
         distancias = []
-        for p in self.prototipos:
-            dist = self.calcular_distancia_hamming(caso, p)
-            distancias.append((dist, p['Clase']))
-
-        # Inhibición lateral simulada: el prototipo con menor distancia "gana"
-        menor_distancia = float('inf')
-        clase_ganadora = "Indeterminado"
-        for dist, clase in distancias:
-            if dist < menor_distancia:
-                menor_distancia = dist
-                clase_ganadora = clase
-            elif dist == menor_distancia:
-                clase_ganadora = "Indeterminado" # Empate
+        for prototipo in self.prototipos:
+            dist = self.calcular_distancia_hamming(caso_filtrado, prototipo)
+            distancias.append((dist, prototipo['Clase']))
+        
+        # Encontrar la menor distancia
+        menor_distancia = min(dist for dist, _ in distancias)
+        
+        # Contar votos entre los prototipos con menor distancia
+        votos = Counter(clase for dist, clase in distancias if dist == menor_distancia)
+        
+        # Desempatar por proximidad adicional si hay empate
+        if len(votos) > 1:
+            # En caso de empate, usar el primer prototipo más cercano
+            clase_ganadora = distancias[0][1]
+        else:
+            clase_ganadora = votos.most_common(1)[0][0] if votos else "Indeterminado"
+            
         return clase_ganadora, menor_distancia
 
-# ---------- Utilidad para autodetectar delimitador ----------
 def detectar_delimitador(ruta_archivo: str) -> str:
-    """Detecta si el archivo CSV usa ',' o ';' como delimitador."""
+    """Detecta automáticamente el delimitador del CSV."""
     try:
         with open(ruta_archivo, 'r', encoding='utf-8') as f:
-            first_line = f.readline()
-            if not first_line:
-                raise ValueError("El archivo está vacío.")
-            return ';' if ';' in first_line else ','
-    except UnicodeDecodeError:
-        raise ValueError(f"Error de codificación al leer '{ruta_archivo}'. Intenta guardarlo en UTF-8.")
-    except FileNotFoundError:
-        raise FileNotFoundError(f"Archivo no encontrado: {ruta_archivo}")
+            primera_linea = f.readline().strip()
+            if ';' in primera_linea:
+                return ';'
+            elif ',' in primera_linea:
+                return ','
+            else:
+                return ','  # Por defecto
     except Exception as e:
-        raise RuntimeError(f"No se pudo detectar delimitador en '{ruta_archivo}': {e}")
+        raise ValueError(f"No se pudo detectar delimitador: {e}")
 
-# ---------- Parsing Args ----------
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Clasificador por Red de Hamming (CSV -> CSV).",
-        epilog="Ejemplo: python Nnhamming.py prototipos.csv casos.csv --metadata metadata.csv --log errores.log"
-    )
-    parser.add_argument("prototipos", help="Ruta al CSV de prototipos (debe incluir columna 'Clase').")
-    parser.add_argument("casos", help="Ruta al CSV con los casos a clasificar. Primera columna puede ser ID.")
-    parser.add_argument("--id-column", default=None,
-                        help="Nombre de la columna que contiene el ID del caso (por defecto: primera columna del CSV).")
-    parser.add_argument("--metadata", default=None,
-                        help="Ruta al CSV de metadatos con columnas 'Característica' y 'Tipo'.")
-    parser.add_argument("--log", default=None,
-                        help="Ruta al archivo de log para registrar errores.")
-    parser.add_argument("--abort-on-error", action="store_true",
-                        help="Abortar inmediatamente si se encuentra un caso con error de formato.")
-    parser.add_argument("--verbose", action="store_true", help="Mostrar información adicional.")
-    return parser.parse_args()
-
-# ---------- Utilidades de parsing ----------
-def map_to_binary(value: str) -> Optional[int]:
-    """
-    Mapea un string a 0/1. Retorna None si no es mapeable.
-    Acepta: '0','1','true','false','yes','no','si','sí','y','n' (case-insensitive).
-    """
-    if value is None:
+def mapear_a_binario(valor: str) -> Optional[int]:
+    """Convierte un valor a binario (0/1) de forma robusta."""
+    if valor is None or valor == '':
         return None
-    v = str(value).strip().lower()
-    if v == '':
-        return None
-    trues = {'1', 'true', 'yes', 'y', 'si', 'sí', 't'}
-    falses = {'0', 'false', 'no', 'n', 'f'}
-    if v in trues:
+        
+    valor_str = str(valor).strip().lower()
+    
+    # Valores verdaderos
+    if valor_str in {'1', 'true', 'verdadero', 'si', 'sí', 'yes', 'y', 't', 'v'}:
         return 1
-    if v in falses:
+        
+    # Valores falsos
+    if valor_str in {'0', 'false', 'falso', 'no', 'n', 'f'}:
         return 0
+        
+    # Intentar como número
     try:
-        ival = int(v)
-        if ival in (0, 1):
-            return ival
-    except Exception:
+        num = int(valor_str)
+        return 1 if num == 1 else 0 if num == 0 else None
+    except ValueError:
         return None
-    return None
 
-def cargar_metadata(ruta_metadata: str, verbose: bool = False) -> Optional[Dict[str, str]]:
-    """Carga metadatos desde un archivo CSV."""
-    if not ruta_metadata:
-        return None
+def cargar_datos_csv(ruta: str, es_prototipos: bool = True) -> Optional[List[Dict]]:
+    """Carga datos desde archivo CSV con validación."""
     try:
-        delim = detectar_delimitador(ruta_metadata)
-        with open(ruta_metadata, mode='r', encoding='utf-8') as f:
+        delim = detectar_delimitador(ruta)
+        
+        with open(ruta, 'r', encoding='utf-8') as f:
             lector = csv.DictReader(f, delimiter=delim)
             if lector.fieldnames is None:
-                print(f"[ERROR] El archivo de metadatos '{ruta_metadata}' no contiene encabezado.")
+                print(f"❌ ERROR: Archivo vacío o sin encabezados: {ruta}")
                 return None
-            if 'Característica' not in lector.fieldnames or 'Tipo' not in lector.fieldnames:
-                print(f"[ERROR] El CSV de metadatos debe incluir columnas 'Característica' y 'Tipo'.")
+                
+            campos = [campo.strip() for campo in lector.fieldnames]
+            
+            # Validar estructura
+            if es_prototipos and 'Clase' not in campos:
+                print("❌ ERROR: Los prototipos deben incluir columna 'Clase'")
                 return None
-            metadata = {row['Característica'].strip(): row['Tipo'].strip().lower() for row in lector}
-            if verbose:
-                print(f"[INFO] Cargados metadatos desde '{ruta_metadata}': {metadata}")
-            return metadata
-    except Exception as e:
-        print(f"[ERROR] Fallo al leer metadatos: {e}")
-        return None
-
-def cargar_prototipos(ruta_archivo: str, metadata: Optional[Dict[str, str]], verbose: bool = False) -> Optional[List[Dict[str, Any]]]:
-    """Carga prototipos desde CSV con validaciones robustas."""
-    try:
-        delim = detectar_delimitador(ruta_archivo)
-        with open(ruta_archivo, mode='r', encoding='utf-8') as f:
-            lector = csv.DictReader(f, delimiter=delim)
-            if lector.fieldnames is None:
-                print(f"[ERROR] El archivo de prototipos '{ruta_archivo}' no contiene encabezado.")
-                return None
-            headers = [h.strip() for h in lector.fieldnames]
-            if 'clase' not in [h.lower() for h in headers]:
-                print(f"[ERROR] El CSV de prototipos debe incluir una columna 'Clase'. Encontrado: {headers}")
-                return None
-
-            if metadata:
-                missing = [c for c in headers if c.lower() != 'clase' and c not in metadata]
-                if missing:
-                    print(f"[ERROR] Columnas en prototipos no definidas en metadatos: {missing}")
-                    return None
-
-            prototipos = []
-            for idx, fila in enumerate(lector, start=2):
-                if not any(fila.values()):
-                    print(f"[WARN] Fila vacía en prototipos (línea {idx}), ignorada.")
+                
+            datos = []
+            
+            for num_linea, fila in enumerate(lector, start=2):
+                if not any(fila.values()):  # Fila vacía
                     continue
-                row_norm = {k.strip(): v for k, v in fila.items()}
-                clase = None
-                prot = {}
-                for key, raw_val in row_norm.items():
-                    if key.lower() == 'clase':
-                        clase = raw_val.strip()
+                    
+                dato_procesado = {}
+                
+                for campo in campos:
+                    valor = fila.get(campo, '').strip()
+                    
+                    if campo == 'Clase' or campo == 'ID':
+                        dato_procesado[campo] = valor
                     else:
-                        val = map_to_binary(raw_val)
-                        if val is None:
-                            print(f"[ERROR] Prototipo línea {idx}: valor no binario en columna '{key}': '{raw_val}'")
-                            return None
-                        if metadata and metadata.get(key, '').lower() != 'binario':
-                            print(f"[ERROR] Prototipo línea {idx}: columna '{key}' debe ser binaria según metadatos.")
-                            return None
-                        prot[key] = val
-                if not clase:
-                    print(f"[ERROR] Prototipo línea {idx}: columna 'Clase' vacía.")
-                    return None
-                prototipos.append({'Clase': clase, **prot})
-
-            if not prototipos:
-                print("[ERROR] No se cargó ningún prototipo válido.")
+                        valor_bin = mapear_a_binario(valor)
+                        dato_procesado[campo] = valor_bin
+                
+                # Solo validar clase si es prototipo
+                if es_prototipos and not dato_procesado.get('Clase'):
+                    print(f"⚠️  Línea {num_linea}: Falta valor en columna 'Clase'")
+                    continue
+                    
+                datos.append(dato_procesado)
+                    
+            if not datos:
+                print(f"❌ ERROR: No se cargaron datos válidos de {ruta}")
                 return None
-
-            if verbose:
-                print(f"[INFO] Cargados {len(prototipos)} prototipos desde '{ruta_archivo}'.")
-            return prototipos
-
+                
+            print(f"✅ Cargados {len(datos)} registros desde {ruta}")
+            return datos
+            
     except Exception as e:
-        print(f"[ERROR] Fallo al leer prototipos: {e}")
+        print(f"❌ ERROR leyendo {ruta}: {e}")
         return None
 
-# ---------- Escritura de log ----------
-def escribir_log(ruta_log: Optional[str], mensaje: str):
-    """Escribe un mensaje en el archivo de log si se especifica."""
-    if ruta_log:
-        try:
-            with open(ruta_log, 'a', encoding='utf-8') as f:
-                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                f.write(f"[{timestamp}] {mensaje}\n")
-        except Exception as e:
-            print(f"[ERROR] No se pudo escribir en el log '{ruta_log}': {e}")
+def main():
+    """Función principal del programa."""
+    parser = argparse.ArgumentParser(
+        description='Red de Hamming para Detección de Phishing',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=f'''
+Ejemplos de uso:
+  python {sys.argv[0]} prototipos.csv casos.csv
+  python {sys.argv[0]} prototipos.csv casos.csv --verbose
 
-# ---------- Main ----------
-def main() -> int:
-    args = parse_args()
-
-    # Validar existencia de archivos
-    if not os.path.exists(args.prototipos):
-        print(f"[ERROR] Archivo de prototipos no encontrado: {args.prototipos}")
-        escribir_log(args.log, f"Archivo de prototipos no encontrado: {args.prototipos}")
-        return 2
-    if not os.path.exists(args.casos):
-        print(f"[ERROR] Archivo de casos no encontrado: {args.casos}")
-        escribir_log(args.log, f"Archivo de casos no encontrado: {args.casos}")
-        return 2
-    if args.metadata and not os.path.exists(args.metadata):
-        print(f"[ERROR] Archivo de metadatos no encontrado: {args.metadata}")
-        escribir_log(args.log, f"Archivo de metadatos no encontrado: {args.metadata}")
-        return 2
-
-    # Cargar metadatos
-    metadata = cargar_metadata(args.metadata, verbose=args.verbose)
-    if args.metadata and metadata is None:
-        return 2
-
+Características:
+  • Clasificación robusta de correos como Legítimo/Phishing
+  • Manejo flexible de características
+  • Soporte para diferentes formatos CSV
+        '''
+    )
+    
+    parser.add_argument('prototipos', help='Archivo CSV con prototipos de entrenamiento')
+    parser.add_argument('casos', help='Archivo CSV con casos a clasificar')
+    parser.add_argument('--verbose', action='store_true', 
+                       help='Mostrar información detallada')
+    parser.add_argument('--salida', default='resultados_clasificacion.csv',
+                       help='Archivo de salida para resultados')
+    
+    args = parser.parse_args()
+    
+    print("🚀 INICIANDO SISTEMA DE DETECCIÓN DE PHISHING")
+    print("=" * 60)
+    
+    # Validar archivos de entrada
+    for archivo in [args.prototipos, args.casos]:
+        if not os.path.exists(archivo):
+            print(f"❌ ERROR: Archivo no encontrado: {archivo}")
+            return 1
+    
     # Cargar prototipos
-    prototipos = cargar_prototipos(args.prototipos, metadata, verbose=args.verbose)
-    if prototipos is None:
-        escribir_log(args.log, f"Fallo al cargar prototipos desde '{args.prototipos}'")
-        return 2
-
-    # Extraer características
+    print("📥 Cargando prototipos de entrenamiento...")
+    prototipos = cargar_datos_csv(args.prototipos, es_prototipos=True)
+    if not prototipos:
+        return 1
+        
+    # Cargar casos a clasificar
+    print("📥 Cargando casos para clasificación...")
+    casos = cargar_datos_csv(args.casos, es_prototipos=False)
+    if not casos:
+        return 1
+        
+    print(f"📨 Casos a clasificar: {len(casos)}")
+    
+    # Inicializar red
     try:
-        caracteristicas = [k for k in prototipos[0].keys() if k != 'Clase']
-        if not caracteristicas:
-            print("[ERROR] No se detectaron características en prototipos.")
-            escribir_log(args.log, "No se detectaron características en prototipos")
-            return 2
+        red = RedHamming(prototipos)
     except Exception as e:
-        print(f"[ERROR] No se pudieron extraer características: {e}")
-        escribir_log(args.log, f"No se pudieron extraer características: {e}")
-        return 2
-
-    # Inicializar red de Hamming
-    red = HammingNetwork(prototipos, caracteristicas)
-
+        print(f"❌ ERROR inicializando red: {e}")
+        return 1
+    
+    # Procesar clasificación
+    print("\n🔍 INICIANDO CLASIFICACIÓN...")
+    print("-" * 60)
+    
+    resultados = []
+    estadisticas = Counter()
+    
+    for caso in casos:
+        try:
+            id_caso = caso.get('ID', 'Desconocido')
+            
+            # Clasificar
+            clase_predicha, distancia = red.clasificar(caso)
+            
+            # Actualizar estadísticas
+            estadisticas[clase_predicha] += 1
+                
+            # Guardar resultado
+            resultados.append({
+                'ID': id_caso,
+                'Clase_Predicha': clase_predicha,
+                'Distancia_Hamming': distancia
+            })
+            
+            if args.verbose:
+                print(f"✅ {id_caso} -> {clase_predicha} (distancia: {distancia})")
+                
+        except Exception as e:
+            print(f"❌ ERROR clasificando caso {id_caso}: {e}")
+            estadisticas['Error'] += 1
+            resultados.append({
+                'ID': id_caso,
+                'Clase_Predicha': 'Error',
+                'Distancia_Hamming': -1,
+                'Error': str(e)
+            })
+    
+    # Generar reporte final
+    print("\n📊 REPORTE FINAL DE CLASIFICACIÓN")
+    print("=" * 60)
+    
+    total = len(casos)
+    for clase, count in estadisticas.items():
+        porcentaje = (count / total) * 100
+        print(f"   {clase:<12}: {count:>3} casos ({porcentaje:5.1f}%)")
+    
+    # Guardar resultados en CSV
     try:
-        delim_casos = detectar_delimitador(args.casos)
-        with open(args.casos, mode='r', encoding='utf-8') as f:
-            lector = csv.DictReader(f, delimiter=delim_casos)
-            if lector.fieldnames is None:
-                print(f"[ERROR] El archivo de casos '{args.casos}' no contiene encabezado.")
-                escribir_log(args.log, f"El archivo de casos '{args.casos}' no contiene encabezado")
-                return 2
-            fieldnames = [h.strip() for h in lector.fieldnames]
-            id_col = args.id_column if args.id_column else fieldnames[0]
-            if id_col not in fieldnames:
-                print(f"[ERROR] Columna ID '{id_col}' no encontrada en casos. Columnas: {fieldnames}")
-                escribir_log(args.log, f"Columna ID '{id_col}' no encontrada en casos")
-                return 2
-
-            missing = [c for c in caracteristicas if c not in fieldnames]
-            if missing:
-                print(f"[ERROR] Faltan columnas en '{args.casos}': {missing}")
-                escribir_log(args.log, f"Faltan columnas en '{args.casos}': {missing}")
-                return 2
-
-            print("\n--- INICIO DE CLASIFICACIÓN CON RED DE HAMMING ---")
-            print(f"Prototipos: {[p['Clase'] for p in prototipos]}")
-            print(f"Características: {len(caracteristicas)} -> {caracteristicas}")
-            print("-" * 60)
-
-            for lineno, fila in enumerate(lector, start=2):
-                if not any(fila.values()):
-                    print(f"[WARN] Fila vacía en casos (línea {lineno}), ignorada.")
-                    escribir_log(args.log, f"Fila vacía en casos (línea {lineno})")
-                    continue
-                row = {k.strip(): v for k, v in fila.items()}
-                id_val = row.get(id_col, f"fila_{lineno}")
-                caso_procesado = {}
-                errores_en_fila = []
-
-                for c in caracteristicas:
-                    raw = row.get(c)
-                    mapped = map_to_binary(raw)
-                    if mapped is None:
-                        errores_en_fila.append((c, raw))
-                    else:
-                        caso_procesado[c] = mapped
-
-                if errores_en_fila:
-                    msg = f"[ERROR] Caso '{id_val}' (línea {lineno}): valores inválidos -> " + \
-                          ", ".join(f"{col}='{val}'" for col, val in errores_en_fila)
-                    print(msg)
-                    escribir_log(args.log, msg)
-                    if args.abort_on_error:
-                        return 3
-                    else:
-                        print(f"  > Caso '{id_val}': Clasificado como 'Indeterminado'.")
-                        continue
-
-                # Clasificar usando la red
-                clase_asignada, distancia = red.clasificar(caso_procesado)
-                print(f"  > Caso '{id_val}': Clasificado como '{clase_asignada}' (Hamming={distancia})")
-                escribir_log(args.log, f"Caso '{id_val}' clasificado como '{clase_asignada}' (Hamming={distancia})")
-
-            print("-" * 60)
-            print("--- CLASIFICACIÓN FINALIZADA ---")
-            return 0
-
+        with open(args.salida, 'w', newline='', encoding='utf-8') as f:
+            if resultados:
+                campos = resultados[0].keys()
+                escritor = csv.DictWriter(f, fieldnames=campos, delimiter=';')
+                escritor.writeheader()
+                escritor.writerows(resultados)
+                
+        print(f"💾 Resultados guardados en: {args.salida}")
     except Exception as e:
-        print(f"[ERROR] Fallo procesando '{args.casos}': {e}")
-        escribir_log(args.log, f"Fallo procesando '{args.casos}': {e}")
-        return 2
+        print(f"❌ ERROR guardando resultados: {e}")
+    
+    print("\n✅ PROCESO COMPLETADO EXITOSAMENTE")
+    return 0
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     sys.exit(main())
