@@ -5,63 +5,27 @@ import os
 from urllib.parse import urlparse
 import tldextract
 from collections import Counter
+from patterns.keywords import URGENTE_KEYWORDS, CREDENCIALES_KEYWORDS, AMENAZAS_KEYWORDS, PREMIO_KEYWORDS, ACTUALIZACION_KEYWORDS, URL_SHORTENERS, DOMINIOS_GENERICOS
+from patterns.regex_patterns import ERRORS_PATTERN, LINKS_PATTERN, EMAIL_PATTERN, GREETINGS_PATTERN, PHONE_PATTERN
 
 class PhishingAnalyzer:
     def __init__(self):
         # Patrones específicos para phishing
-        self.URGENTE_KEYWORDS = [
-            'urgente', 'inmediato', 'acción requerida', 'cuenta suspendida', 'bloqueada',
-            'problema de seguridad', 'verificación necesaria', 'actuar ahora', 'última oportunidad',
-            'alerta de seguridad', 'expira pronto', 'confirmar ahora', 'validar cuenta',
-            'importante', 'atención', 'critical', 'action required', 'immediately'
-        ]
-        
-        self.CREDENCIALES_KEYWORDS = [
-            'contraseña', 'password', 'credenciales', 'iniciar sesión', 'login',
-            'verificar cuenta', 'confirmar identidad', 'datos de acceso',
-            'actualizar información', 'seguridad de la cuenta', 'clave', 'usuario',
-            'credential', 'account verification', 'security update'
-        ]
-        
-        self.AMENAZAS_KEYWORDS = [
-            'permanente', 'perderá acceso', 'eliminaremos', 'suspenderemos',
-            'bloqueo permanente', 'consecuencias', 'acción legal', 'multa',
-            'tarifas adicionales', 'cobro automático', 'suspend', 'terminate',
-            'close your account', 'permanent loss'
-        ]
-        
-        self.PREMIO_KEYWORDS = [
-            'ganador', 'premio', 'sorteo', 'felicitaciones', 'has sido seleccionado',
-            'reclama tu premio', 'regalo especial', 'oferta exclusiva', 'ganaste',
-            'winner', 'congratulations', 'selected', 'prize', 'reward'
-        ]
-        
-        self.ACTUALIZACION_KEYWORDS = [
-            'actualizar', 'verificar', 'confirmar', 'validar', 'completar',
-            'renovar información', 'revisar cuenta', 'mejorar seguridad',
-            'update', 'verify', 'confirm', 'validate', 'renew'
-        ]
-        
-        # Acortadores de URL
-        self.URL_SHORTENERS = {
-            'bit.ly', 'tinyurl.com', 'goo.gl', 't.co', 'ow.ly', 'is.gd',
-            'buff.ly', 'shorte.st', 'adf.ly', 'tiny.cc', 'bitly.com',
-            'rebrand.ly', 'cutt.ly', 'shorturl.at'
-        }
-        
-        # Dominios genéricos comunes
-        self.DOMINIOS_GENERICOS = {
-            'gmail.com', 'hotmail.com', 'outlook.com', 'yahoo.com', 'live.com',
-            'aol.com', 'icloud.com', 'protonmail.com', 'yandex.com'
-        }
+        self.URGENTE_KEYWORDS = URGENTE_KEYWORDS
+        self.CREDENCIALES_KEYWORDS = CREDENCIALES_KEYWORDS
+        self.AMENAZAS_KEYWORDS = AMENAZAS_KEYWORDS
+        self.PREMIO_KEYWORDS = PREMIO_KEYWORDS
+        self.ACTUALIZACION_KEYWORDS = ACTUALIZACION_KEYWORDS
+        self.URL_SHORTENERS = URL_SHORTENERS
+        self.DOMINIOS_GENERICOS = DOMINIOS_GENERICOS
         
         # Expresiones regulares compiladas
         self.REGEX = {
-            "errores": re.compile(r'\b(urjente|nesesita|actualisar|verificacion|hasido|disculpa|grasias|kiero|q|tmb|diculpa|vienbenido|nesesitas|porfavor|ud\.?)\b', re.I),
-            "enlaces": re.compile(r'https?://[^\s/$.?#].[^\s]*', re.I),
-            "email": re.compile(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'),
-            "saludo_generico": re.compile(r'^(estimado cliente|querido usuario|apreciado cliente|dear customer|hola,|hi there|greetings|premium user|valued customer)', re.I | re.M),
-            "telefono": re.compile(r'(\+\d{1,3}[-.]?)?\d{2,4}[-.]?\d{3,4}[-.]?\d{3,4}'),
+            "errores": re.compile(ERRORS_PATTERN, re.I),
+            "enlaces": re.compile(LINKS_PATTERN, re.I),
+            "email": re.compile(EMAIL_PATTERN),
+            "saludo_generico": re.compile(GREETINGS_PATTERN, re.I | re.M),
+            "telefono": re.compile(PHONE_PATTERN)
         }
 
     def generar_id_correo(self, numero_correo):
@@ -299,90 +263,3 @@ class PhishingAnalyzer:
                 "AmenazasConsecuencias": 0, "PremioInexperado": 0, "ActualizacionUrgente": 0, "SaludoGenerico": 1
             }
             return caracteristicas, f"Correo{numero_correo:02d}", "Error en análisis"
-
-def procesar_correos_phishing(input_file, output_file="correos_analizados.csv"):
-    """
-    Procesa un archivo de texto con correos y genera un CSV con características de phishing
-    """
-    analyzer = PhishingAnalyzer()
-    
-    try:
-        with open(input_file, "r", encoding="utf-8", errors="ignore") as f:
-            contenido = f.read()
-    except FileNotFoundError:
-        print(f"❌ Error: No se encontró el archivo '{input_file}'")
-        return
-
-    # Separar correos individuales
-    separadores = [r"\nFrom:", r"\nDe:", r"\nRecibidos\n", r"\nReceived:"]
-    patron_separador = "|".join(separadores)
-    correos = re.split(patron_separador, contenido)
-    correos = [c.strip() for c in correos if c.strip()]
-
-    if not correos:
-        print("⚠️ No se encontraron correos para analizar")
-        return
-
-    resultados = []
-    
-    print("🔍 Iniciando análisis de correos...")
-    for idx, correo in enumerate(correos, start=1):
-        try:
-            caracteristicas, id_correo, asunto = analyzer.analizar_correo(correo, idx)
-            
-            # Agregar a resultados
-            fila = [id_correo] + list(caracteristicas.values())
-            resultados.append(fila)
-            
-            print(f"✅ {id_correo}: {asunto[:60]}...")
-            
-        except Exception as e:
-            print(f"❌ Error analizando correo {idx}: {e}")
-            continue
-
-    # Columnas para el CSV
-    columnas = [
-        "ID", "AsuntoUrgente", "SolicitaCredenciales", "EnlacesSospechosos",
-        "DominioRemitenteSospechoso", "ErroresOrtograficos", "FaltaInformacionContacto",
-        "AmenazasConsecuencias", "PremioInexperado", "ActualizacionUrgente", "SaludoGenerico"
-    ]
-
-    # Crear DataFrame y guardar
-    if resultados:
-        df = pd.DataFrame(resultados, columns=columnas)
-        df.to_csv(output_file, index=False, encoding="utf-8")
-        
-        print(f"\n✅ Análisis completado!")
-        print(f"📁 Resultados guardados en: {os.path.abspath(output_file)}")
-        print(f"📊 Total de correos analizados: {len(resultados)}")
-        
-        # Mostrar resumen estadístico
-        print("\n📈 Resumen de características detectadas:")
-        for col in columnas[1:]:
-            count = df[col].sum()
-            porcentaje = (count / len(resultados)) * 100
-            print(f"   {col}: {count}/{len(resultados)} ({porcentaje:.1f}%)")
-    else:
-        print("❌ No se pudieron analizar correos")
-
-if __name__ == "__main__":
-    print("🛡️  Analizador de Phishing - Detección de Correos Fraudulentos")
-    print("=" * 60)
-    
-    if len(sys.argv) < 2:
-        print("\nUso: python procesar_correos.py <archivo_correos.txt> [archivo_salida.csv]")
-        print("\nEjemplos:")
-        print("  python procesar_correos.py correos.txt")
-        print("  python procesar_correos.py correos.txt resultado.csv")
-        print("\nEl archivo de correos debe tener formato:")
-        print("  From: \"Nombre\" <email@dominio.com>")
-        print("  Subject: Asunto del correo")
-        print("  ...cuerpo del correo...")
-    else:
-        input_file = sys.argv[1]
-        output_file = sys.argv[2] if len(sys.argv) > 2 else "correos_analizados.csv"
-        
-        if not os.path.exists(input_file):
-            print(f"❌ Error: El archivo '{input_file}' no existe")
-        else:
-            procesar_correos_phishing(input_file, output_file)
