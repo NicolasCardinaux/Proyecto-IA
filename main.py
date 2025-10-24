@@ -2,7 +2,7 @@ import sys
 import os
 import pandas as pd
 from phishing_analyzer import PhishingAnalyzer
-from file_processor import cargar_archivo, separar_correos
+from utils.file_processor import cargar_archivo, separar_correos
 
 def procesar_correos_phishing(input_file, output_file="correos_analizados.csv"):
     analyzer = PhishingAnalyzer()
