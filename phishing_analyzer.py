@@ -107,7 +107,7 @@ class PhishingAnalyzer:
 
         return usa_acortador, dominio_sospechoso
 
-    def analizar_remitente(self, remitente_email, remitente_nombre):
+    def analizar_remitente(self, remitente_email):
         """Analiza el remitente en busca de suplantación"""
         if not remitente_email:
             return 1
@@ -216,20 +216,16 @@ class PhishingAnalyzer:
 
             # Extraer información del remitente
             remitente_email = ""
-            remitente_nombre = "Desconocido"
 
             if remitente:
                 if '<' in remitente and '>' in remitente:
                     match = re.search(r'(.*?)<(.*?)>', remitente)
                     if match:
-                        remitente_nombre = match.group(1).strip().strip('"')
                         remitente_email = match.group(2).strip()
                 else:
                     remitente_email = remitente
                     # Intentar extraer nombre si está entre comillas
                     match = re.search(r'"([^"]*)"', remitente)
-                    if match:
-                        remitente_nombre = match.group(1).strip()
 
             remitente_dominio = ""
             if '@' in remitente_email:
@@ -251,7 +247,7 @@ class PhishingAnalyzer:
                 usa_acortador or dominio_sospechoso) else 0
 
             caracteristicas["DominioRemitenteSospechoso"] = self.analizar_remitente(
-                remitente_email, remitente_nombre)
+                remitente_email)
             caracteristicas["ErroresOrtograficos"] = self.analizar_errores(
                 cuerpo)
             caracteristicas["FaltaInformacionContacto"] = self.analizar_falta_contacto(
