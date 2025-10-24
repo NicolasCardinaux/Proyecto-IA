@@ -39,7 +39,7 @@ class RedHamming:
             return []
 
         # Tomar características del primer prototipo excluyendo 'Clase' e 'ID'
-        caracteristicas = [k for k in self.prototipos[0].keys() 
+        caracteristicas = [k for k in self.prototipos[0].keys()
                           if k not in ['Clase', 'ID'] and self.prototipos[0][k] is not None]
         return caracteristicas
 
@@ -111,7 +111,7 @@ Características:
 
     parser.add_argument('prototipos', help='Archivo CSV con prototipos de entrenamiento')
     parser.add_argument('casos', help='Archivo CSV con casos a clasificar')
-    parser.add_argument('--verbose', action='store_true', 
+    parser.add_argument('--verbose', action='store_true',
                        help='Mostrar información detallada')
     parser.add_argument('--salida', default='resultados_clasificacion.csv',
                        help='Archivo de salida para resultados')

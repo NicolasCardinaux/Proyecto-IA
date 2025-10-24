@@ -6,7 +6,7 @@ from utils.file_processor import cargar_archivo, separar_correos
 
 def procesar_correos_phishing(input_file, output_file="correos_analizados.csv"):
     analyzer = PhishingAnalyzer()
-    
+
     contenido = cargar_archivo(input_file)
     if contenido is None:
         return
