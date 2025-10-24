@@ -18,7 +18,7 @@ def procesar_correos_phishing(input_file, output_file="correos_analizados.csv"):
 
     resultados = []
     print("🔍 Iniciando análisis de correos...")
-    
+
     for idx, correo in enumerate(correos, start=1):
         try:
             caracteristicas, id_correo, asunto = analyzer.analizar_correo(correo, idx)
