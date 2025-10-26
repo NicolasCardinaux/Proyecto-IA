@@ -28,8 +28,8 @@ python Nnhamming.py prototipos.csv correos_analizados.csv --verbose
 ```
 📊 REPORTE FINAL DE CLASIFICACIÓN
 ============================================================
-   Phishing    :  39 casos (39.0%)
-   Legítimo    :  61 casos (61.0%)
+   Phishing    :  50 casos (50.0%)
+   Legítimo    :  50 casos (50.0%)
 💾 Resultados guardados en: resultados_clasificacion.csv
 ✅ PROCESO COMPLETADO EXITOSAMENTE
 ```

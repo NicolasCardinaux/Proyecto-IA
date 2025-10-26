@@ -1,61 +1,61 @@
 ID,AsuntoUrgente,SolicitaCredenciales,EnlacesSospechosos,DominioRemitenteSospechoso,ErroresOrtograficos,FaltaInformacionContacto,AmenazasConsecuencias,PremioInexperado,ActualizacionUrgente,SaludoGenerico
-Correo01,0,0,0,0,0,0,0,0,0,0
-Correo02,1,1,1,1,0,1,1,0,1,1
-Correo03,0,0,0,0,1,0,0,0,0,1
-Correo04,1,0,1,1,1,0,0,1,1,0
-Correo05,1,0,0,1,0,0,0,0,0,0
-Correo06,0,1,1,1,1,0,1,0,1,1
-Correo07,0,0,0,0,0,0,0,0,0,0
-Correo08,1,1,1,1,0,1,1,0,1,1
-Correo09,0,0,0,0,1,0,0,0,0,1
-Correo10,1,0,1,1,1,0,0,1,1,0
-Correo11,1,0,0,1,0,0,0,0,0,0
-Correo12,0,1,1,1,1,0,1,0,1,1
-Correo13,0,0,0,0,0,0,0,0,0,0
-Correo14,1,1,1,1,0,1,1,0,1,1
-Correo15,0,0,0,0,1,0,0,0,0,1
-Correo16,1,0,1,1,1,0,0,1,1,0
-Correo17,1,0,0,1,0,0,0,0,0,0
-Correo18,0,1,1,1,1,0,1,0,1,1
-Correo19,0,0,0,0,0,0,0,0,0,0
-Correo20,1,1,1,1,0,1,1,0,1,1
-Correo21,0,0,0,0,1,0,0,0,0,1
-Correo22,1,0,1,1,1,0,0,1,1,0
-Correo23,1,0,0,1,0,0,0,0,0,0
-Correo24,0,1,1,1,1,0,1,0,1,1
-Correo25,0,0,0,0,0,0,0,0,0,0
-Correo26,1,1,1,1,0,1,1,0,1,1
-Correo27,0,0,0,0,1,0,0,0,0,1
-Correo28,1,0,1,1,1,0,0,1,1,0
-Correo29,1,0,0,1,0,0,0,0,0,0
-Correo30,0,1,1,1,1,0,1,0,1,1
-Correo31,0,0,0,0,0,0,0,0,0,0
-Correo32,1,1,1,1,0,1,1,0,1,1
-Correo33,0,0,0,0,1,0,0,0,0,1
-Correo34,1,0,1,1,1,0,0,1,1,0
-Correo35,1,0,0,1,0,0,0,0,0,0
-Correo36,0,1,1,1,1,0,1,0,1,1
-Correo37,0,0,0,0,0,0,0,0,0,0
-Correo38,1,1,1,1,0,1,1,0,1,1
-Correo39,0,0,0,0,1,0,0,0,0,1
-Correo40,1,0,1,1,1,0,0,1,1,0
-Correo41,1,0,0,1,0,0,0,0,0,0
-Correo42,0,1,1,1,1,0,1,0,1,1
-Correo43,0,0,0,0,0,0,0,0,0,0
-Correo44,1,1,1,1,0,1,1,0,1,1
-Correo45,0,0,0,0,1,0,0,0,0,1
-Correo46,1,0,1,1,1,0,0,1,1,0
-Correo47,1,0,0,1,0,0,0,0,0,0
-Correo48,0,1,1,1,1,0,1,0,1,1
-Correo49,0,0,0,0,0,0,0,0,0,0
-Correo50,1,1,1,1,0,1,1,0,1,1
-Correo51,0,0,0,0,1,0,0,0,0,1
-Correo52,1,0,1,1,1,0,0,1,1,0
-Correo53,1,0,0,1,0,0,0,0,0,0
-Correo54,0,1,1,1,1,0,1,0,1,1
-Correo55,0,0,0,0,0,0,0,0,0,0
-Correo56,1,1,1,1,0,1,1,0,1,1
-Correo57,0,0,0,0,1,0,0,0,0,1
-Correo58,1,0,1,1,1,0,0,1,1,0
-Correo59,1,0,0,1,0,0,0,0,0,0
-Correo60,0,1,1,1,1,0,1,0,1,0
+Correo01,1,1,1,1,1,1,1,1,1,1 # Phishing
+Correo02,1,0,1,1,0,1,0,1,1,0 # Phishing
+Correo03,1,1,0,1,1,0,1,0,0,1 # Phishing
+Correo04,1,0,0,1,0,1,1,0,1,0 # Phishing
+Correo05,1,1,1,0,0,0,1,1,0,0 # Phishing
+Correo06,1,0,0,0,1,1,0,1,1,1 # Phishing
+Correo07,1,1,0,0,1,1,1,0,1,0 # Phishing
+Correo08,1,0,1,1,1,0,0,0,0,1 # Phishing
+Correo09,1,1,1,1,0,1,0,0,1,0 # Phishing
+Correo10,1,0,1,0,1,1,1,1,0,0 # Phishing
+Correo11,1,1,0,0,0,0,0,1,1,1 # Phishing
+Correo12,1,0,0,1,1,0,1,0,0,1 # Phishing
+Correo13,1,1,1,0,1,0,0,1,0,1 # Phishing
+Correo14,1,0,1,0,0,0,1,1,1,0 # Phishing
+Correo15,1,1,0,1,0,0,0,0,1,0 # Phishing
+Correo16,1,0,0,0,1,0,0,0,1,0 # Phishing
+Correo17,1,1,1,1,0,0,1,0,0,0 # Phishing
+Correo18,1,0,1,0,1,1,0,0,1,1 # Phishing
+Correo19,1,1,0,0,0,1,1,1,0,1 # Phishing
+Correo20,1,0,1,1,0,0,0,1,1,1 # Phishing
+Correo21,1,1,1,0,1,1,0,0,0,1 # Phishing
+Correo22,1,0,0,1,1,1,1,1,0,0 # Phishing
+Correo23,1,1,1,1,1,0,0,1,1,0 # Phishing
+Correo24,1,0,0,0,1,0,1,0,1,1 # Phishing
+Correo25,1,1,0,1,1,1,0,1,0,0 # Phishing
+Correo26,1,0,0,0,1,1,1,1,0,0 # Phishing
+Correo27,1,1,1,1,1,0,1,0,1,0 # Phishing
+Correo28,1,0,0,1,1,0,0,1,1,0 # Phishing
+Correo29,1,1,0,0,1,0,1,1,1,0 # Phishing
+Correo30,1,0,1,1,1,1,0,1,0,1 # Phishing
+Correo31,0,0,0,0,0,0,0,0,0,0 # Legítimo
+Correo32,0,1,0,0,0,0,0,0,0,0 # Legítimo
+Correo33,0,0,1,0,0,0,0,0,0,0 # Legítimo
+Correo34,0,0,0,1,0,0,0,1,0,0 # Legítimo
+Correo35,0,0,0,0,1,0,0,0,0,1 # Legítimo
+Correo36,0,0,0,0,0,1,0,0,0,0 # Legítimo
+Correo37,0,0,0,0,0,0,1,0,0,0 # Legítimo
+Correo38,0,0,0,0,0,0,0,1,0,0 # Legítimo
+Correo39,0,0,0,0,0,0,0,0,1,0 # Legítimo
+Correo40,0,0,0,0,0,0,0,0,0,1 # Legítimo
+Correo41,1,0,0,0,0,0,0,0,0,1 # Legítimo
+Correo42,0,1,0,0,0,0,0,0,0,1 # Legítimo
+Correo43,0,0,0,0,1,1,0,0,0,0 # Legítimo
+Correo44,0,1,1,0,0,0,0,0,0,0 # Legítimo
+Correo45,0,0,0,0,0,1,0,0,0,1 # Legítimo
+Correo46,0,1,0,1,0,0,0,0,0,0 # Legítimo
+Correo47,0,0,1,0,0,0,0,0,0,1 # Legítimo
+Correo48,0,0,0,1,1,0,0,0,0,0 # Legítimo
+Correo49,0,0,0,0,0,1,0,0,1,0 # Legítimo
+Correo50,0,0,0,0,0,0,1,0,0,1 # Legítimo
+Correo51,0,0,1,0,0,0,0,0,1,0 # Legítimo
+Correo52,0,0,0,1,0,0,0,1,0,0 # Legítimo
+Correo53,0,0,0,0,1,0,0,0,1,0 # Legítimo
+Correo54,0,1,0,0,1,0,0,0,0,0 # Legítimo
+Correo55,0,0,0,0,0,0,0,1,0,1 # Legítimo
+Correo56,0,0,0,1,0,0,0,0,1,0 # Legítimo
+Correo57,0,0,1,0,0,1,0,0,0,0 # Legítimo
+Correo58,0,0,0,0,1,0,0,1,0,0 # Legítimo
+Correo59,0,1,0,0,0,1,0,0,0,0 # Legítimo
+Correo60,0,0,0,0,0,0,1,0,1,0 # Legítimo
