@@ -24,3 +24,6 @@ ADDRESS_PATTERN = r'(calle|avenida|av\.|número|nro|piso|departamento|depto|addr
 
 # Detecta presencia de información de palabras comúnes en nombres de organizaciones.
 CORP_PATTERN = r'(inc\.|llc|s\.a\.|corporation|company|corp|ltda)'
+
+# Delimitadores de correos.
+DELIMITERS_PATTERN = r"\nFrom:", r"\nDe:", r"\nRecibidos\n", r"\nReceived:"
