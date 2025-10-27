@@ -3,7 +3,7 @@ from urllib.parse import urlparse
 import tldextract
 from collections import Counter
 from patterns.keywords import URGENTE_KEYWORDS, CREDENCIALES_KEYWORDS, AMENAZAS_KEYWORDS, PREMIO_KEYWORDS, ACTUALIZACION_KEYWORDS, URL_SHORTENERS, DOMINIOS_GENERICOS
-from patterns.regex_patterns import ERRORS_PATTERN, LINKS_PATTERN, EMAIL_PATTERN, GREETINGS_PATTERN, PHONE_PATTERN
+from patterns.regex_patterns import ERRORS_PATTERN, LINKS_PATTERN, EMAIL_PATTERN, GREETINGS_PATTERN, PHONE_PATTERN, SENSIBLE_PATTERN, SYMBOLS_PATTERN, ADDRESS_PATTERN, CORP_PATTERN
 
 class PhishingAnalyzer:
     def __init__(self):
@@ -49,7 +49,7 @@ class PhishingAnalyzer:
             formato_sospechoso = False
             
         # Verificar símbolos excesivos
-        simbolos_excesivos = len(re.findall(r'[!¡?¿]{2,}', asunto)) > 0
+        simbolos_excesivos = len(re.findall(SYMBOLS_PATTERN, asunto)) > 0
         
         return 1 if urgente or formato_sospechoso or simbolos_excesivos else 0
 
@@ -64,7 +64,7 @@ class PhishingAnalyzer:
         tiene_keywords = any(keyword in cuerpo_lower for keyword in self.CREDENCIALES_KEYWORDS)
         
         # Verificar patrones de formularios
-        patrones_formulario = re.findall(r'(ingrese|introduzca|complete|rellene|proporcione).*?(contraseña|password|usuario|credencial|tarjeta|cuenta|dni)', cuerpo_lower)
+        patrones_formulario = re.findall(SENSIBLE_PATTERN, cuerpo_lower)
         
         return 1 if tiene_keywords or patrones_formulario else 0
 
@@ -150,8 +150,8 @@ class PhishingAnalyzer:
             
         # Buscar información de contacto legítima
         tiene_telefono = self.REGEX["telefono"].search(cuerpo)
-        tiene_direccion = re.search(r'(calle|avenida|av\.|número|nro|piso|departamento|depto|address|street|ave)', cuerpo, re.I)
-        tiene_empresa = re.search(r'(inc\.|llc|s\.a\.|corporation|company|corp|ltda)', cuerpo, re.I)
+        tiene_direccion = re.search(ADDRESS_PATTERN, cuerpo, re.I)
+        tiene_empresa = re.search(CORP_PATTERN, cuerpo, re.I)
         
         return 0 if (tiene_telefono or tiene_direccion or tiene_empresa) else 1
 
