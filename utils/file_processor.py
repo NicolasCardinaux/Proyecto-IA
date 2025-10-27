@@ -1,5 +1,4 @@
 import re
-import os
 
 def cargar_archivo(input_file):
     """Carga el contenido de un archivo de correos"""
