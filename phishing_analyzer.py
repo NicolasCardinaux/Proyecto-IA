@@ -1,6 +1,4 @@
 import re
-import sys
-import os
 from urllib.parse import urlparse
 import tldextract
 from collections import Counter
