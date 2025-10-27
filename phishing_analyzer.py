@@ -1,5 +1,4 @@
 import re
-import pandas as pd
 import sys
 import os
 from urllib.parse import urlparse
