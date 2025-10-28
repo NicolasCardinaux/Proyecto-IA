@@ -1,6 +1,6 @@
 ## Clasificador Red de Hamming (`Nnhamming.py`)
 
-## 1. Descripción general
+## 1. Descripción
 Implementa una **Red de Hamming** que compara cada caso con prototipos definidos y clasifica los correos en `Phishing` o `Legítimos` según la **distancia de Hamming** (cantidad de diferencias entre vectores binarios).
 
 ---

@@ -1,6 +1,6 @@
 # Analizador de Correos Phishing (`main.py`)
 
-## 1. Descripción general
+## 1. Descripción
 Lee un archivo `.txt` con correos electrónicos y genera un `.csv` con **10 indicadores binarios** de phishing. Cada fila representa un correo y cada columna una característica detectada.
 
 ---

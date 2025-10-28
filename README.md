@@ -1,6 +1,6 @@
 # Proyecto: Detección de Phishing con Red de Hamming
 
-## 1. Descripción general
+## 1. Descripción
 El proyecto combina dos módulos para detectar intentos de **phishing** en correos electrónicos:
 
 1. **Análisis de correos (`main.py`)**: procesa archivos `.txt` con correos, extrae 10 características binarias y genera un dataset `.csv`.

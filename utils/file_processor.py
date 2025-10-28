@@ -1,4 +1,5 @@
 import re
+from patterns.regex_patterns import DELIMITERS_PATTERN
 
 def cargar_archivo(input_file):
     """Carga el contenido de un archivo de correos"""
@@ -11,7 +12,7 @@ def cargar_archivo(input_file):
 
 def separar_correos(contenido):
     """Separa los correos individuales a partir del contenido del archivo"""
-    separadores = [r"\nFrom:", r"\nDe:", r"\nRecibidos\n", r"\nReceived:"]
+    separadores = [DELIMITERS_PATTERN]
     patron_separador = "|".join(separadores)
     correos = re.split(patron_separador, contenido)
     return [c.strip() for c in correos if c.strip()]
