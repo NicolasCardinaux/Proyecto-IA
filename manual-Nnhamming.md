@@ -36,6 +36,19 @@ python Nnhamming.py prototipos.csv correos_analizados.csv --verbose
 
 ---
 
-## 5. Referencias
+## 5. FAQ
+
+**P1:** ¿Qué pasa si un caso tiene la misma distancia con dos clases?  
+**R1:** El programa asigna la clase del primer prototipo que aparece en el archivo.
+
+**P2:** ¿Puedo agregar más características?  
+**R2:** Sí, siempre que se agreguen las mismas columnas a prototipos y casos.
+
+**P3:** ¿Qué significa una distancia alta?  
+**R3:** Indica que el caso es muy distinto a todos los prototipos conocidos; la clasificación es menos confiable.
+
+---
+
+## 6. Referencias
 [1] Artificial Neural Networks. Edgar Sánchez-Sinencio, Clifford Lau. IEEE Press, 1992.  
 [2] Cardinaux, Paredes, Saavedra. *Las Redes de Hamming aplicadas a la detección de phishing*. UADER FCyT, 2025.
