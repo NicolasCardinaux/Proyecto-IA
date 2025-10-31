@@ -41,3 +41,8 @@ DOMINIOS_GENERICOS = [
     'gmail.com', 'hotmail.com', 'outlook.com', 'yahoo.com', 'live.com',
     'aol.com', 'icloud.com', 'protonmail.com', 'yandex.com'
 ]
+
+REMITENTES_CONFIABLES = [
+    'netflix', 'google', 'banco', 'amazon', 'apple', 'microsoft',
+    'paypal', 'facebook', 'instagram', 'santander', 'galicia', 'bbva'
+]
