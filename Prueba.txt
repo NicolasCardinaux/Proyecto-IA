@@ -1,505 +1,199 @@
-From: "CuentaSegura" <security@update-account.online>
-Subject: Verifique su cuenta ahora
-Date: Wed, 08 Oct 2025 02:23:00 -0300
-
-Estimado usuario,
-
-Para evitar el cierre de su cuenta debe verificar su información.
-http://cuentasegura.xyz/verify
-Ingrese su usuario y contraseña.
-
-From: "CuentaSegura" <admin@secure-login.biz>
-Subject: Verifique su cuenta ahora
-Date: Tue, 14 Oct 2025 08:12:00 -0300
-
-Estimado usuario,
-
-Para evitar el cierre de su cuenta debe verificar su información.
-http://cuentasegura.xyz/verify
-Ingrese su usuario y contraseña.
-
-From: "Banco Falso" <security@tinyurl.com>
-Subject: 🚨 ALERTA: Transacción sospechosa requiere verificación
-Date: Fri, 31 Oct 2025 11:06:00 -0300
+From: "Banco Nación" <no-reply@bna.com.ar>
+Subject: Resumen mensual de movimientos
+Date: Sat, 18 Oct 2025 09:20:00 -0300
 
 Estimado cliente,
 
-Detectamos una transacción inusual. Para verificar sus datos: 👉 VERIFICAR AHORA: https://tinyurl.com/galicia-seguridad-validate
-DATOS: número de tarjeta, fecha, CVV, clave de home banking.
-Si no completa la verificación en 2 horas su cuenta será bloqueada.
+Adjuntamos el resumen de movimientos de su cuenta. Si detecta anomalías comuníquese con la sucursal.
+Centro de atención: 0800-999-9999
+Banco de la Nación Argentina
 
-From: "Service Fake" <alertas@cuentasegura.xyz>
-Subject: Última oportunidad para validar cuenta
-Date: Mon, 22 Sep 2025 22:19:00 -0300
+From: "UADER Secretaría" <secretaria@uader.edu.ar>
+Subject: Horario de recuperatorio publicado
+Date: Wed, 01 Oct 2025 09:21:00 -0300
 
-Estimado usuario,
+Estimado/a estudiante,
 
-Si no valida su cuenta en 24 horas se eliminará.
-Validar: http://mi-servicio.ru/validar
-Ingrese datos de acceso.
-Contacto: 0810-000-0000
+Se publicó el horario del examen de recuperatorio en la plataforma.
+Ingresá a https://campus.uader.edu.ar
+Secretaría Académica
+Facultad de Ciencia y Tecnología
 
-From: "CuentaSegura" <alertas@actualiza-cuenta.com>
-Subject: Verifique su cuenta ahora
-Date: Sun, 05 Oct 2025 16:47:00 -0300
-
-Estimado usuario,
-
-Para evitar el cierre de su cuenta debe verificar su información.
-http://cuentasegura.xyz/verify
-Ingrese su usuario y contraseña.
-
-From: "Spotify" <no-reply@spotify.com>
+From: "Spotify" <notificaciones@gmail.com>
 Subject: Tu playlist semanal
-Date: Thu, 23 Oct 2025 03:18:00 -0300
+Date: Mon, 20 Oct 2025 05:17:00 -0300
 
-Hola Javier,
+Hola Carlos,
 
 Tu playlist Weekly ha sido actualizada. Escúchala: https://open.spotify.com/playlist/xyz
 Atte., El equipo de Spotify
+
+From: "Amazon" <auto-confirm@amazon.com>
+Subject: Confirmación de tu pedido
+Date: Wed, 15 Oct 2025 23:28:00 -0300
+
+Hola Ana,
+
+Gracias por tu compra. Número de pedido: 123-4567890.
+Seguimiento: https://www.amazon.com/gp/css/order-history
+Servicio al cliente: https://www.amazon.com/help
+Tel: +1-800-000-0000
+Amazon.com, Inc.
+
+From: "Banco Nación" <no-reply@bna.com.ar>
+Subject: Resumen mensual de movimientos
+Date: Tue, 30 Sep 2025 17:05:00 -0300
+
+Estimado cliente,
+
+Adjuntamos el resumen de movimientos de su cuenta. Si detecta anomalías comuníquese con la sucursal.
+Centro de atención: 0800-999-9999
+Banco de la Nación Argentina
+
+From: "UADER Secretaría" <secretaria@uader.edu.ar>
+Subject: Horario de recuperatorio publicado
+Date: Sun, 05 Oct 2025 03:42:00 -0300
+
+Estimado/a estudiante,
+
+Se publicó el horario del examen de recuperatorio en la plataforma.
+Ingresá a https://campus.uader.edu.ar
+Secretaría Académica
+Facultad de Ciencia y Tecnología
+
+From: "Amazon" <auto-confirm@amazon.com>
+Subject: Confirmación de tu pedido
+Date: Fri, 31 Oct 2025 11:13:00 -0300
+
+Hola Nicolás,
+
+Gracias por tu compra. Número de pedido: 123-4567890.
+Seguimiento: https://www.amazon.com/gp/css/order-history
+Servicio al cliente: https://www.amazon.com/help
+Tel: +1-800-000-0000
+Amazon.com, Inc.
+
+From: "LinkedIn" <notificaciones@gmail.com>
+Subject: Nuevas sugerencias de empleo para ti
+Date: Tue, 30 Sep 2025 11:00:00 -0300
+
+Hola Javier,
+
+Hemos encontrado nuevas ofertas que coinciden con tu perfil.
+Ver más en https://www.linkedin.com/jobs
+
+From: "Banco Nación" <no-reply@bna.com.ar>
+Subject: Resumen mensual de movimientos
+Date: Wed, 29 Oct 2025 14:45:00 -0300
+
+Estimado cliente,
+
+Adjuntamos el resumen de movimientos de su cuenta. Si detecta anomalías comuníquese con la sucursal.
+Centro de atención: 0800-999-9999
+Banco de la Nación Argentina
+
+From: "Banco Nación" <info@gmail.com>
+Subject: Resumen mensual de movimientos
+Date: Mon, 27 Oct 2025 03:36:00 -0300
+
+Estimado cliente,
+
+Adjuntamos el resumen de movimientos de su cuenta. Si detecta anomalías comuníquese con la sucursal.
+Centro de atención: 0800-999-9999
+Banco de la Nación Argentina
+
+From: "UADER Secretaría" <info@gmail.com>
+Subject: Horario de recuperatorio publicado
+Date: Wed, 15 Oct 2025 19:11:00 -0300
+
+Estimado/a estudiante,
+
+Se publicó el horario del examen de recuperatorio en la plataforma.
+Ingresá a https://campus.uader.edu.ar
+Secretaría Académica
+Facultad de Ciencia y Tecnología
+
+From: "Banco Nación" <no-reply@bna.com.ar>
+Subject: Resumen mensual de movimientos
+Date: Sat, 04 Oct 2025 18:05:00 -0300
+
+Estimado cliente,
+
+Adjuntamos el resumen de movimientos de su cuenta. Si detecta anomalías comuníquese con la sucursal.
+Centro de atención: 0800-999-9999
+Banco de la Nación Argentina
 
 From: "LinkedIn" <no-reply@linkedin.com>
 Subject: Nuevas sugerencias de empleo para ti
-Date: Wed, 01 Oct 2025 14:34:00 -0300
+Date: Fri, 10 Oct 2025 08:11:00 -0300
 
 Hola Nicolás,
 
 Hemos encontrado nuevas ofertas que coinciden con tu perfil.
 Ver más en https://www.linkedin.com/jobs
 
-From: "SoportePayPal" <soporte@paypal-secure-login.com>
-Subject: Actualice su cuenta PayPal
-Date: Tue, 21 Oct 2025 16:37:00 -0300
-
-Estimado,
-
-Se requiere actualizar método de pago: http://tiny.cc/paypal-update
-Ingrese usuario y contraseña.
-
-From: "Spotify" <no-reply@spotify.com>
-Subject: Tu playlist semanal
-Date: Tue, 23 Sep 2025 20:16:00 -0300
-
-Hola Ana,
-
-Tu playlist Weekly ha sido actualizada. Escúchala: https://open.spotify.com/playlist/xyz
-Atte., El equipo de Spotify
-
-From: "SecureBank" <alerts@securebanking.info>
-Subject: Verifique su cuenta para evitar bloqueo
-Date: Thu, 25 Sep 2025 14:47:00 -0300
-
-Estimado cliente,
-
-Confirme sus datos ahora: http://securebanking.info/verify
-Ingrese número de tarjeta y clave.
-
-From: "Aerolíneas" <ventas@aerolineas.com.ar>
-Subject: Itinerario de vuelo - Reserva confirmada
-Date: Sat, 18 Oct 2025 17:57:00 -0300
-
-Estimado pasajero,
-
-Su vuelo AR123 está confirmado. Puede ver su e-ticket en la web.
-Contacto: +54 11 4000-0000
-
-From: "Banco Nación" <no-reply@bna.com.ar>
-Subject: Resumen mensual de movimientos
-Date: Sat, 25 Oct 2025 01:37:00 -0300
-
-Estimado cliente,
-
-Adjuntamos el resumen de movimientos de su cuenta. Si detecta anomalías comuníquese con la sucursal.
-Centro de atención: 0800-999-9999
-Banco de la Nación Argentina
-
-From: "UADER Secretaría" <secretaria@uader.edu.ar>
-Subject: Horario de recuperatorio publicado
-Date: Thu, 02 Oct 2025 17:06:00 -0300
-
-Estimado/a estudiante,
-
-Se publicó el horario del examen de recuperatorio en la plataforma.
-Ingresá a https://campus.uader.edu.ar
-Secretaría Académica
-Facultad de Ciencia y Tecnología
-
-From: "Netflix Fraud" <admin@cuentasegura.xyz>
-Subject: Problema con su método de pago - Actualización requerida
-Date: Sun, 12 Oct 2025 18:47:00 -0300
-
-Dear Netflix User,
-
-We are having trouble processing your payment. Update here: http://goo.gl/netflix-billing-fix
-You will need to provide card number and security code.
-
-From: "Soporte Pago" <soporte@aklsjfdslk.com>
-Subject: Actualice su método de pago
-Date: Thu, 02 Oct 2025 13:18:00 -0300
-
-Estimado usuario,
-
-Hemos tenido un problema con su cobro. Ingrese sus datos para actualizar: https://aklsjfdslk.com/update
-Ingrese número de tarjeta y contraseña.
-Contacto: 0810-000-0000
-
-From: "Soporte Pago" <admin@aklsjfdslk.com>
-Subject: Actualice su método de pago
-Date: Sat, 18 Oct 2025 14:12:00 -0300
-
-Estimado usuario,
-
-Hemos tenido un problema con su cobro. Ingrese sus datos para actualizar: https://aklsjfdslk.com/update
-Ingrese número de tarjeta y contraseña.
-
-From: "UADER Secretaría" <secretaria@uader.edu.ar>
-Subject: Horario de recuperatorio publicado
-Date: Tue, 07 Oct 2025 06:20:00 -0300
-
-Estimado/a estudiante,
-
-Se publicó el horario del examen de recuperatorio en la plataforma.
-Ingresá a https://campus.uader.edu.ar
-Secretaría Académica
-Facultad de Ciencia y Tecnología
-
-From: "PremioSorpresa" <admin@aklsjfdslk.com>
-Subject: Felicitaciones! Has sido seleccionado como ganador
-Date: Sun, 12 Oct 2025 19:21:00 -0300
-
-¡Felicitaciones! Ganaste un premio. Reclama tu premio en: http://bit.ly/ganador-premio
-Para coordinar envio necesitamos tu dirección y número de tarjeta.
-
-From: "Amazon" <servicio@clinica.com.ar>
-Subject: Detalle de entrega
-Date: Wed, 15 Oct 2025 23:16:00 -0300
+From: "LinkedIn" <no-reply@linkedin.com>
+Subject: Nuevas sugerencias de empleo para ti
+Date: Mon, 27 Oct 2025 00:26:00 -0300
 
 Hola Javier,
 
-Tu paquete está en tránsito. Seguimiento: https://www.amazon.com/track
-Servicio al cliente: https://www.amazon.com/help
+Hemos encontrado nuevas ofertas que coinciden con tu perfil.
+Ver más en https://www.linkedin.com/jobs
 
 From: "Clínica Central" <turnos@clinicacentral.com.ar>
 Subject: Confirmación de turno médico
-Date: Fri, 26 Sep 2025 06:10:00 -0300
-
-Hola Lorenzo,
-
-Confirmamos tu turno el 03/11 a las 14:00.
-Contacto: (0343) 420-0000
-Dirección: Av. Principal 123, Paraná
-
-From: "Banco Falso" <alertas@banco-galicia.info>
-Subject: 🚨 ALERTA: Transacción sospechosa requiere verificación
-Date: Thu, 16 Oct 2025 05:12:00 -0300
-
-Estimado cliente,
-
-Detectamos una transacción inusual. Para verificar sus datos: 👉 VERIFICAR AHORA: https://tinyurl.com/galicia-seguridad-validate
-DATOS: número de tarjeta, fecha, CVV, clave de home banking.
-Si no completa la verificación en 2 horas su cuenta será bloqueada.
-Contacto: 0810-000-0000
-
-From: "UADER Secretaría" <no-reply@serviciooficial.com>
-Subject: Horario de recuperatorio publicado
-Date: Sun, 19 Oct 2025 00:39:00 -0300
-
-Estimado/a estudiante,
-
-Se publicó el horario del examen de recuperatorio en la plataforma.
-Ingresá a https://campus.uader.edu.ar
-Secretaría Académica
-Facultad de Ciencia y Tecnología
-
-From: "Banco Falso" <alertas@banco-galicia.info>
-Subject: 🚨 ALERTA: Transacción sospechosa requiere verificación
-Date: Sun, 28 Sep 2025 08:47:00 -0300
-
-Estimado cliente,
-
-Detectamos una transacción inusual. Para verificar sus datos: 👉 VERIFICAR AHORA: https://tinyurl.com/galicia-seguridad-validate
-DATOS: número de tarjeta, fecha, CVV, clave de home banking.
-Si no completa la verificación en 2 horas su cuenta será bloqueada.
-
-From: "Banco Nación" <no-reply@bna.com.ar>
-Subject: Resumen mensual de movimientos
-Date: Tue, 07 Oct 2025 09:35:00 -0300
-
-Estimado cliente,
-
-Adjuntamos el resumen de movimientos de su cuenta. Si detecta anomalías comuníquese con la sucursal.
-Centro de atención: 0800-999-9999
-Banco de la Nación Argentina
-
-From: "Spotify" <no-reply@spotify.com>
-Subject: Tu playlist semanal
-Date: Tue, 28 Oct 2025 23:00:00 -0300
-
-Hola Nicolás,
-
-Tu playlist Weekly ha sido actualizada. Escúchala: https://open.spotify.com/playlist/xyz
-Atte., El equipo de Spotify
-
-From: "Banco Nación" <no-reply@bna.com.ar>
-Subject: Resumen mensual de movimientos
-Date: Fri, 24 Oct 2025 19:06:00 -0300
-
-Estimado cliente,
-
-Adjuntamos el resumen de movimientos de su cuenta. Si detecta anomalías comuníquese con la sucursal.
-Centro de atención: 0800-999-9999
-Banco de la Nación Argentina
-
-From: "Amazon" <auto-confirm@amazon.com>
-Subject: Confirmación de tu pedido
-Date: Thu, 09 Oct 2025 02:18:00 -0300
+Date: Thu, 25 Sep 2025 04:32:00 -0300
 
 Hola Lucía,
 
-Gracias por tu compra. Número de pedido: 123-4567890.
-Seguimiento: https://www.amazon.com/gp/css/order-history
-Servicio al cliente: https://www.amazon.com/help
-Tel: +1-800-000-0000
-Amazon.com, Inc.
+Confirmamos tu turno el 03/11 a las 14:00.
+Contacto: (0343) 420-0000
+Dirección: Av. Principal 123, Paraná
 
-From: "Service Fake" <admin@mi-servicio.ru>
-Subject: Última oportunidad para validar cuenta
-Date: Wed, 22 Oct 2025 02:05:00 -0300
-
-Estimado usuario,
-
-Si no valida su cuenta en 24 horas se eliminará.
-Validar: http://mi-servicio.ru/validar
-Ingrese datos de acceso.
-
-From: "LinkedIn" <contacto@gmail.com>
+From: "LinkedIn" <no-reply@linkedin.com>
 Subject: Nuevas sugerencias de empleo para ti
-Date: Sun, 21 Sep 2025 13:24:00 -0300
+Date: Sun, 28 Sep 2025 03:42:00 -0300
 
 Hola Diego,
 
 Hemos encontrado nuevas ofertas que coinciden con tu perfil.
 Ver más en https://www.linkedin.com/jobs
 
-From: "Amazon" <auto-confirm@amazon.com>
-Subject: Detalle de entrega
-Date: Wed, 08 Oct 2025 23:18:00 -0300
+From: "UADER Secretaría" <secretaria@uader.edu.ar>
+Subject: Horario de recuperatorio publicado
+Date: Tue, 07 Oct 2025 12:36:00 -0300
 
-Hola Nicolás,
+Estimado/a estudiante,
 
-Tu paquete está en tránsito. Seguimiento: https://www.amazon.com/track
-Servicio al cliente: https://www.amazon.com/help
+Se publicó el horario del examen de recuperatorio en la plataforma.
+Ingresá a https://campus.uader.edu.ar
+Secretaría Académica
+Facultad de Ciencia y Tecnología
 
-From: "Amazon" <info@gmail.com>
-Subject: Confirmación de tu pedido
-Date: Sun, 19 Oct 2025 14:45:00 -0300
+From: "Clinica Dental" <turnos@odontologia.com.ar>
+Subject: Recordatorio de turno
+Date: Fri, 26 Sep 2025 13:41:00 -0300
 
-Hola Carlos,
-
-Gracias por tu compra. Número de pedido: 123-4567890.
-Seguimiento: https://www.amazon.com/gp/css/order-history
-Servicio al cliente: https://www.amazon.com/help
-Tel: +1-800-000-0000
-Amazon.com, Inc.
-
-From: "Banco Falso" <admin@tinyurl.com>
-Subject: 🚨 ALERTA: Transacción sospechosa requiere verificación
-Date: Fri, 10 Oct 2025 16:26:00 -0300
-
-Estimado cliente,
-
-Detectamos una transacción inusual. Para verificar sus datos: 👉 VERIFICAR AHORA: https://tinyurl.com/galicia-seguridad-validate
-DATOS: número de tarjeta, fecha, CVV, clave de home banking.
-Si no completa la verificación en 2 horas su cuenta será bloqueada.
-Contacto: 0810-000-0000
-
-From: "Amazon" <auto-confirm@amazon.com>
-Subject: Detalle de entrega
-Date: Mon, 13 Oct 2025 07:53:00 -0300
-
-Hola Carlos,
-
-Tu paquete está en tránsito. Seguimiento: https://www.amazon.com/track
-Servicio al cliente: https://www.amazon.com/help
-
-From: "Amazon" <info@gmail.com>
-Subject: Detalle de entrega
-Date: Sun, 05 Oct 2025 22:08:00 -0300
-
-Hola Ana,
-
-Tu paquete está en tránsito. Seguimiento: https://www.amazon.com/track
-Servicio al cliente: https://www.amazon.com/help
-
-From: "Soporte Pago" <soporte@aklsjfdslk.com>
-Subject: Actualice su método de pago
-Date: Sat, 18 Oct 2025 06:40:00 -0300
-
-Estimado usuario,
-
-Hemos tenido un problema con su cobro. Ingrese sus datos para actualizar: https://aklsjfdslk.com/update
-Ingrese número de tarjeta y contraseña.
+Recordamos su turno para limpieza dental el 05/11 a las 09:00.
+Tel: 0343-600-400
+Dirección: Calle Salud 45
 
 From: "Clínica Central" <turnos@clinicacentral.com.ar>
 Subject: Confirmación de turno médico
-Date: Fri, 24 Oct 2025 23:32:00 -0300
+Date: Tue, 30 Sep 2025 07:23:00 -0300
 
-Hola Carlos,
+Hola Javier,
 
 Confirmamos tu turno el 03/11 a las 14:00.
 Contacto: (0343) 420-0000
 Dirección: Av. Principal 123, Paraná
 
-From: "BancoLegit Falso" <alertas@secure-login.biz>
-Subject: Verificar actividad en su cuenta
-Date: Sat, 25 Oct 2025 07:33:00 -0300
-
-Estimado cliente,
-
-Detectamos un inicio de sesión desde otro país. Para confirmar su identidad debe enviar usuario y contraseña por este formulario: http://tinyurl.com/confirmar-banco
-Contacto: 0810-000-0000
-
-From: "Service Fake" <admin@mi-servicio.ru>
-Subject: Última oportunidad para validar cuenta
-Date: Wed, 08 Oct 2025 05:38:00 -0300
-
-Estimado usuario,
-
-Si no valida su cuenta en 24 horas se eliminará.
-Validar: http://mi-servicio.ru/validar
-Ingrese datos de acceso.
-
-From: "UADER Secretaría" <secretaria@uader.edu.ar>
-Subject: Horario de recuperatorio publicado
-Date: Fri, 17 Oct 2025 14:42:00 -0300
-
-Estimado/a estudiante,
-
-Se publicó el horario del examen de recuperatorio en la plataforma.
-Ingresá a https://campus.uader.edu.ar
-Secretaría Académica
-Facultad de Ciencia y Tecnología
-
-From: "SecureBank" <alerts@securebanking.info>
-Subject: Verifique su cuenta para evitar bloqueo
-Date: Wed, 29 Oct 2025 04:35:00 -0300
-
-Estimado cliente,
-
-Confirme sus datos ahora: http://securebanking.info/verify
-Ingrese número de tarjeta y clave.
-Contacto: 0810-000-0000
-
-From: "Spotify" <no-reply@spotify.com>
-Subject: Tu playlist semanal
-Date: Sun, 21 Sep 2025 00:22:00 -0300
-
-Hola María,
-
-Tu playlist Weekly ha sido actualizada. Escúchala: https://open.spotify.com/playlist/xyz
-Atte., El equipo de Spotify
-
-From: "UADER Secretaría" <secretaria@uader.edu.ar>
-Subject: Horario de recuperatorio publicado
-Date: Thu, 25 Sep 2025 20:36:00 -0300
-
-Estimado/a estudiante,
-
-Se publicó el horario del examen de recuperatorio en la plataforma.
-Ingresá a https://campus.uader.edu.ar
-Secretaría Académica
-Facultad de Ciencia y Tecnología
-
-From: "Amazon" <auto-confirm@amazon.com>
-Subject: Detalle de entrega
-Date: Mon, 20 Oct 2025 04:21:00 -0300
+From: "Mercado Libre" <notificaciones@mercadolibre.com>
+Subject: Tu compra fue confirmada
+Date: Tue, 30 Sep 2025 22:02:00 -0300
 
 Hola Diego,
-
-Tu paquete está en tránsito. Seguimiento: https://www.amazon.com/track
-Servicio al cliente: https://www.amazon.com/help
-
-From: "Spotify" <info@gmail.com>
-Subject: Tu playlist semanal
-Date: Tue, 28 Oct 2025 23:51:00 -0300
-
-Hola Carlos,
-
-Tu playlist Weekly ha sido actualizada. Escúchala: https://open.spotify.com/playlist/xyz
-Atte., El equipo de Spotify
-
-From: "Google" <noreply@google.com>
-Subject: Resumen de seguridad de tu cuenta
-Date: Mon, 13 Oct 2025 13:11:00 -0300
-
-Hola María,
-
-Detectamos inicio de sesión desde Buenos Aires. Si no lo reconocés revisá: https://myaccount.google.com/security-checkup
-Soporte: https://support.google.com/accounts
-
-From: "Aerolíneas" <ventas@aerolineas.com.ar>
-Subject: Itinerario de vuelo - Reserva confirmada
-Date: Sat, 18 Oct 2025 14:06:00 -0300
-
-Estimado pasajero,
-
-Su vuelo AR123 está confirmado. Puede ver su e-ticket en la web.
-Contacto: +54 11 4000-0000
-
-From: "Amazon" <auto-confirm@amazon.com>
-Subject: Confirmación de tu pedido
-Date: Thu, 25 Sep 2025 22:04:00 -0300
-
-Hola Javier,
-
-Gracias por tu compra. Número de pedido: 123-4567890.
-Seguimiento: https://www.amazon.com/gp/css/order-history
-Servicio al cliente: https://www.amazon.com/help
-Tel: +1-800-000-0000
-Amazon.com, Inc.
-
-From: "Soporte Pago" <admin@actualiza-cuenta.com>
-Subject: Actualice su método de pago
-Date: Mon, 20 Oct 2025 02:46:00 -0300
-
-Estimado usuario,
-
-Hemos tenido un problema con su cobro. Ingrese sus datos para actualizar: https://aklsjfdslk.com/update
-Ingrese número de tarjeta y contraseña.
-Contacto: 0810-000-0000
-
-From: "Soporte Pago" <alertas@bit.ly>
-Subject: Actualice su método de pago
-Date: Wed, 29 Oct 2025 13:43:00 -0300
-
-Estimado usuario,
-
-Hemos tenido un problema con su cobro. Ingrese sus datos para actualizar: https://aklsjfdslk.com/update
-Ingrese número de tarjeta y contraseña.
-
-From: "Amazon" <auto-confirm@amazon.com>
-Subject: Detalle de entrega
-Date: Fri, 26 Sep 2025 00:40:00 -0300
-
-Hola Ana,
-
-Tu paquete está en tránsito. Seguimiento: https://www.amazon.com/track
-Servicio al cliente: https://www.amazon.com/help
-
-From: "Soporte Pago" <admin@secure-login.biz>
-Subject: Actualice su método de pago
-Date: Wed, 08 Oct 2025 08:34:00 -0300
-
-Estimado usuario,
-
-Hemos tenido un problema con su cobro. Ingrese sus datos para actualizar: https://aklsjfdslk.com/update
-Ingrese número de tarjeta y contraseña.
-
-From: "Mercado Libre" <notificaciones@gmail.com>
-Subject: Tu compra fue confirmada
-Date: Fri, 24 Oct 2025 08:03:00 -0300
-
-Hola Ana,
 
 Tu pago fue procesado con éxito. Podés ver el seguimiento en tu cuenta: https://www.mercadolibre.com.ar/compras
 
@@ -508,89 +202,61 @@ Atención al cliente: https://www.mercadolibre.com.ar/ayuda
 Teléfono: 0800-555-1234
 Mercado Libre S.R.L.
 
-From: "CuentaSegura" <security@bit.ly>
-Subject: Verifique su cuenta ahora
-Date: Tue, 21 Oct 2025 21:37:00 -0300
+From: "Clinica Dental" <turnos@odontologia.com.ar>
+Subject: Recordatorio de turno
+Date: Tue, 21 Oct 2025 00:50:00 -0300
 
-Estimado usuario,
+Recordamos su turno para limpieza dental el 05/11 a las 09:00.
+Tel: 0343-600-400
+Dirección: Calle Salud 45
 
-Para evitar el cierre de su cuenta debe verificar su información.
-http://cuentasegura.xyz/verify
-Ingrese su usuario y contraseña.
-Contacto: 0810-000-0000
-
-From: "Amazon" <auto-confirm@amazon.com>
-Subject: Detalle de entrega
-Date: Fri, 10 Oct 2025 23:20:00 -0300
-
-Hola Lorenzo,
-
-Tu paquete está en tránsito. Seguimiento: https://www.amazon.com/track
-Servicio al cliente: https://www.amazon.com/help
-
-From: "Netflix Fraud" <admin@update-account.online>
-Subject: Problema con su método de pago - Actualización requerida
-Date: Wed, 29 Oct 2025 01:27:00 -0300
-
-Dear Netflix User,
-
-We are having trouble processing your payment. Update here: http://goo.gl/netflix-billing-fix
-You will need to provide card number and security code.
-
-From: "Soporte Apple" <no-reply@actualiza-cuenta.com>
-Subject: URGENTE: Actividad sospechosa detectada en su cuenta iCloud
-Date: Thu, 02 Oct 2025 15:47:00 -0300
-
-Estimado usuario,
-
-Hemos detectado intentos de acceso. Para restaurar el acceso debe actualizar inmediatamente sus credenciales.
-🔒 HAGA CLIC AQUÍ: http://bit.ly/apple-verification-urgent
-Ingrese su ID de Apple y contraseña. SI NO ACTÚA EN 24 HORAS, SU CUENTA SERÁ SUSPENDIDA.
-Atentamente,
-Equipo de Soporte Apple
-Contacto: 0810-000-0000
-
-From: "CuentaSegura" <soporte@aklsjfdslk.com>
-Subject: Verifique su cuenta ahora
-Date: Mon, 27 Oct 2025 06:39:00 -0300
-
-Estimado usuario,
-
-Para evitar el cierre de su cuenta debe verificar su información.
-http://cuentasegura.xyz/verify
-Ingrese su usuario y contraseña.
-
-From: "Aerolíneas" <ventas@aerolineas.com.ar>
+From: "Aerolíneas" <info@gmail.com>
 Subject: Itinerario de vuelo - Reserva confirmada
-Date: Tue, 14 Oct 2025 17:26:00 -0300
+Date: Sat, 25 Oct 2025 09:58:00 -0300
 
 Estimado pasajero,
 
 Su vuelo AR123 está confirmado. Puede ver su e-ticket en la web.
 Contacto: +54 11 4000-0000
 
-From: "CuentaSegura" <soporte@tinyurl.com>
-Subject: Verifique su cuenta ahora
-Date: Wed, 29 Oct 2025 05:17:00 -0300
+From: "Mercado Libre" <notificaciones@mercadolibre.com>
+Subject: Tu compra fue confirmada
+Date: Fri, 03 Oct 2025 17:37:00 -0300
 
-Estimado usuario,
+Hola Lucía,
 
-Para evitar el cierre de su cuenta debe verificar su información.
-http://cuentasegura.xyz/verify
-Ingrese su usuario y contraseña.
+Tu pago fue procesado con éxito. Podés ver el seguimiento en tu cuenta: https://www.mercadolibre.com.ar/compras
 
-From: "Spotify" <no-reply@serviciooficial.com>
+Gracias por usar Mercado Libre.
+Atención al cliente: https://www.mercadolibre.com.ar/ayuda
+Teléfono: 0800-555-1234
+Mercado Libre S.R.L.
+
+From: "Spotify" <no-reply@spotify.com>
 Subject: Tu playlist semanal
-Date: Tue, 21 Oct 2025 22:52:00 -0300
+Date: Sat, 25 Oct 2025 06:40:00 -0300
 
-Hola María,
+Hola Nicolás,
 
 Tu playlist Weekly ha sido actualizada. Escúchala: https://open.spotify.com/playlist/xyz
 Atte., El equipo de Spotify
 
-From: "Banco Nación" <alertas@universidad.edu.ar>
+From: "Mercado Libre" <notificaciones@mercadolibre.com>
+Subject: Tu compra fue confirmada
+Date: Wed, 15 Oct 2025 09:43:00 -0300
+
+Hola Javier,
+
+Tu pago fue procesado con éxito. Podés ver el seguimiento en tu cuenta: https://www.mercadolibre.com.ar/compras
+
+Gracias por usar Mercado Libre.
+Atención al cliente: https://www.mercadolibre.com.ar/ayuda
+Teléfono: 0800-555-1234
+Mercado Libre S.R.L.
+
+From: "Banco Nación" <no-reply@bna.com.ar>
 Subject: Resumen mensual de movimientos
-Date: Sat, 25 Oct 2025 22:39:00 -0300
+Date: Sun, 19 Oct 2025 01:12:00 -0300
 
 Estimado cliente,
 
@@ -598,44 +264,42 @@ Adjuntamos el resumen de movimientos de su cuenta. Si detecta anomalías comuní
 Centro de atención: 0800-999-9999
 Banco de la Nación Argentina
 
-From: "LinkedIn" <notificaciones@gmail.com>
-Subject: Nuevas sugerencias de empleo para ti
-Date: Thu, 09 Oct 2025 08:35:00 -0300
-
-Hola Ana,
-
-Hemos encontrado nuevas ofertas que coinciden con tu perfil.
-Ver más en https://www.linkedin.com/jobs
-
-From: "PremioSorpresa" <admin@cuentasegura.xyz>
-Subject: Felicitaciones! Has sido seleccionado como ganador
-Date: Sun, 19 Oct 2025 07:38:00 -0300
-
-¡Felicitaciones! Ganaste un premio. Reclama tu premio en: http://bit.ly/ganador-premio
-Para coordinar envio necesitamos tu dirección y número de tarjeta.
-
-From: "SoportePayPal" <no-reply@cuentasegura.xyz>
-Subject: Actualice su cuenta PayPal
-Date: Wed, 01 Oct 2025 06:39:00 -0300
-
-Estimado,
-
-Se requiere actualizar método de pago: http://tiny.cc/paypal-update
-Ingrese usuario y contraseña.
-
 From: "Clínica Central" <turnos@clinicacentral.com.ar>
 Subject: Confirmación de turno médico
-Date: Wed, 08 Oct 2025 09:20:00 -0300
+Date: Sat, 04 Oct 2025 03:29:00 -0300
 
-Hola Javier,
+Hola Ana,
 
 Confirmamos tu turno el 03/11 a las 14:00.
 Contacto: (0343) 420-0000
 Dirección: Av. Principal 123, Paraná
 
+From: "Mercado Libre" <notificaciones@mercadolibre.com>
+Subject: Tu compra fue confirmada
+Date: Mon, 06 Oct 2025 00:45:00 -0300
+
+Hola Nicolás,
+
+Tu pago fue procesado con éxito. Podés ver el seguimiento en tu cuenta: https://www.mercadolibre.com.ar/compras
+
+Gracias por usar Mercado Libre.
+Atención al cliente: https://www.mercadolibre.com.ar/ayuda
+Teléfono: 0800-555-1234
+Mercado Libre S.R.L.
+
+From: "Banco Nación" <no-reply@bna.com.ar>
+Subject: Resumen mensual de movimientos
+Date: Tue, 28 Oct 2025 22:00:00 -0300
+
+Estimado cliente,
+
+Adjuntamos el resumen de movimientos de su cuenta. Si detecta anomalías comuníquese con la sucursal.
+Centro de atención: 0800-999-9999
+Banco de la Nación Argentina
+
 From: "UADER Secretaría" <secretaria@uader.edu.ar>
 Subject: Horario de recuperatorio publicado
-Date: Thu, 02 Oct 2025 03:15:00 -0300
+Date: Fri, 03 Oct 2025 19:04:00 -0300
 
 Estimado/a estudiante,
 
@@ -644,72 +308,432 @@ Ingresá a https://campus.uader.edu.ar
 Secretaría Académica
 Facultad de Ciencia y Tecnología
 
-From: "Soporte Pago" <no-reply@bit.ly>
-Subject: Actualice su método de pago
-Date: Thu, 25 Sep 2025 13:15:00 -0300
-
-Estimado usuario,
-
-Hemos tenido un problema con su cobro. Ingrese sus datos para actualizar: https://aklsjfdslk.com/update
-Ingrese número de tarjeta y contraseña.
-
-From: "SecureBank" <alerts@securebanking.info>
-Subject: Verifique su cuenta para evitar bloqueo
-Date: Thu, 09 Oct 2025 08:34:00 -0300
-
-Estimado cliente,
-
-Confirme sus datos ahora: http://securebanking.info/verify
-Ingrese número de tarjeta y clave.
-
-From: "Service Fake" <admin@mi-servicio.ru>
-Subject: Última oportunidad para validar cuenta
-Date: Mon, 20 Oct 2025 01:44:00 -0300
-
-Estimado usuario,
-
-Si no valida su cuenta en 24 horas se eliminará.
-Validar: http://mi-servicio.ru/validar
-Ingrese datos de acceso.
-
 From: "Spotify" <no-reply@spotify.com>
 Subject: Tu playlist semanal
-Date: Thu, 25 Sep 2025 19:27:00 -0300
+Date: Mon, 13 Oct 2025 10:38:00 -0300
 
-Hola Martina,
+Hola Javier,
 
 Tu playlist Weekly ha sido actualizada. Escúchala: https://open.spotify.com/playlist/xyz
 Atte., El equipo de Spotify
 
+From: "LinkedIn" <no-reply@linkedin.com>
+Subject: Nuevas sugerencias de empleo para ti
+Date: Thu, 09 Oct 2025 09:47:00 -0300
+
+Hola Carlos,
+
+Hemos encontrado nuevas ofertas que coinciden con tu perfil.
+Ver más en https://www.linkedin.com/jobs
+
+From: "LinkedIn" <info@gmail.com>
+Subject: Nuevas sugerencias de empleo para ti
+Date: Mon, 29 Sep 2025 19:08:00 -0300
+
+Hola María,
+
+Hemos encontrado nuevas ofertas que coinciden con tu perfil.
+Ver más en https://www.linkedin.com/jobs
+
+From: "Mercado Libre" <info@gmail.com>
+Subject: Tu compra fue confirmada
+Date: Fri, 26 Sep 2025 23:07:00 -0300
+
+Hola Martina,
+
+Tu pago fue procesado con éxito. Podés ver el seguimiento en tu cuenta: https://www.mercadolibre.com.ar/compras
+
+Gracias por usar Mercado Libre.
+Atención al cliente: https://www.mercadolibre.com.ar/ayuda
+Teléfono: 0800-555-1234
+Mercado Libre S.R.L.
+
+From: "Spotify" <no-reply@spotify.com>
+Subject: Tu playlist semanal
+Date: Fri, 03 Oct 2025 05:39:00 -0300
+
+Hola Diego,
+
+Tu playlist Weekly ha sido actualizada. Escúchala: https://open.spotify.com/playlist/xyz
+Atte., El equipo de Spotify
+
+From: "Banco Nación" <no-reply@bna.com.ar>
+Subject: Resumen mensual de movimientos
+Date: Thu, 25 Sep 2025 18:58:00 -0300
+
+Estimado cliente,
+
+Adjuntamos el resumen de movimientos de su cuenta. Si detecta anomalías comuníquese con la sucursal.
+Centro de atención: 0800-999-9999
+Banco de la Nación Argentina
+
+From: "Clínica Central" <notificaciones@gmail.com>
+Subject: Confirmación de turno médico
+Date: Sat, 18 Oct 2025 14:27:00 -0300
+
+Hola Sofía,
+
+Confirmamos tu turno el 03/11 a las 14:00.
+Contacto: (0343) 420-0000
+Dirección: Av. Principal 123, Paraná
+
+From: "Aerolíneas" <ventas@aerolineas.com.ar>
+Subject: Itinerario de vuelo - Reserva confirmada
+Date: Sun, 26 Oct 2025 13:05:00 -0300
+
+Estimado pasajero,
+
+Su vuelo AR123 está confirmado. Puede ver su e-ticket en la web.
+Contacto: +54 11 4000-0000
+
+From: "Amazon" <auto-confirm@amazon.com>
+Subject: Confirmación de tu pedido
+Date: Fri, 31 Oct 2025 09:37:00 -0300
+
+Hola Diego,
+
+Gracias por tu compra. Número de pedido: 123-4567890.
+Seguimiento: https://www.amazon.com/gp/css/order-history
+Servicio al cliente: https://www.amazon.com/help
+Tel: +1-800-000-0000
+Amazon.com, Inc.
+
+From: "UADER Secretaría" <info@gmail.com>
+Subject: Horario de recuperatorio publicado
+Date: Mon, 27 Oct 2025 21:12:00 -0300
+
+Estimado/a estudiante,
+
+Se publicó el horario del examen de recuperatorio en la plataforma.
+Ingresá a https://campus.uader.edu.ar
+Secretaría Académica
+Facultad de Ciencia y Tecnología
+
+From: "Amazon" <contacto@gmail.com>
+Subject: Confirmación de tu pedido
+Date: Sat, 27 Sep 2025 05:03:00 -0300
+
+Hola Lorenzo,
+
+Gracias por tu compra. Número de pedido: 123-4567890.
+Seguimiento: https://www.amazon.com/gp/css/order-history
+Servicio al cliente: https://www.amazon.com/help
+Tel: +1-800-000-0000
+Amazon.com, Inc.
+
 From: "Google" <noreply@google.com>
 Subject: Resumen de seguridad de tu cuenta
-Date: Sun, 19 Oct 2025 11:16:00 -0300
+Date: Wed, 22 Oct 2025 00:00:00 -0300
+
+Hola Lucía,
+
+Detectamos inicio de sesión desde Buenos Aires. Si no lo reconocés revisá: https://myaccount.google.com/security-checkup
+Soporte: https://support.google.com/accounts
+
+From: "Amazon" <auto-confirm@amazon.com>
+Subject: Confirmación de tu pedido
+Date: Sun, 26 Oct 2025 18:15:00 -0300
+
+Hola Sofía,
+
+Gracias por tu compra. Número de pedido: 123-4567890.
+Seguimiento: https://www.amazon.com/gp/css/order-history
+Servicio al cliente: https://www.amazon.com/help
+Tel: +1-800-000-0000
+Amazon.com, Inc.
+
+From: "Banco Nación" <no-reply@bna.com.ar>
+Subject: Resumen mensual de movimientos
+Date: Fri, 10 Oct 2025 19:31:00 -0300
+
+Estimado cliente,
+
+Adjuntamos el resumen de movimientos de su cuenta. Si detecta anomalías comuníquese con la sucursal.
+Centro de atención: 0800-999-9999
+Banco de la Nación Argentina
+
+From: "Spotify" <no-reply@spotify.com>
+Subject: Tu playlist semanal
+Date: Fri, 26 Sep 2025 08:26:00 -0300
+
+Hola Nicolás,
+
+Tu playlist Weekly ha sido actualizada. Escúchala: https://open.spotify.com/playlist/xyz
+Atte., El equipo de Spotify
+
+From: "LinkedIn" <no-reply@linkedin.com>
+Subject: Nuevas sugerencias de empleo para ti
+Date: Mon, 13 Oct 2025 09:57:00 -0300
+
+Hola María,
+
+Hemos encontrado nuevas ofertas que coinciden con tu perfil.
+Ver más en https://www.linkedin.com/jobs
+
+From: "Clinica Dental" <turnos@odontologia.com.ar>
+Subject: Recordatorio de turno
+Date: Mon, 27 Oct 2025 17:29:00 -0300
+
+Recordamos su turno para limpieza dental el 05/11 a las 09:00.
+Tel: 0343-600-400
+Dirección: Calle Salud 45
+
+From: "Google" <info@gmail.com>
+Subject: Resumen de seguridad de tu cuenta
+Date: Wed, 15 Oct 2025 04:13:00 -0300
 
 Hola Carlos,
 
 Detectamos inicio de sesión desde Buenos Aires. Si no lo reconocés revisá: https://myaccount.google.com/security-checkup
 Soporte: https://support.google.com/accounts
 
-From: "BancoLegit Falso" <alertas@update-account.online>
-Subject: Verificar actividad en su cuenta
-Date: Mon, 22 Sep 2025 01:06:00 -0300
+From: "Google" <noreply@google.com>
+Subject: Resumen de seguridad de tu cuenta
+Date: Tue, 30 Sep 2025 03:09:00 -0300
+
+Hola Sofía,
+
+Detectamos inicio de sesión desde Buenos Aires. Si no lo reconocés revisá: https://myaccount.google.com/security-checkup
+Soporte: https://support.google.com/accounts
+
+From: "Google" <noreply@google.com>
+Subject: Resumen de seguridad de tu cuenta
+Date: Tue, 23 Sep 2025 19:40:00 -0300
+
+Hola Carlos,
+
+Detectamos inicio de sesión desde Buenos Aires. Si no lo reconocés revisá: https://myaccount.google.com/security-checkup
+Soporte: https://support.google.com/accounts
+
+From: "Service Fake" <admin@secure-login.biz>
+Subject: Última oportunidad para validar cuenta
+Date: Fri, 10 Oct 2025 01:10:00 -0300
+
+Estimado usuario,
+
+Si no valida su cuenta en 24 horas se eliminará.
+Validar: http://mi-servicio.ru/validar
+Ingrese datos de acceso.
+
+From: "Banco Falso" <soporte@secure-login.biz>
+Subject: 🚨 ALERTA: Transacción sospechosa requiere verificación
+Date: Sun, 12 Oct 2025 00:06:00 -0300
 
 Estimado cliente,
 
-Detectamos un inicio de sesión desde otro país. Para confirmar su identidad debe enviar usuario y contraseña por este formulario: http://tinyurl.com/confirmar-banco
+Detectamos una transacción inusual. Para verificar sus datos: 👉 VERIFICAR AHORA: https://tinyurl.com/galicia-seguridad-validate
+DATOS: número de tarjeta, fecha, CVV, clave de home banking.
+Si no completa la verificación en 2 horas su cuenta será bloqueada.
 
-From: "SoportePayPal" <soporte@paypal-secure-login.com>
+From: "Netflix Fraud" <security@bit.ly>
+Subject: Problema con su método de pago - Actualización requerida
+Date: Sat, 25 Oct 2025 19:26:00 -0300
+
+Dear Netflix User,
+
+We are having trouble processing your payment. Update here: http://goo.gl/netflix-billing-fix
+You will need to provide card number and security code.
+
+From: "Service Fake" <admin@tinyurl.com>
+Subject: Última oportunidad para validar cuenta
+Date: Fri, 10 Oct 2025 14:46:00 -0300
+
+Estimado usuario,
+
+Si no valida su cuenta en 24 horas se eliminará.
+Validar: http://mi-servicio.ru/validar
+Ingrese datos de acceso.
+
+From: "SoportePayPal" <security@update-account.online>
 Subject: Actualice su cuenta PayPal
-Date: Sat, 04 Oct 2025 00:48:00 -0300
+Date: Mon, 06 Oct 2025 00:31:00 -0300
 
 Estimado,
 
 Se requiere actualizar método de pago: http://tiny.cc/paypal-update
 Ingrese usuario y contraseña.
 
-From: "Banco Falso" <alertas@banco-galicia.info>
+From: "Promo Falsa" <soporte@bit.ly>
+Subject: Has sido seleccionado! Reclamá ahora
+Date: Sat, 04 Oct 2025 14:01:00 -0300
+
+Felicitaciones, ganaste. Completa datos para envío y depósito.
+http://bit.ly/reclama-premio
+
+From: "Banco Falso" <soporte@update-account.online>
 Subject: 🚨 ALERTA: Transacción sospechosa requiere verificación
-Date: Tue, 21 Oct 2025 09:15:00 -0300
+Date: Thu, 16 Oct 2025 00:35:00 -0300
+
+Estimado cliente,
+
+Detectamos una transacción inusual. Para verificar sus datos: 👉 VERIFICAR AHORA: https://tinyurl.com/galicia-seguridad-validate
+DATOS: número de tarjeta, fecha, CVV, clave de home banking.
+Si no completa la verificación en 2 horas su cuenta será bloqueada.
+
+From: "CuentaSegura" <security@actualiza-cuenta.com>
+Subject: Verifique su cuenta ahora
+Date: Thu, 09 Oct 2025 11:32:00 -0300
+
+Estimado usuario,
+
+Para evitar el cierre de su cuenta debe verificar su información.
+http://cuentasegura.xyz/verify
+Ingrese su usuario y contraseña.
+
+From: "Soporte Apple" <no-reply@update-account.online>
+Subject: URGENTE: Actividad sospechosa detectada en su cuenta iCloud
+Date: Sun, 26 Oct 2025 19:24:00 -0300
+
+Estimado usuario,
+
+Hemos detectado intentos de acceso. Para restaurar el acceso debe actualizar inmediatamente sus credenciales.
+🔒 HAGA CLIC AQUÍ: http://bit.ly/apple-verification-urgent
+Ingrese su ID de Apple y contraseña. SI NO ACTÚA EN 24 HORAS, SU CUENTA SERÁ SUSPENDIDA.
+Atentamente,
+Equipo de Soporte Apple
+
+From: "SoportePayPal" <no-reply@tinyurl.com>
+Subject: Actualice su cuenta PayPal
+Date: Mon, 27 Oct 2025 03:58:00 -0300
+
+Estimado,
+
+Se requiere actualizar método de pago: http://tiny.cc/paypal-update
+Ingrese usuario y contraseña.
+
+From: "Netflix Fraud" <support@netflix-payment.com>
+Subject: Problema con su método de pago - Actualización requerida
+Date: Tue, 21 Oct 2025 14:46:00 -0300
+
+Dear Netflix User,
+
+We are having trouble processing your payment. Update here: http://goo.gl/netflix-billing-fix
+You will need to provide card number and security code.
+Contacto: 0810-000-0000
+
+From: "Promo Falsa" <promo@ganador-online.com>
+Subject: Has sido seleccionado! Reclamá ahora
+Date: Sun, 28 Sep 2025 03:07:00 -0300
+
+Felicitaciones, ganaste. Completa datos para envío y depósito.
+http://bit.ly/reclama-premio
+
+From: "Soporte Apple" <security@update-account.online>
+Subject: URGENTE: Actividad sospechosa detectada en su cuenta iCloud
+Date: Sat, 27 Sep 2025 04:07:00 -0300
+
+Estimado usuario,
+
+Hemos detectado intentos de acceso. Para restaurar el acceso debe actualizar inmediatamente sus credenciales.
+🔒 HAGA CLIC AQUÍ: http://bit.ly/apple-verification-urgent
+Ingrese su ID de Apple y contraseña. SI NO ACTÚA EN 24 HORAS, SU CUENTA SERÁ SUSPENDIDA.
+Atentamente,
+Equipo de Soporte Apple
+
+From: "SoportePayPal" <admin@tinyurl.com>
+Subject: Actualice su cuenta PayPal
+Date: Tue, 07 Oct 2025 12:08:00 -0300
+
+Estimado,
+
+Se requiere actualizar método de pago: http://tiny.cc/paypal-update
+Ingrese usuario y contraseña.
+
+From: "Soporte Apple" <admin@tinyurl.com>
+Subject: URGENTE: Actividad sospechosa detectada en su cuenta iCloud
+Date: Fri, 31 Oct 2025 08:33:00 -0300
+
+Estimado usuario,
+
+Hemos detectado intentos de acceso. Para restaurar el acceso debe actualizar inmediatamente sus credenciales.
+🔒 HAGA CLIC AQUÍ: http://bit.ly/apple-verification-urgent
+Ingrese su ID de Apple y contraseña. SI NO ACTÚA EN 24 HORAS, SU CUENTA SERÁ SUSPENDIDA.
+Atentamente,
+Equipo de Soporte Apple
+
+From: "Soporte Apple" <alertas@update-account.online>
+Subject: URGENTE: Actividad sospechosa detectada en su cuenta iCloud
+Date: Fri, 24 Oct 2025 04:26:00 -0300
+
+Estimado usuario,
+
+Hemos detectado intentos de acceso. Para restaurar el acceso debe actualizar inmediatamente sus credenciales.
+🔒 HAGA CLIC AQUÍ: http://bit.ly/apple-verification-urgent
+Ingrese su ID de Apple y contraseña. SI NO ACTÚA EN 24 HORAS, SU CUENTA SERÁ SUSPENDIDA.
+Atentamente,
+Equipo de Soporte Apple
+
+From: "CuentaSegura" <no-reply@cuentasegura.xyz>
+Subject: Verifique su cuenta ahora
+Date: Wed, 08 Oct 2025 05:44:00 -0300
+
+Estimado usuario,
+
+Para evitar el cierre de su cuenta debe verificar su información.
+http://cuentasegura.xyz/verify
+Ingrese su usuario y contraseña.
+Contacto: 0810-000-0000
+
+From: "Netflix Fraud" <admin@bit.ly>
+Subject: Problema con su método de pago - Actualización requerida
+Date: Mon, 22 Sep 2025 10:05:00 -0300
+
+Dear Netflix User,
+
+We are having trouble processing your payment. Update here: http://goo.gl/netflix-billing-fix
+You will need to provide card number and security code.
+
+From: "PremioSorpresa" <security@aklsjfdslk.com>
+Subject: Felicitaciones! Has sido seleccionado como ganador
+Date: Fri, 03 Oct 2025 12:27:00 -0300
+
+¡Felicitaciones! Ganaste un premio. Reclama tu premio en: http://bit.ly/ganador-premio
+Para coordinar envio necesitamos tu dirección y número de tarjeta.
+
+From: "SoportePayPal" <soporte@paypal-secure-login.com>
+Subject: Actualice su cuenta PayPal
+Date: Mon, 29 Sep 2025 21:28:00 -0300
+
+Estimado,
+
+Se requiere actualizar método de pago: http://tiny.cc/paypal-update
+Ingrese usuario y contraseña.
+
+From: "Banco Falso" <security@secure-login.biz>
+Subject: 🚨 ALERTA: Transacción sospechosa requiere verificación
+Date: Mon, 27 Oct 2025 21:51:00 -0300
+
+Estimado cliente,
+
+Detectamos una transacción inusual. Para verificar sus datos: 👉 VERIFICAR AHORA: https://tinyurl.com/galicia-seguridad-validate
+DATOS: número de tarjeta, fecha, CVV, clave de home banking.
+Si no completa la verificación en 2 horas su cuenta será bloqueada.
+
+From: "CuentaSegura" <no-reply@cuentasegura.xyz>
+Subject: Verifique su cuenta ahora
+Date: Thu, 09 Oct 2025 00:50:00 -0300
+
+Estimado usuario,
+
+Para evitar el cierre de su cuenta debe verificar su información.
+http://cuentasegura.xyz/verify
+Ingrese su usuario y contraseña.
+
+From: "Soporte Apple" <security@apple-verification.net>
+Subject: URGENTE: Actividad sospechosa detectada en su cuenta iCloud
+Date: Thu, 09 Oct 2025 13:55:00 -0300
+
+Estimado usuario,
+
+Hemos detectado intentos de acceso. Para restaurar el acceso debe actualizar inmediatamente sus credenciales.
+🔒 HAGA CLIC AQUÍ: http://bit.ly/apple-verification-urgent
+Ingrese su ID de Apple y contraseña. SI NO ACTÚA EN 24 HORAS, SU CUENTA SERÁ SUSPENDIDA.
+Atentamente,
+Equipo de Soporte Apple
+
+From: "Banco Falso" <security@aklsjfdslk.com>
+Subject: 🚨 ALERTA: Transacción sospechosa requiere verificación
+Date: Sun, 12 Oct 2025 15:14:00 -0300
 
 Estimado cliente,
 
@@ -718,66 +742,34 @@ DATOS: número de tarjeta, fecha, CVV, clave de home banking.
 Si no completa la verificación en 2 horas su cuenta será bloqueada.
 Contacto: 0810-000-0000
 
-From: "Banco Falso" <alertas@aklsjfdslk.com>
-Subject: 🚨 ALERTA: Transacción sospechosa requiere verificación
-Date: Tue, 28 Oct 2025 23:38:00 -0300
+From: "Soporte Pago" <admin@bit.ly>
+Subject: Actualice su método de pago
+Date: Sat, 27 Sep 2025 02:07:00 -0300
 
-Estimado cliente,
+Estimado usuario,
 
-Detectamos una transacción inusual. Para verificar sus datos: 👉 VERIFICAR AHORA: https://tinyurl.com/galicia-seguridad-validate
-DATOS: número de tarjeta, fecha, CVV, clave de home banking.
-Si no completa la verificación en 2 horas su cuenta será bloqueada.
+Hemos tenido un problema con su cobro. Ingrese sus datos para actualizar: https://aklsjfdslk.com/update
+Ingrese número de tarjeta y contraseña.
 
-From: "Banco Falso" <admin@cuentasegura.xyz>
-Subject: 🚨 ALERTA: Transacción sospechosa requiere verificación
-Date: Fri, 24 Oct 2025 20:09:00 -0300
+From: "Promo Falsa" <no-reply@tinyurl.com>
+Subject: Has sido seleccionado! Reclamá ahora
+Date: Thu, 02 Oct 2025 09:03:00 -0300
 
-Estimado cliente,
+Felicitaciones, ganaste. Completa datos para envío y depósito.
+http://bit.ly/reclama-premio
 
-Detectamos una transacción inusual. Para verificar sus datos: 👉 VERIFICAR AHORA: https://tinyurl.com/galicia-seguridad-validate
-DATOS: número de tarjeta, fecha, CVV, clave de home banking.
-Si no completa la verificación en 2 horas su cuenta será bloqueada.
+From: "SoportePayPal" <alertas@bit.ly>
+Subject: Actualice su cuenta PayPal
+Date: Thu, 30 Oct 2025 07:01:00 -0300
 
-From: "Aerolíneas" <ventas@aerolineas.com.ar>
-Subject: Itinerario de vuelo - Reserva confirmada
-Date: Mon, 27 Oct 2025 18:06:00 -0300
+Estimado,
 
-Estimado pasajero,
+Se requiere actualizar método de pago: http://tiny.cc/paypal-update
+Ingrese usuario y contraseña.
 
-Su vuelo AR123 está confirmado. Puede ver su e-ticket en la web.
-Contacto: +54 11 4000-0000
-
-From: "Amazon" <auto-confirm@amazon.com>
-Subject: Detalle de entrega
-Date: Fri, 10 Oct 2025 14:59:00 -0300
-
-Hola Lorenzo,
-
-Tu paquete está en tránsito. Seguimiento: https://www.amazon.com/track
-Servicio al cliente: https://www.amazon.com/help
-
-From: "PremioSorpresa" <alertas@update-account.online>
-Subject: Felicitaciones! Has sido seleccionado como ganador
-Date: Mon, 29 Sep 2025 08:24:00 -0300
-
-¡Felicitaciones! Ganaste un premio. Reclama tu premio en: http://bit.ly/ganador-premio
-Para coordinar envio necesitamos tu dirección y número de tarjeta.
-
-From: "Amazon" <no-reply@serviciooficial.com>
-Subject: Confirmación de tu pedido
-Date: Tue, 28 Oct 2025 01:44:00 -0300
-
-Hola Lucía,
-
-Gracias por tu compra. Número de pedido: 123-4567890.
-Seguimiento: https://www.amazon.com/gp/css/order-history
-Servicio al cliente: https://www.amazon.com/help
-Tel: +1-800-000-0000
-Amazon.com, Inc.
-
-From: "Soporte Apple" <admin@cuentasegura.xyz>
+From: "Soporte Apple" <admin@secure-login.biz>
 Subject: URGENTE: Actividad sospechosa detectada en su cuenta iCloud
-Date: Wed, 15 Oct 2025 13:22:00 -0300
+Date: Thu, 25 Sep 2025 20:24:00 -0300
 
 Estimado usuario,
 
@@ -786,27 +778,21 @@ Hemos detectado intentos de acceso. Para restaurar el acceso debe actualizar inm
 Ingrese su ID de Apple y contraseña. SI NO ACTÚA EN 24 HORAS, SU CUENTA SERÁ SUSPENDIDA.
 Atentamente,
 Equipo de Soporte Apple
+Contacto: 0810-000-0000
 
-From: "BancoLegit Falso" <admin@bit.ly>
-Subject: Verificar actividad en su cuenta
-Date: Fri, 03 Oct 2025 10:12:00 -0300
+From: "CuentaSegura" <admin@bit.ly>
+Subject: Verifique su cuenta ahora
+Date: Tue, 14 Oct 2025 14:15:00 -0300
 
-Estimado cliente,
+Estimado usuario,
 
-Detectamos un inicio de sesión desde otro país. Para confirmar su identidad debe enviar usuario y contraseña por este formulario: http://tinyurl.com/confirmar-banco
+Para evitar el cierre de su cuenta debe verificar su información.
+http://cuentasegura.xyz/verify
+Ingrese su usuario y contraseña.
 
-From: "LinkedIn" <no-reply@linkedin.com>
-Subject: Nuevas sugerencias de empleo para ti
-Date: Thu, 09 Oct 2025 10:51:00 -0300
-
-Hola Nicolás,
-
-Hemos encontrado nuevas ofertas que coinciden con tu perfil.
-Ver más en https://www.linkedin.com/jobs
-
-From: "Banco Falso" <soporte@actualiza-cuenta.com>
+From: "Banco Falso" <security@update-account.online>
 Subject: 🚨 ALERTA: Transacción sospechosa requiere verificación
-Date: Fri, 24 Oct 2025 04:38:00 -0300
+Date: Tue, 28 Oct 2025 21:18:00 -0300
 
 Estimado cliente,
 
@@ -814,28 +800,9 @@ Detectamos una transacción inusual. Para verificar sus datos: 👉 VERIFICAR AH
 DATOS: número de tarjeta, fecha, CVV, clave de home banking.
 Si no completa la verificación en 2 horas su cuenta será bloqueada.
 
-From: "Aerolíneas" <ventas@aerolineas.com.ar>
-Subject: Itinerario de vuelo - Reserva confirmada
-Date: Fri, 24 Oct 2025 23:21:00 -0300
-
-Estimado pasajero,
-
-Su vuelo AR123 está confirmado. Puede ver su e-ticket en la web.
-Contacto: +54 11 4000-0000
-
-From: "Banco Nación" <no-reply@bna.com.ar>
-Subject: Resumen mensual de movimientos
-Date: Thu, 02 Oct 2025 05:48:00 -0300
-
-Estimado cliente,
-
-Adjuntamos el resumen de movimientos de su cuenta. Si detecta anomalías comuníquese con la sucursal.
-Centro de atención: 0800-999-9999
-Banco de la Nación Argentina
-
-From: "Soporte Apple" <security@actualiza-cuenta.com>
+From: "Soporte Apple" <security@apple-verification.net>
 Subject: URGENTE: Actividad sospechosa detectada en su cuenta iCloud
-Date: Wed, 24 Sep 2025 20:48:00 -0300
+Date: Mon, 27 Oct 2025 22:49:00 -0300
 
 Estimado usuario,
 
@@ -844,10 +811,11 @@ Hemos detectado intentos de acceso. Para restaurar el acceso debe actualizar inm
 Ingrese su ID de Apple y contraseña. SI NO ACTÚA EN 24 HORAS, SU CUENTA SERÁ SUSPENDIDA.
 Atentamente,
 Equipo de Soporte Apple
+Contacto: 0810-000-0000
 
-From: "Service Fake" <alertas@short.ly>
+From: "Service Fake" <soporte@secure-login.biz>
 Subject: Última oportunidad para validar cuenta
-Date: Wed, 01 Oct 2025 20:50:00 -0300
+Date: Sun, 21 Sep 2025 01:52:00 -0300
 
 Estimado usuario,
 
@@ -855,105 +823,85 @@ Si no valida su cuenta en 24 horas se eliminará.
 Validar: http://mi-servicio.ru/validar
 Ingrese datos de acceso.
 
-From: "Google" <alertas@serviciooficial.com>
-Subject: Resumen de seguridad de tu cuenta
-Date: Sun, 26 Oct 2025 11:18:00 -0300
+From: "PremioSorpresa" <no-reply@tinyurl.com>
+Subject: Felicitaciones! Has sido seleccionado como ganador
+Date: Sun, 21 Sep 2025 19:21:00 -0300
 
-Hola Diego,
+¡Felicitaciones! Ganaste un premio. Reclama tu premio en: http://bit.ly/ganador-premio
+Para coordinar envio necesitamos tu dirección y número de tarjeta.
 
-Detectamos inicio de sesión desde Buenos Aires. Si no lo reconocés revisá: https://myaccount.google.com/security-checkup
-Soporte: https://support.google.com/accounts
+From: "PremioSorpresa" <alertas@tinyurl.com>
+Subject: Felicitaciones! Has sido seleccionado como ganador
+Date: Sat, 20 Sep 2025 22:38:00 -0300
 
-From: "CuentaSegura" <no-reply@cuentasegura.xyz>
-Subject: Verifique su cuenta ahora
-Date: Sun, 05 Oct 2025 18:21:00 -0300
+¡Felicitaciones! Ganaste un premio. Reclama tu premio en: http://bit.ly/ganador-premio
+Para coordinar envio necesitamos tu dirección y número de tarjeta.
 
-Estimado usuario,
+From: "Promo Falsa" <promo@ganador-online.com>
+Subject: Has sido seleccionado! Reclamá ahora
+Date: Fri, 26 Sep 2025 03:28:00 -0300
 
-Para evitar el cierre de su cuenta debe verificar su información.
-http://cuentasegura.xyz/verify
-Ingrese su usuario y contraseña.
+Felicitaciones, ganaste. Completa datos para envío y depósito.
+http://bit.ly/reclama-premio
 
-From: "Netflix Fraud" <security@tinyurl.com>
+From: "Netflix Fraud" <security@update-account.online>
 Subject: Problema con su método de pago - Actualización requerida
-Date: Tue, 21 Oct 2025 18:56:00 -0300
+Date: Sun, 26 Oct 2025 00:36:00 -0300
 
 Dear Netflix User,
 
 We are having trouble processing your payment. Update here: http://goo.gl/netflix-billing-fix
 You will need to provide card number and security code.
 
-From: "Amazon" <contacto@gmail.com>
-Subject: Confirmación de tu pedido
-Date: Fri, 24 Oct 2025 07:54:00 -0300
+From: "Service Fake" <admin@aklsjfdslk.com>
+Subject: Última oportunidad para validar cuenta
+Date: Thu, 16 Oct 2025 00:27:00 -0300
 
-Hola Ana,
+Estimado usuario,
 
-Gracias por tu compra. Número de pedido: 123-4567890.
-Seguimiento: https://www.amazon.com/gp/css/order-history
-Servicio al cliente: https://www.amazon.com/help
-Tel: +1-800-000-0000
-Amazon.com, Inc.
+Si no valida su cuenta en 24 horas se eliminará.
+Validar: http://mi-servicio.ru/validar
+Ingrese datos de acceso.
 
-From: "BancoLegit Falso" <soporte@aklsjfdslk.com>
-Subject: Verificar actividad en su cuenta
-Date: Sat, 27 Sep 2025 16:48:00 -0300
+From: "Netflix Fraud" <soporte@secure-login.biz>
+Subject: Problema con su método de pago - Actualización requerida
+Date: Mon, 13 Oct 2025 04:38:00 -0300
 
-Estimado cliente,
+Dear Netflix User,
 
-Detectamos un inicio de sesión desde otro país. Para confirmar su identidad debe enviar usuario y contraseña por este formulario: http://tinyurl.com/confirmar-banco
+We are having trouble processing your payment. Update here: http://goo.gl/netflix-billing-fix
+You will need to provide card number and security code.
 
-From: "PremioSorpresa" <security@secure-login.biz>
-Subject: Felicitaciones! Has sido seleccionado como ganador
-Date: Wed, 24 Sep 2025 13:24:00 -0300
-
-¡Felicitaciones! Ganaste un premio. Reclama tu premio en: http://bit.ly/ganador-premio
-Para coordinar envio necesitamos tu dirección y número de tarjeta.
-
-From: "SecureBank" <soporte@actualiza-cuenta.com>
+From: "SecureBank" <no-reply@bit.ly>
 Subject: Verifique su cuenta para evitar bloqueo
-Date: Tue, 14 Oct 2025 07:04:00 -0300
+Date: Wed, 01 Oct 2025 21:56:00 -0300
 
 Estimado cliente,
 
 Confirme sus datos ahora: http://securebanking.info/verify
 Ingrese número de tarjeta y clave.
 
-From: "UADER Secretaría" <secretaria@uader.edu.ar>
-Subject: Horario de recuperatorio publicado
-Date: Fri, 10 Oct 2025 21:33:00 -0300
+From: "Promo Falsa" <soporte@tinyurl.com>
+Subject: Has sido seleccionado! Reclamá ahora
+Date: Mon, 13 Oct 2025 04:59:00 -0300
 
-Estimado/a estudiante,
+Felicitaciones, ganaste. Completa datos para envío y depósito.
+http://bit.ly/reclama-premio
+Contacto: 0810-000-0000
 
-Se publicó el horario del examen de recuperatorio en la plataforma.
-Ingresá a https://campus.uader.edu.ar
-Secretaría Académica
-Facultad de Ciencia y Tecnología
-
-From: "CuentaSegura" <no-reply@cuentasegura.xyz>
-Subject: Verifique su cuenta ahora
-Date: Sat, 20 Sep 2025 21:27:00 -0300
+From: "Soporte Pago" <soporte@aklsjfdslk.com>
+Subject: Actualice su método de pago
+Date: Tue, 30 Sep 2025 23:08:00 -0300
 
 Estimado usuario,
 
-Para evitar el cierre de su cuenta debe verificar su información.
-http://cuentasegura.xyz/verify
-Ingrese su usuario y contraseña.
+Hemos tenido un problema con su cobro. Ingrese sus datos para actualizar: https://aklsjfdslk.com/update
+Ingrese número de tarjeta y contraseña.
+Contacto: 0810-000-0000
 
-From: "UADER Secretaría" <secretaria@uader.edu.ar>
-Subject: Horario de recuperatorio publicado
-Date: Sat, 25 Oct 2025 23:56:00 -0300
-
-Estimado/a estudiante,
-
-Se publicó el horario del examen de recuperatorio en la plataforma.
-Ingresá a https://campus.uader.edu.ar
-Secretaría Académica
-Facultad de Ciencia y Tecnología
-
-From: "Soporte Apple" <no-reply@secure-login.biz>
+From: "Soporte Apple" <admin@actualiza-cuenta.com>
 Subject: URGENTE: Actividad sospechosa detectada en su cuenta iCloud
-Date: Wed, 08 Oct 2025 12:20:00 -0300
+Date: Tue, 28 Oct 2025 16:29:00 -0300
 
 Estimado usuario,
 
@@ -962,14 +910,81 @@ Hemos detectado intentos de acceso. Para restaurar el acceso debe actualizar inm
 Ingrese su ID de Apple y contraseña. SI NO ACTÚA EN 24 HORAS, SU CUENTA SERÁ SUSPENDIDA.
 Atentamente,
 Equipo de Soporte Apple
+Contacto: 0810-000-0000
 
-From: "UADER Secretaría" <alertas@universidad.edu.ar>
-Subject: Horario de recuperatorio publicado
-Date: Wed, 08 Oct 2025 09:19:00 -0300
+From: "Service Fake" <admin@tinyurl.com>
+Subject: Última oportunidad para validar cuenta
+Date: Sun, 21 Sep 2025 14:07:00 -0300
 
-Estimado/a estudiante,
+Estimado usuario,
 
-Se publicó el horario del examen de recuperatorio en la plataforma.
-Ingresá a https://campus.uader.edu.ar
-Secretaría Académica
-Facultad de Ciencia y Tecnología
+Si no valida su cuenta en 24 horas se eliminará.
+Validar: http://mi-servicio.ru/validar
+Ingrese datos de acceso.
+
+From: "CuentaSegura" <alertas@actualiza-cuenta.com>
+Subject: Verifique su cuenta ahora
+Date: Tue, 07 Oct 2025 12:15:00 -0300
+
+Estimado usuario,
+
+Para evitar el cierre de su cuenta debe verificar su información.
+http://cuentasegura.xyz/verify
+Ingrese su usuario y contraseña.
+Contacto: 0810-000-0000
+
+From: "Service Fake" <admin@mi-servicio.ru>
+Subject: Última oportunidad para validar cuenta
+Date: Fri, 24 Oct 2025 04:16:00 -0300
+
+Estimado usuario,
+
+Si no valida su cuenta en 24 horas se eliminará.
+Validar: http://mi-servicio.ru/validar
+Ingrese datos de acceso.
+
+From: "SecureBank" <alerts@securebanking.info>
+Subject: Verifique su cuenta para evitar bloqueo
+Date: Wed, 01 Oct 2025 08:59:00 -0300
+
+Estimado cliente,
+
+Confirme sus datos ahora: http://securebanking.info/verify
+Ingrese número de tarjeta y clave.
+
+From: "Banco Falso" <soporte@secure-login.biz>
+Subject: 🚨 ALERTA: Transacción sospechosa requiere verificación
+Date: Fri, 24 Oct 2025 01:13:00 -0300
+
+Estimado cliente,
+
+Detectamos una transacción inusual. Para verificar sus datos: 👉 VERIFICAR AHORA: https://tinyurl.com/galicia-seguridad-validate
+DATOS: número de tarjeta, fecha, CVV, clave de home banking.
+Si no completa la verificación en 2 horas su cuenta será bloqueada.
+
+From: "CuentaSegura" <alertas@aklsjfdslk.com>
+Subject: Verifique su cuenta ahora
+Date: Thu, 30 Oct 2025 15:33:00 -0300
+
+Estimado usuario,
+
+Para evitar el cierre de su cuenta debe verificar su información.
+http://cuentasegura.xyz/verify
+Ingrese su usuario y contraseña.
+
+From: "PremioSorpresa" <sorteos@ganasteahora.com>
+Subject: Felicitaciones! Has sido seleccionado como ganador
+Date: Fri, 10 Oct 2025 17:08:00 -0300
+
+¡Felicitaciones! Ganaste un premio. Reclama tu premio en: http://bit.ly/ganador-premio
+Para coordinar envio necesitamos tu dirección y número de tarjeta.
+
+From: "Banco Falso" <alertas@banco-galicia.info>
+Subject: 🚨 ALERTA: Transacción sospechosa requiere verificación
+Date: Fri, 03 Oct 2025 07:54:00 -0300
+
+Estimado cliente,
+
+Detectamos una transacción inusual. Para verificar sus datos: 👉 VERIFICAR AHORA: https://tinyurl.com/galicia-seguridad-validate
+DATOS: número de tarjeta, fecha, CVV, clave de home banking.
+Si no completa la verificación en 2 horas su cuenta será bloqueada.
