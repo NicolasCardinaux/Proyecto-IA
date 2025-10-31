@@ -5,6 +5,7 @@ from phishing_analyzer import PhishingAnalyzer
 from utils.file_processor import cargar_archivo, separar_correos
 
 def procesar_correos_phishing(input_file, output_file="correos_analizados.csv"):
+    """Procesa un archivo de correos y analiza cada uno en busca de señales de phishing."""
     analyzer = PhishingAnalyzer()
 
     contenido = cargar_archivo(input_file)
@@ -30,12 +31,24 @@ def procesar_correos_phishing(input_file, output_file="correos_analizados.csv"):
             continue
 
     if resultados:
-        columnas = [
-            "ID", "AsuntoUrgente", "SolicitaCredenciales", "EnlacesSospechosos",
-            "DominioRemitenteSospechoso", "ErroresOrtograficos", "FaltaInformacionContacto",
-            "AmenazasConsecuencias", "PremioInexperado", "ActualizacionUrgente", "SaludoGenerico"
+
+        columnas_finales = [
+            "ID",
+            "SolicitaCredenciales",
+            "EnlacesSospechosos",
+            "AsuntoUrgente_compuesto",
+            "DominioRemitenteSospechoso",
+            "NombreDominioIncoherente",
+            "DominioContacto_compuesto",
+            "DominioAmenaza_compuesto",
+            "MicroSeñales_fuerte",
+            "LinkYActualizacion",
+            "SolicitaCredencialesAlternativa"
         ]
-        df = pd.DataFrame(resultados, columns=columnas)
+
+        df = pd.DataFrame(resultados, columns=["ID"] + list(caracteristicas.keys()))
+        columnas_presentes = [c for c in columnas_finales if c in df.columns]
+        df = df[columnas_presentes]
         df.to_csv(output_file, index=False, encoding="utf-8")
         print(f"\n✅ Análisis completado! Resultados guardados en: {os.path.abspath(output_file)}")
     else:
