@@ -12,7 +12,6 @@ def cargar_archivo(input_file):
 
 def separar_correos(contenido):
     """Separa los correos individuales a partir del contenido del archivo"""
-    separadores = [DELIMITERS_PATTERN]
-    patron_separador = "|".join(separadores)
+    patron_separador = "|".join(DELIMITERS_PATTERN)
     correos = re.split(patron_separador, contenido)
     return [c.strip() for c in correos if c.strip()]
