@@ -1,6 +1,6 @@
-ID,AsuntoUrgente,SolicitaCredenciales,EnlacesSospechosos,DominioRemitenteSospechoso,ErroresOrtograficos,FaltaInformacionContacto,AmenazasConsecuencias,PremioInexperado,ActualizacionUrgente,SaludoGenerico
-Correo01,1,1,1,0,0,1,1,0,1,0
-Correo02,0,1,1,1,0,0,1,0,1,1
-Correo03,0,0,1,1,0,0,1,0,1,0
-Correo04,0,0,0,1,0,1,0,0,0,0
-Correo05,0,0,0,1,0,0,0,0,0,0
+ID,SolicitaCredenciales,EnlacesSospechosos,AsuntoUrgente_compuesto,DominioRemitenteSospechoso,NombreDominioIncoherente,DominioContacto_compuesto,DominioAmenaza_compuesto,MicroSeñales_fuerte,LinkYActualizacion,SolicitaCredencialesAlternativa
+Correo01,1,1,1,0,0,0,0,0,1,1
+Correo02,1,1,0,1,1,0,1,0,1,1
+Correo03,0,1,0,1,1,0,1,0,1,0
+Correo04,0,0,0,1,1,1,0,0,0,0
+Correo05,0,0,0,1,1,0,0,0,0,0
