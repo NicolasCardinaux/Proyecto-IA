@@ -1,11 +1,23 @@
 import re
 from urllib.parse import urlparse
 import tldextract
-from patterns.keywords import URGENTE_KEYWORDS, CREDENCIALES_KEYWORDS, AMENAZAS_KEYWORDS, PREMIO_KEYWORDS, ACTUALIZACION_KEYWORDS, URL_SHORTENERS, DOMINIOS_GENERICOS
+import logging
+import traceback
+from patterns.keywords import URGENTE_KEYWORDS, CREDENCIALES_KEYWORDS, AMENAZAS_KEYWORDS, PREMIO_KEYWORDS, ACTUALIZACION_KEYWORDS, URL_SHORTENERS, DOMINIOS_GENERICOS, REMITENTES_CONFIABLES
 from patterns.regex_patterns import ERRORS_PATTERN, LINKS_PATTERN, EMAIL_PATTERN, GREETINGS_PATTERN, PHONE_PATTERN, SENSIBLE_PATTERN, SYMBOLS_PATTERN, ADDRESS_PATTERN, CORP_PATTERN
 
 
+# Para la excepción en analizar_correo
+logger = logging.getLogger(__name__)
+if not logger.handlers:
+    handler = logging.StreamHandler()
+    fmt = logging.Formatter(
+        "%(asctime)s %(levelname)s %(name)s: %(message)s")
+    handler.setFormatter(fmt)
+    logger.addHandler(handler)
+    logger.setLevel(logging.INFO)
 class PhishingAnalyzer:
+    """Clase para analizar correos electrónicos en busca de señales de phishing."""
     def __init__(self):
         # Patrones específicos para phishing
         self.URGENTE_KEYWORDS = URGENTE_KEYWORDS
@@ -130,6 +142,19 @@ class PhishingAnalyzer:
 
         return 0
 
+    def analizar_nombre_remitente(self, remitente_email):
+        """Analiza el nombre antes del @ y marca 1 si no pertenece a entidades conocidas."""
+        if not remitente_email or '@' not in remitente_email:
+            return 1  # Falta correo válido = sospechoso
+
+        nombre = remitente_email.split('@')[0].lower()
+
+        # Si contiene alguno de los nombres legítimos = no sospechoso
+        for r in REMITENTES_CONFIABLES:
+            if r in nombre:
+                return 0
+        return 1
+
     def analizar_errores(self, cuerpo):
         """Busca errores ortográficos y gramaticales típicos de phishing"""
         if not cuerpo:
@@ -245,6 +270,8 @@ class PhishingAnalyzer:
 
             caracteristicas["DominioRemitenteSospechoso"] = self.analizar_remitente(
                 remitente_email)
+            caracteristicas["NombreRemitenteDesconocido"] = self.analizar_nombre_remitente(
+                remitente_email)
             caracteristicas["ErroresOrtograficos"] = self.analizar_errores(
                 cuerpo)
             caracteristicas["FaltaInformacionContacto"] = self.analizar_falta_contacto(
@@ -256,14 +283,88 @@ class PhishingAnalyzer:
                 cuerpo)
             caracteristicas["SaludoGenerico"] = self.analizar_saludo(cuerpo)
 
+            caracteristicas = self.combinar_caracteristicas(
+                caracteristicas, remitente_email)
+
             return caracteristicas, id_correo, asunto
 
-        except Exception:
-            # En caso de error, retornar valores por defecto
-            caracteristicas = {
-                "AsuntoUrgente": 0, "SolicitaCredenciales": 0, "EnlacesSospechosos": 0,
-                "DominioRemitenteSospechoso": 1, "ErroresOrtograficos": 0,
-                "FaltaInformacionContacto": 1, "AmenazasConsecuencias": 0,
-                "PremioInexperado": 0, "ActualizacionUrgente": 0, "SaludoGenerico": 1
-            }
-            return caracteristicas, f"Correo{numero_correo:02d}", "Error en análisis"
+        except Exception as e:
+
+            logger.error("Error analizando correo %s: %s", numero_correo, e)
+            logger.debug("Traceback:\n%s", traceback.format_exc())
+
+            raise
+
+    def combinar_caracteristicas(self, caracteristicas, remitente_email=None):
+        """
+        Genera variables compuestas a partir de combinaciones lógicas de las señales básicas.
+        Retorna el mismo diccionario con nuevas claves agregadas.
+        """
+
+        c = caracteristicas.copy()
+
+        # --- AsuntoUrgente_compuesto ---
+        if c.get("AsuntoUrgente") == 1 and (
+            c.get("EnlacesSospechosos") == 1
+            or c.get("FaltaInformacionContacto") == 1
+            or c.get("AmenazasConsecuencias") == 1
+        ):
+            c["AsuntoUrgente_compuesto"] = 1
+        else:
+            c["AsuntoUrgente_compuesto"] = 0
+
+        # --- LinkYActualizacion ---
+        c["LinkYActualizacion"] = 1 if (
+            c.get("EnlacesSospechosos") == 1 and c.get("ActualizacionUrgente") == 1
+        ) else 0
+
+        # --- DominioAmenaza_compuesto ---
+        c["DominioAmenaza_compuesto"] = 1 if (
+            c.get("DominioRemitenteSospechoso") == 1 and c.get(
+                "AmenazasConsecuencias") == 1
+        ) else 0
+
+        # --- DominioContacto_compuesto ---
+        c["DominioContacto_compuesto"] = 1 if (
+            c.get("DominioRemitenteSospechoso") == 1 and c.get(
+                "FaltaInformacionContacto") == 1
+        ) else 0
+
+        # --- MicroSeñales_fuerte (2 o más de 3 activas) ---
+        micro_signos = sum([
+            c.get("ErroresOrtograficos", 0),
+            c.get("PremioInexperado", 0),
+            c.get("SaludoGenerico", 0),
+        ])
+        c["MicroSeñales_fuerte"] = 1 if micro_signos >= 2 else 0
+
+        # --- UrgenteYContacto_compuesto ---
+        c["UrgenteYContacto_compuesto"] = 1 if (
+            c.get("AsuntoUrgente") == 1 and c.get("FaltaInformacionContacto") == 1
+        ) else 0
+
+        # --- SolicitaCredencialesAlternativa ---
+        c["SolicitaCredencialesAlternativa"] = 1 if (
+            c.get("SolicitaCredenciales") == 1 and c.get("EnlacesSospechosos") == 1
+        ) else 0
+
+        # --- NombreDominioIncoherente ---
+        nombre = c.get("NombreRemitenteDesconocido", 0)
+        dominio = c.get("DominioRemitenteSospechoso", 0)
+        incoherente = 0
+
+        # Caso 1: Suplantación total (nombre genérico + dominio falso)
+        if nombre == 1 and dominio == 1:
+            incoherente = 1
+        # Caso 2: Suplantación parcial (marca legítima en dominio incorrecto)
+        elif remitente_email and '@' in remitente_email:
+            parte_nombre = remitente_email.split('@')[0].lower()
+            parte_dominio = remitente_email.split('@')[1].lower()
+            for marca in REMITENTES_CONFIABLES:
+                if marca in parte_nombre and marca not in parte_dominio:
+                    incoherente = 1
+                    break
+
+        c["NombreDominioIncoherente"] = incoherente
+
+        return c
