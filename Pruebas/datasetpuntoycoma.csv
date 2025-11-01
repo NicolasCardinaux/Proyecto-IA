@@ -1,0 +1,13 @@
+ID,SolicitaCredenciales,EnlacesSospechosos,AsuntoUrgente_compuesto,DominioRemitenteSospechoso,NombreDominioIncoherente,DominioContacto_compuesto,DominioAmenaza_compuesto,MicroSeñales_fuerte,LinkYActualizacion,SolicitaCredencialesAlternativa
+Correo01;1;1;1;1;1;1;1;1;1;1 # Phishing
+Correo02;1;0;1;1;0;1;0;1;1;0 # Phishing
+Correo03;1;1;0;1;1;0;1;0;0;1 # Phishing
+Correo04;1;0;0;1;0;1;1;0;1;0 # Phishing
+Correo05;1;1;1;0;0;0;1;0;0;1 # Phishing
+Correo06;1;0;0;0;1;1;1;1;1;0 # Phishing
+Correo07;0;0;0;0;1;0;0;1;0;0 # Legítimo
+Correo08;0;1;0;0;1;0;0;0;0;0 # Legítimo
+Correo09;0;0;0;0;0;0;0;1;1;0 # Legítimo
+Correo10;0;0;0;0;0;1;1;0;0;0 # Legítimo
+Correo11;0;0;0;0;1;0;0;0;0;0 # Legítimo
+Correo12;0;1;0;0;0;0;1;0;0;0 # Legítimo

@@ -1,0 +1,11 @@
+SolicitaCredenciales;EnlacesSospechosos;AsuntoUrgente_compuesto;DominioRemitenteSospechoso;NombreDominioIncoherente;DominioContacto_compuesto;DominioAmenaza_compuesto;MicroSeñales_fuerte;LinkYActualizacion;SolicitaCredencialesAlternativa
+0;0;0;0;0;0;0;0;0;0
+0;0;0;1;0;1;0;0;0;0
+0;0;1;0;0;0;0;0;1;0
+0;1;0;0;0;0;0;0;0;0
+1;1;1;1;1;1;0;1;1;1
+0;1;1;1;1;0;1;1;1;0
+0;1;1;1;0;0;0;1;0;0
+1;0;1;0;1;0;0;1;0;0
+1;1;0;1;1;1;0;1;1;1
+1;0;1;1;1;0;1;0;0;0
