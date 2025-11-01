@@ -1,101 +1,101 @@
 ID,SolicitaCredenciales,EnlacesSospechosos,AsuntoUrgente_compuesto,DominioRemitenteSospechoso,NombreDominioIncoherente,DominioContacto_compuesto,DominioAmenaza_compuesto,MicroSeñales_fuerte,LinkYActualizacion,SolicitaCredencialesAlternativa
-Correo01,0,0,0,0,0,0,0,0,0,0
-Correo02,0,0,0,1,1,1,0,0,0,0
-Correo03,0,0,0,1,1,1,0,0,0,0
-Correo04,0,0,0,1,1,0,0,0,0,0
-Correo05,0,0,0,1,1,0,0,0,0,0
-Correo06,0,0,0,1,1,1,0,0,0,0
-Correo07,0,0,0,1,1,0,0,0,0,0
-Correo08,0,0,0,1,1,1,0,0,0,0
-Correo09,0,0,0,1,1,0,0,0,0,0
-Correo10,0,0,0,1,1,0,0,0,0,0
-Correo11,0,0,0,1,1,1,0,0,0,0
-Correo12,0,0,0,1,1,0,0,0,0,0
-Correo13,0,0,0,1,1,1,0,0,0,0
-Correo14,0,0,0,1,1,1,0,0,0,0
-Correo15,0,0,0,1,1,0,0,0,0,0
-Correo16,0,0,0,1,1,1,0,0,0,0
-Correo17,0,0,0,1,1,1,0,0,0,0
-Correo18,0,0,0,1,1,0,0,0,0,0
-Correo19,0,0,0,1,1,0,0,0,0,0
-Correo20,0,0,0,1,1,0,0,0,0,0
-Correo21,0,0,0,1,1,0,0,0,0,0
-Correo22,0,0,0,1,1,1,0,0,0,0
-Correo23,0,0,0,1,1,0,0,0,0,0
-Correo24,0,0,0,1,1,1,0,0,0,0
-Correo25,0,0,0,1,1,0,0,0,0,0
-Correo26,0,0,0,1,1,0,0,0,0,0
-Correo27,0,0,0,1,1,0,0,0,0,0
-Correo28,0,0,0,1,1,0,0,0,0,0
-Correo29,0,0,0,1,1,0,0,0,0,0
-Correo30,0,0,0,1,1,1,0,0,0,0
-Correo31,0,0,0,1,1,1,0,0,0,0
-Correo32,0,0,0,1,1,1,0,0,0,0
-Correo33,0,0,0,1,1,1,0,0,0,0
-Correo34,0,0,0,1,1,0,0,0,0,0
-Correo35,0,0,0,1,1,1,0,0,0,0
-Correo36,0,0,0,1,1,0,0,0,0,0
-Correo37,0,0,0,1,1,0,0,0,0,0
-Correo38,0,0,0,1,1,1,0,0,0,0
-Correo39,0,0,0,1,1,0,0,0,0,0
-Correo40,0,0,0,1,1,1,0,0,0,0
-Correo41,0,0,0,1,1,0,0,0,0,0
-Correo42,0,0,0,1,1,1,0,0,0,0
-Correo43,0,0,0,1,1,0,0,0,0,0
-Correo44,0,0,0,1,1,0,0,0,0,0
-Correo45,0,0,0,1,1,1,0,0,0,0
-Correo46,0,0,0,1,1,1,0,0,0,0
-Correo47,0,0,0,1,1,0,0,0,0,0
-Correo48,0,0,0,1,1,1,0,0,0,0
-Correo49,0,0,0,1,1,1,0,0,0,0
-Correo50,0,0,0,1,1,1,0,0,0,0
-Correo51,1,0,1,1,1,1,0,0,0,0
-Correo52,1,1,0,1,1,0,0,0,1,1
-Correo53,0,1,0,1,1,1,0,0,1,0
-Correo54,1,0,1,1,1,1,0,0,0,0
-Correo55,1,1,0,1,1,1,0,0,1,1
-Correo56,0,1,0,1,1,1,0,0,0,0
-Correo57,1,1,0,1,1,0,0,0,1,1
-Correo58,1,0,0,1,1,1,0,0,0,0
-Correo59,1,1,1,1,1,1,1,0,1,1
-Correo60,1,1,0,1,1,1,0,0,1,1
-Correo61,0,1,0,1,1,0,0,0,1,0
-Correo62,0,1,0,1,1,1,0,0,0,0
-Correo63,1,1,1,1,1,1,1,0,1,1
-Correo64,1,1,0,1,1,1,0,0,1,1
-Correo65,1,1,1,1,1,1,1,0,1,1
-Correo66,1,1,1,1,1,1,1,0,1,1
-Correo67,1,0,0,1,1,0,0,0,0,0
-Correo68,0,1,0,1,1,1,0,0,1,0
-Correo69,0,1,0,1,1,0,0,0,0,0
-Correo70,1,1,0,1,1,1,0,0,1,1
-Correo71,1,1,0,1,1,0,0,0,1,1
-Correo72,1,0,0,1,1,1,0,0,0,0
-Correo73,1,1,1,1,1,1,1,0,1,1
-Correo74,1,1,0,1,1,0,0,0,1,1
-Correo75,1,0,0,1,1,0,0,0,0,0
-Correo76,0,1,0,1,1,1,0,0,0,0
-Correo77,1,1,0,1,1,1,0,0,1,1
-Correo78,1,1,1,1,1,0,1,0,1,1
-Correo79,1,0,0,1,1,1,0,0,0,0
-Correo80,1,1,0,1,1,0,0,0,1,1
-Correo81,1,1,1,1,1,0,1,0,1,1
-Correo82,1,0,1,1,1,1,0,0,0,0
-Correo83,0,1,0,1,1,0,0,0,0,0
-Correo84,0,1,0,1,1,0,0,0,0,0
-Correo85,0,1,0,1,1,1,0,0,0,0
-Correo86,0,1,0,1,1,1,0,0,1,0
-Correo87,1,0,1,1,1,1,0,0,0,0
-Correo88,0,1,0,1,1,1,0,0,1,0
-Correo89,1,0,0,1,1,0,0,0,0,0
-Correo90,0,1,0,1,1,0,0,0,0,0
-Correo91,1,0,0,1,1,0,0,0,0,0
-Correo92,1,1,1,1,1,0,1,0,1,1
-Correo93,1,0,1,1,1,1,0,0,0,0
-Correo94,1,0,0,1,1,0,0,0,0,0
-Correo95,1,0,1,1,1,1,0,0,0,0
-Correo96,1,0,0,1,1,0,0,0,0,0
-Correo97,1,1,0,1,1,0,0,0,1,1
-Correo98,1,0,0,1,1,1,0,0,0,0
-Correo99,0,1,0,1,1,0,0,0,0,0
-Correo100,1,1,0,1,1,0,0,0,1,1
+Correo01,1,1,1,1,1,1,0,1,1,1 #Phishing
+Correo02,0,1,1,1,1,0,1,1,1,0 #Phishing
+Correo03,1,1,1,0,0,0,0,0,1,0 #Phishing
+Correo04,1,0,1,0,1,0,0,1,0,0 #Phishing
+Correo05,1,1,0,1,1,1,0,1,1,1 #Phishing
+Correo06,1,0,1,1,1,0,1,0,0,0 #Phishing
+Correo07,1,1,1,1,1,1,0,1,1,0 #Phishing
+Correo08,1,1,0,1,1,1,0,1,1,0 #Phishing
+Correo09,0,1,1,1,0,1,0,0,0,0 #Phishing
+Correo10,1,1,1,1,0,1,1,1,0,1 #Phishing
+Correo11,1,0,1,0,1,0,1,1,0,0 #Phishing
+Correo12,1,1,0,0,0,0,0,0,0,0 #Phishing
+Correo13,1,1,0,1,1,1,1,1,1,1 #Phishing
+Correo14,1,0,1,1,1,0,1,0,1,0 #Phishing
+Correo15,0,1,1,1,0,0,0,1,0,1 #Phishing
+Correo16,1,0,1,0,0,0,0,0,1,0 #Phishing
+Correo17,1,1,1,0,1,1,0,1,0,1 #Phishing
+Correo18,0,1,1,1,1,0,1,1,0,0 #Phishing
+Correo19,1,0,0,1,1,1,0,1,1,1 #Phishing
+Correo20,1,1,1,0,1,0,1,0,0,1 #Phishing
+Correo21,1,0,1,1,1,0,1,1,0,0 #Phishing
+Correo22,0,1,0,1,0,1,0,0,0,0 #Phishing
+Correo23,0,1,1,1,0,0,0,1,1,0 #Phishing
+Correo24,1,1,1,1,1,1,1,1,1,1 #Phishing
+Correo25,1,1,1,0,0,0,0,0,0,1 #Phishing
+Correo26,1,0,1,0,1,0,0,1,1,0 #Phishing
+Correo27,1,1,0,1,0,1,0,1,1,1 #Phishing
+Correo28,1,0,1,1,1,1,1,0,0,0 #Phishing
+Correo29,0,1,1,1,1,0,1,0,1,0 #Phishing
+Correo30,1,1,0,1,0,1,0,0,0,0 #Phishing
+Correo31,1,0,1,0,1,0,0,0,1,0 #Phishing
+Correo32,1,1,1,0,1,1,1,1,1,0 #Phishing
+Correo33,1,0,0,1,1,1,0,1,0,1 #Phishing
+Correo34,0,1,1,1,1,0,1,1,1,1 #Phishing
+Correo35,1,0,1,0,1,1,0,1,0,0 #Phishing
+Correo36,1,1,0,1,1,1,0,0,1,1 #Phishing
+Correo37,1,0,1,1,0,0,1,0,0,0 #Phishing
+Correo38,0,0,1,0,1,0,0,0,1,0 #Phishing
+Correo39,0,1,1,1,0,1,0,1,0,0 #Phishing
+Correo40,1,1,1,1,1,0,1,1,1,0 #Phishing
+Correo41,1,0,0,1,1,1,0,1,1,0 #Phishing
+Correo42,1,1,0,0,0,0,0,0,0,1 #Phishing
+Correo43,1,0,1,0,1,0,1,1,0,1 #Phishing
+Correo44,1,0,1,1,0,1,0,0,0,0 #Phishing
+Correo45,0,1,1,1,1,0,0,1,1,1 #Phishing
+Correo46,1,1,1,1,0,1,0,1,1,1 #Phishing
+Correo47,1,0,0,0,1,1,0,1,0,0 #Phishing
+Correo48,0,1,1,0,0,0,0,0,1,0 #Phishing
+Correo49,1,1,0,1,1,0,1,1,1,1 #Phishing
+Correo50,1,0,1,1,1,0,1,0,0,1 #Phishing
+Correo51,0,0,0,0,0,0,0,0,0,0 #Legítimo
+Correo52,0,1,1,0,0,0,0,1,0,0 #Legítimo
+Correo53,0,0,0,1,0,0,0,0,0,0 #Legítimo
+Correo54,0,0,0,0,0,1,0,0,0,0 #Legítimo
+Correo55,0,0,1,0,0,0,0,0,0,0 #Legítimo
+Correo56,0,1,0,0,0,0,0,0,0,1 #Legítimo
+Correo57,0,0,0,1,0,1,0,0,0,1 #Legítimo
+Correo58,1,0,1,0,0,0,0,1,0,0 #Legítimo
+Correo59,0,0,0,0,0,0,1,0,0,0 #Legítimo
+Correo60,0,1,0,0,0,0,0,0,0,0 #Legítimo
+Correo61,1,0,1,1,1,0,0,0,0,0 #Legítimo
+Correo62,0,0,0,1,0,1,0,0,1,0 #Legítimo
+Correo63,0,0,1,0,0,0,0,0,1,0 #Legítimo
+Correo64,0,1,0,1,0,0,0,0,0,0 #Legítimo
+Correo65,0,1,1,1,0,0,1,1,0,0 #Legítimo
+Correo66,0,0,0,0,1,0,0,0,0,0 #Legítimo
+Correo67,0,0,0,1,0,1,0,1,0,0 #Legítimo
+Correo68,0,1,0,0,0,0,0,0,1,0 #Legítimo
+Correo69,0,0,1,0,0,0,0,1,0,1 #Legítimo
+Correo70,1,1,0,1,1,0,0,1,1,1 #Legítimo
+Correo71,0,0,0,0,0,0,0,0,1,0 #Legítimo
+Correo72,0,1,0,0,1,0,0,0,0,0 #Legítimo
+Correo73,0,0,0,1,1,1,0,0,0,0 #Legítimo
+Correo74,0,0,1,0,0,0,1,0,1,0 #Legítimo
+Correo75,0,1,0,0,0,1,0,0,0,0 #Legítimo
+Correo76,0,0,0,0,0,0,0,0,0,1 #Legítimo
+Correo77,1,0,0,1,1,1,0,1,1,1 #Legítimo
+Correo78,0,0,1,1,0,1,0,0,0,0 #Legítimo
+Correo79,0,1,0,0,0,0,1,0,0,0 #Legítimo
+Correo80,0,0,0,0,0,1,0,0,1,0 #Legítimo
+Correo81,0,1,1,1,1,0,0,1,0,0 #Legítimo
+Correo82,0,0,1,0,0,0,0,0,0,1 #Legítimo
+Correo83,0,1,0,0,0,0,0,1,0,0 #Legítimo
+Correo84,0,0,0,1,0,1,1,0,0,0 #Legítimo
+Correo85,0,0,0,0,1,0,0,0,1,0 #Legítimo
+Correo86,1,0,1,0,1,0,0,1,0,1 #Legítimo
+Correo87,0,1,1,0,0,0,0,0,0,0 #Legítimo
+Correo88,0,0,0,1,0,0,0,0,1,0 #Legítimo
+Correo89,0,1,0,0,0,1,0,0,0,1 #Legítimo
+Correo90,0,0,1,0,1,0,0,0,1,0 #Legítimo
+Correo91,0,1,0,0,0,0,0,0,1,1 #Legítimo
+Correo92,1,1,0,0,1,1,0,1,1,1 #Legítimo
+Correo93,0,0,0,1,0,1,0,0,0,0 #Legítimo
+Correo94,0,0,1,0,0,0,0,1,1,0 #Legítimo
+Correo95,0,1,0,0,1,1,0,0,0,0 #Legítimo
+Correo96,0,0,0,0,0,0,0,1,0,0 #Legítimo
+Correo97,0,1,0,1,0,1,0,0,0,0 #Legítimo
+Correo98,0,0,1,0,0,1,0,0,0,0 #Legítimo
+Correo99,1,0,1,1,1,0,1,0,0,1 #Legítimo
+Correo100,0,0,0,1,1,0,0,0,0,0 #Legítimo
