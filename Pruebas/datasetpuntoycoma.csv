@@ -1,4 +1,4 @@
-ID;AsuntoUrgente;SolicitaCredenciales;EnlacesSospechosos;DominioRemitenteSospechoso;ErroresOrtograficos;FaltaInformacionContacto;AmenazasConsecuencias;PremioInexperado;ActualizacionUrgente;SaludoGenerico
+ID,SolicitaCredenciales,EnlacesSospechosos,AsuntoUrgente_compuesto,DominioRemitenteSospechoso,NombreDominioIncoherente,DominioContacto_compuesto,DominioAmenaza_compuesto,MicroSeñales_fuerte,LinkYActualizacion,SolicitaCredencialesAlternativa
 Correo01;1;1;1;1;1;1;1;1;1;1 # Phishing
 Correo02;1;0;1;1;0;1;0;1;1;0 # Phishing
 Correo03;1;1;0;1;1;0;1;0;0;1 # Phishing
