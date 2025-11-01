@@ -1,61 +1,61 @@
 ID,SolicitaCredenciales,EnlacesSospechosos,AsuntoUrgente_compuesto,DominioRemitenteSospechoso,NombreDominioIncoherente,DominioContacto_compuesto,DominioAmenaza_compuesto,MicroSeñales_fuerte,LinkYActualizacion,SolicitaCredencialesAlternativa
-Correo01,0,0,0,0,0,0,0,0,0,0
-Correo02,0,0,0,1,1,0,0,0,0,0
-Correo03,0,0,0,1,1,0,0,0,0,0
-Correo04,0,0,0,1,1,0,0,0,0,0
-Correo05,0,0,0,1,1,1,0,0,0,0
-Correo06,0,0,0,1,1,0,0,0,0,0
-Correo07,0,0,0,1,1,0,0,0,0,0
-Correo08,0,0,0,1,1,1,0,0,0,0
-Correo09,0,0,0,1,1,0,0,0,0,0
-Correo10,0,0,0,1,1,0,0,0,0,0
-Correo11,0,0,0,1,1,1,0,0,0,0
-Correo12,0,0,0,1,1,1,0,0,0,0
-Correo13,0,0,0,1,1,1,0,0,0,0
-Correo14,0,0,0,1,1,1,0,0,0,0
-Correo15,0,0,0,1,1,1,0,0,0,0
-Correo16,0,0,0,1,1,0,0,0,0,0
-Correo17,0,0,0,1,1,1,0,0,0,0
-Correo18,0,0,0,1,1,1,0,0,0,0
-Correo19,0,0,0,1,1,0,0,0,0,0
-Correo20,0,0,0,1,1,0,0,0,0,0
-Correo21,0,0,0,1,1,0,0,0,0,0
-Correo22,0,0,0,1,1,0,0,0,0,0
-Correo23,0,0,0,1,1,1,0,0,0,0
-Correo24,0,0,0,1,1,1,0,0,0,0
-Correo25,0,0,0,1,1,1,0,0,0,0
-Correo26,0,0,0,1,1,0,0,0,0,0
-Correo27,0,0,0,1,1,1,0,0,0,0
-Correo28,0,0,0,1,1,1,0,0,0,0
-Correo29,0,0,0,1,1,0,0,0,0,0
-Correo30,0,0,0,1,1,0,0,0,0,0
-Correo31,0,1,0,1,1,1,0,0,1,0
-Correo32,1,1,0,1,1,0,0,0,1,1
-Correo33,1,0,0,1,1,0,0,0,0,0
-Correo34,1,1,1,1,1,1,1,0,1,1
-Correo35,1,1,1,1,1,1,1,0,1,1
-Correo36,1,0,0,1,1,0,0,0,0,0
-Correo37,1,0,0,1,1,0,0,0,0,0
-Correo38,1,1,0,1,1,1,0,0,1,1
-Correo39,1,1,0,1,1,0,0,0,1,1
-Correo40,1,1,0,1,1,1,0,0,1,1
-Correo41,0,1,0,1,1,1,0,0,0,0
-Correo42,1,1,1,1,1,1,1,0,1,1
-Correo43,0,1,0,1,1,0,0,0,0,0
-Correo44,0,1,0,1,1,0,0,0,0,0
-Correo45,1,0,1,1,1,1,0,0,0,0
-Correo46,1,0,0,1,1,0,0,0,0,0
-Correo47,0,1,0,1,1,1,0,0,1,0
-Correo48,1,0,0,1,1,0,0,0,0,0
-Correo49,1,1,1,1,1,0,1,0,1,1
-Correo50,0,1,0,1,1,1,0,0,0,0
-Correo51,1,1,0,1,1,0,0,0,1,1
-Correo52,1,1,0,1,1,1,0,0,1,1
-Correo53,1,0,0,1,1,0,0,0,0,0
-Correo54,1,0,1,1,1,1,0,0,0,0
-Correo55,1,0,0,1,1,0,0,0,0,0
-Correo56,0,1,0,1,1,1,0,0,0,0
-Correo57,0,1,0,1,1,1,0,0,0,0
-Correo58,1,0,0,1,1,0,0,0,0,0
-Correo59,1,0,1,1,1,1,0,0,0,0
-Correo60,1,0,0,1,1,0,0,0,0,0
+Correo01,1,1,1,1,1,1,0,1,1,1 #Phishing
+Correo02,0,1,1,1,1,0,1,1,1,0 #Phishing
+Correo03,1,1,1,0,0,0,0,0,1,0 #Phishing
+Correo04,1,0,1,0,1,0,0,1,0,0 #Phishing
+Correo05,1,1,0,1,1,1,0,1,1,1 #Phishing
+Correo06,0,1,0,1,0,1,0,0,0,1 #Phishing
+Correo07,1,0,1,1,1,0,1,0,0,0 #Phishing
+Correo08,0,1,1,1,0,0,0,1,0,0 #Phishing
+Correo09,1,1,1,1,1,1,0,1,1,0 #Phishing
+Correo10,1,1,0,1,1,1,0,1,1,0 #Phishing
+Correo11,1,0,1,0,0,0,0,0,1,0 #Phishing
+Correo12,0,1,1,1,1,0,1,1,0,0 #Phishing
+Correo13,1,1,0,1,1,1,1,1,1,1 #Phishing
+Correo14,1,0,1,1,1,0,1,0,1,0 #Phishing
+Correo15,0,1,1,1,0,1,0,1,0,0 #Phishing
+Correo16,1,1,1,0,1,1,0,1,0,1 #Phishing
+Correo17,1,0,1,1,1,0,1,1,0,0 #Phishing
+Correo18,0,1,0,1,0,1,0,0,0,0 #Phishing
+Correo19,1,1,1,1,1,1,1,1,1,1 #Phishing
+Correo20,1,1,1,0,1,0,1,0,0,1 #Phishing
+Correo21,1,1,0,0,0,0,0,0,0,0 #Phishing
+Correo22,0,1,1,1,0,0,0,1,1,0 #Phishing
+Correo23,1,0,1,0,1,0,0,1,1,0 #Phishing
+Correo24,1,1,0,1,0,1,0,1,1,1 #Phishing
+Correo25,1,0,1,1,1,1,1,0,0,0 #Phishing
+Correo26,0,1,1,1,1,0,1,0,1,0 #Phishing
+Correo27,0,0,1,0,1,0,0,0,1,0 #Phishing
+Correo28,1,1,1,0,1,1,1,1,1,0 #Phishing
+Correo29,1,0,0,1,1,1,0,1,0,1 #Phishing
+Correo30,0,1,1,1,1,0,1,1,1,1 #Phishing
+Correo31,0,0,0,0,0,0,0,0,0,0 #Legítimo
+Correo32,0,1,1,0,0,0,0,1,0,0 #Legítimo
+Correo33,0,0,0,1,0,0,0,0,0,0 #Legítimo
+Correo34,0,0,0,0,0,1,0,0,0,0 #Legítimo
+Correo35,0,0,1,0,0,0,0,0,0,0 #Legítimo
+Correo36,0,1,0,0,0,0,0,0,0,1 #Legítimo
+Correo37,1,0,1,0,0,0,0,1,0,0 #Legítimo
+Correo38,0,0,0,1,0,1,0,0,0,1 #Legítimo
+Correo39,0,0,0,0,0,0,1,0,0,0 #Legítimo
+Correo40,0,1,0,0,0,0,0,0,0,0 #Legítimo
+Correo41,1,0,1,1,1,0,0,0,0,0 #Legítimo
+Correo42,0,0,0,1,0,1,0,0,1,0 #Legítimo
+Correo43,0,0,1,0,0,0,0,0,1,0 #Legítimo
+Correo44,0,1,0,1,0,0,0,0,0,0 #Legítimo
+Correo45,0,0,0,0,1,0,0,0,0,0 #Legítimo
+Correo46,0,1,1,1,0,0,1,1,0,0 #Legítimo
+Correo47,0,0,0,1,0,1,0,1,0,0 #Legítimo
+Correo48,0,1,0,0,0,0,0,0,1,0 #Legítimo
+Correo49,0,0,1,0,0,0,0,1,0,1 #Legítimo
+Correo50,0,0,0,0,0,0,0,0,1,0 #Legítimo
+Correo51,1,1,0,1,1,0,0,1,1,1 #Legítimo
+Correo52,0,1,0,0,1,0,0,0,0,0 #Legítimo
+Correo53,0,0,0,1,1,1,0,0,0,0 #Legítimo
+Correo54,0,0,1,0,0,0,1,0,1,0 #Legítimo
+Correo55,0,1,0,0,0,1,0,0,0,0 #Legítimo
+Correo56,0,0,0,0,0,0,0,0,0,1 #Legítimo
+Correo57,0,0,1,1,0,1,0,0,0,0 #Legítimo
+Correo58,0,1,0,0,0,0,1,0,0,0 #Legítimo
+Correo58,0,1,0,0,0,1,0,0,1,0 #Legítimo
+Correo60,0,0,0,0,0,1,0,0,1,0 #Legítimo
