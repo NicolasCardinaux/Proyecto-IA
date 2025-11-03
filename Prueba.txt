@@ -58,7 +58,7 @@ Hemos detectado un problema al procesar su último pago de suscripción. Por mot
 
 Para evitar la interrupción de su servicio, actualice sus datos de pago inmediatamente.
 
-👉 UPDATE PAYMENT INFO: http://goo.gl/netflix-billing-fix
+👉 ACTUALIZAR INFORMACIÓN DE PAGO: http://goo.gl/netflix-billing-fix
 
 DATOS REQUERIDOS PARA LA ACTUALIZACIÓN:
 
