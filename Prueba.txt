@@ -47,27 +47,30 @@ Departamento de Seguridad Bancaria
 Banco Santander Río
 
 
-From: "Netfli Billing Department" <support@netfli-payment.com>
-Subject: Problema con su método de pago - Actualización requerida
+ 
+From: "Netfli Billing Department" support@netfli-payment.com
+Subject: ⚠️ Problema con su método de pago - Actualización requerida
 Date: Mon, 15 Sep 2025 14:45:00 -0300
 
-Dear Netflix User,
+Estimado usuario de Netflix,
 
-We are having trouble processing your last payment for your Netflix subscription. Your account will be suspended in 24 hours if we cannot verify your payment information.
+Hemos detectado un problema al procesar su último pago de suscripción. Por motivos de seguridad, su cuenta será suspendida en las próximas 24 horas si no se verifica su información de facturación.
 
-To avoid interruption of your service, please update your billing details immediately.
+Para evitar la interrupción de su servicio, actualice sus datos de pago inmediatamente.
 
-🔄 UPDATE PAYMENT INFO: http://goo.gl/netflix-billing-fix
+👉 UPDATE PAYMENT INFO: http://goo.gl/netflix-billing-fix
 
-You will need to provide:
-- Credit card number
-- Expiration date
-- Security code
-- Billing address
+DATOS REQUERIDOS PARA LA ACTUALIZACIÓN:
 
-This is an automated security measure. If you do not update your information, your account will be temporarily suspended.
+-Número de tarjeta de crédito
+-Fecha de vencimiento
+-Código de seguridad (CVV)
+-Dirección de facturación
 
-Thank you,
+
+Esta es una medida de seguridad automática. Si no completa la actualización dentro del plazo establecido, su cuenta será suspendida temporalmente.
+
+Cordialmente,
 Netflix Billing Team
 Netflix, Inc.
 
